@@ -41,11 +41,9 @@
 		632E14301D00135400BACD76 /* AppConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 632E14231D00135400BACD76 /* AppConstants.m */; };
 		632E14311D00135400BACD76 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632E14241D00135400BACD76 /* Constants.swift */; };
 		632E14341D00135400BACD76 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632E14291D00135400BACD76 /* Utils.swift */; };
-		635B2E3E1DB9DD9F0050D2FC /* Paysafe.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 635B2E3D1DB9DD9F0050D2FC /* Paysafe.podspec */; };
 		635B49431D7FE57000F53F17 /* PaySafeMockPaymentSummaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 635B49421D7FE57000F53F17 /* PaySafeMockPaymentSummaryViewController.xib */; };
 		63CEEB631D7FE69F002CD6D7 /* PaySafeConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CEEB601D7FE69F002CD6D7 /* PaySafeConstants.m */; };
 		63CEEB641D7FE69F002CD6D7 /* PaySafeDef.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CEEB621D7FE69F002CD6D7 /* PaySafeDef.m */; };
-		63E12A031DB9E2E100EB2ADA /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 63E12A021DB9E2E100EB2ADA /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,13 +99,11 @@
 		632E14231D00135400BACD76 /* AppConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppConstants.m; sourceTree = "<group>"; };
 		632E14241D00135400BACD76 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		632E14291D00135400BACD76 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		635B2E3D1DB9DD9F0050D2FC /* Paysafe.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = Paysafe.podspec; sourceTree = "<group>"; };
 		635B49421D7FE57000F53F17 /* PaySafeMockPaymentSummaryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PaySafeMockPaymentSummaryViewController.xib; path = iOS_SDK.framework/Headers/PaySafeMockPaymentSummaryViewController.xib; sourceTree = "<group>"; };
 		63CEEB5F1D7FE69F002CD6D7 /* PaySafeConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaySafeConstants.h; sourceTree = "<group>"; };
 		63CEEB601D7FE69F002CD6D7 /* PaySafeConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaySafeConstants.m; sourceTree = "<group>"; };
 		63CEEB611D7FE69F002CD6D7 /* PaySafeDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaySafeDef.h; sourceTree = "<group>"; };
 		63CEEB621D7FE69F002CD6D7 /* PaySafeDef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaySafeDef.m; sourceTree = "<group>"; };
-		63E12A021DB9E2E100EB2ADA /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,8 +128,6 @@
 		531A3AFA1AE8BB5E004FE5FA = {
 			isa = PBXGroup;
 			children = (
-				63E12A021DB9E2E100EB2ADA /* LICENSE */,
-				635B2E3D1DB9DD9F0050D2FC /* Paysafe.podspec */,
 				531A3B051AE8BB5F004FE5FA /* TestMerchAppExample_Swift */,
 				531A3B1B1AE8BB5F004FE5FA /* TestMerchAppExample_SwiftTests */,
 				531A3B041AE8BB5F004FE5FA /* Products */,
@@ -377,7 +371,6 @@
 				632E14081D00133100BACD76 /* ApplePayBTN_32pt__white_logo_@2x.png in Resources */,
 				632E140B1D00133100BACD76 /* ApplePayBTN_32pt__white_textLogo_@3x.png in Resources */,
 				632E14151D00133200BACD76 /* Shopping_img.png in Resources */,
-				63E12A031DB9E2E100EB2ADA /* LICENSE in Resources */,
 				632E14071D00133100BACD76 /* ApplePayBTN_32pt__black_textLogo_@3x.png in Resources */,
 				632E14121D00133200BACD76 /* BuyNow_btn.png in Resources */,
 				531A3B131AE8BB5F004FE5FA /* LaunchScreen.xib in Resources */,
@@ -389,7 +382,6 @@
 				632E14101D00133100BACD76 /* Authorization.png in Resources */,
 				632E14131D00133200BACD76 /* OptimalImg.png in Resources */,
 				632E14091D00133100BACD76 /* ApplePayBTN_32pt__white_logo_@3x.png in Resources */,
-				635B2E3E1DB9DD9F0050D2FC /* Paysafe.podspec in Resources */,
 				6305BA681D0822FB00A003E1 /* MerchantRealConfiguration.plist in Resources */,
 				632E140F1D00133100BACD76 /* ApplePayBTN_32pt__whiteLine_textLogo_@3x.png in Resources */,
 				632E14141D00133200BACD76 /* payNow_img.png in Resources */,
