@@ -10,7 +10,7 @@
 
 import Foundation
 
-class TVViewController: UIViewController , UITextFieldDelegate, AuthorizationProcessDelegate,PaysafePaymentAuthorizationProcessDelegate
+class TVViewController: UIViewController , UITextFieldDelegate, AuthorizationProcessDelegate,PaySafePaymentAuthorizationProcessDelegate
 {
     
     @IBOutlet var payNowButton : UIButton?

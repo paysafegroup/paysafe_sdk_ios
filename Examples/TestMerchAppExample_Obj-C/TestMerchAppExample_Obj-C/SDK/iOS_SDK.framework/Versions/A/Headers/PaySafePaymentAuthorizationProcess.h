@@ -11,7 +11,7 @@
 
 
 
-@protocol PaysafePaymentAuthorizationProcessDelegate<NSObject>
+@protocol PaySafePaymentAuthorizationProcessDelegate <NSObject>
 
 @required
 /* This method will return the Customer vault Payment token
@@ -59,7 +59,7 @@
 
 @interface PaySafePaymentAuthorizationProcess : NSObject <NSURLConnectionDelegate,PKPaymentAuthorizationViewControllerDelegate>
 
-@property(nonatomic, assign)id<PaysafePaymentAuthorizationProcessDelegate>authDelegate;
+@property(nonatomic, assign)id<PaySafePaymentAuthorizationProcessDelegate>authDelegate;
 
 
 - (id)initWithMerchantIdentifier:(NSString*)merchantIdentifier withMerchantID:(NSString*)optiMerchantID withMerchantPwd:(NSString*)optiMerchantPwd withMerchantCountry:(NSString*)merchantCountry withMerchantCurrency:(NSString*)merchantCurrency;

@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 
-class SWCreditCardViewController :UIViewController ,UITextFieldDelegate,PaysafePaymentAuthorizationProcessDelegate
+class SWCreditCardViewController :UIViewController ,UITextFieldDelegate,PaySafePaymentAuthorizationProcessDelegate
 {
     @IBOutlet var  scrollView :UIScrollView!
     @IBOutlet var  txtCardNo:UITextField!

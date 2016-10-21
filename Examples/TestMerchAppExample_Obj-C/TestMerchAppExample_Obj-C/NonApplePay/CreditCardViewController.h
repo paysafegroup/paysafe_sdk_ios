@@ -12,7 +12,7 @@
 #import <iOS_SDK/PaySafePaymentAuthorizationProcess.h>
 
 
-@interface CreditCardViewController : UIViewController <UITextFieldDelegate,PaysafePaymentAuthorizationProcessDelegate>
+@interface CreditCardViewController : UIViewController <UITextFieldDelegate,PaySafePaymentAuthorizationProcessDelegate>
 {
 
 }

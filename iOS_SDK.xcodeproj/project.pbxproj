@@ -113,6 +113,7 @@
 		635B49291D7FE3E000F53F17 /* PaySafeMockShippingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaySafeMockShippingManager.m; path = MockPassKItLib/PaySafeMockShippingManager.m; sourceTree = "<group>"; };
 		635B492A1D7FE3E000F53F17 /* PaySafeMockShippingMethodStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaySafeMockShippingMethodStore.h; path = MockPassKItLib/PaySafeMockShippingMethodStore.h; sourceTree = "<group>"; };
 		635B492B1D7FE3E000F53F17 /* PaySafeMockShippingMethodStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaySafeMockShippingMethodStore.m; path = MockPassKItLib/PaySafeMockShippingMethodStore.m; sourceTree = "<group>"; };
+		63E12A0C1DBA0D1300EB2ADA /* Paysafe.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = Paysafe.podspec; sourceTree = "<group>"; };
 		ADD9C1931BC7972900981AB7 /* libiOS_SDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libiOS_SDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADD9C2151BC79E1300981AB7 /* PKPayment+OPAYMockKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "PKPayment+OPAYMockKeys.h"; path = "MockPassKItLib/PKPayment+OPAYMockKeys.h"; sourceTree = "<group>"; };
 		ADD9C2161BC79E1300981AB7 /* PKPayment+OPAYMockKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "PKPayment+OPAYMockKeys.m"; path = "MockPassKItLib/PKPayment+OPAYMockKeys.m"; sourceTree = "<group>"; };
@@ -132,6 +133,7 @@
 		ADD9C18A1BC7972900981AB7 = {
 			isa = PBXGroup;
 			children = (
+				63E12A0C1DBA0D1300EB2ADA /* Paysafe.podspec */,
 				ADD9C1951BC7972900981AB7 /* iOS_SDK */,
 				ADD9C1941BC7972900981AB7 /* Products */,
 			);

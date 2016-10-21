@@ -1,5 +1,5 @@
 //
-//  OPAYPaymentAuthorizationProcess.m
+//  PaySafePaymentAuthorizationProcess.m
 //  iOS_SDK
 //
 //  Created by Sachin Barage on 09/10/15.
