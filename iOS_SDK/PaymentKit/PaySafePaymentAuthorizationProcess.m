@@ -20,7 +20,7 @@
 #define SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
 
 
-@interface PaySafePaymentAuthorizationProcess ()  <UIViewControllerTransitioningDelegate,NSURLConnectionDelegate,PKPaymentAuthorizationViewControllerDelegate,PaysafePaymentAuthorizationProcessDelegate>
+@interface PaySafePaymentAuthorizationProcess ()  <UIViewControllerTransitioningDelegate,NSURLConnectionDelegate,PKPaymentAuthorizationViewControllerDelegate,PaySafeMockPaymentAuthorizationProcessDelegate>
 {
     NSURLConnection *connection;
     
@@ -43,7 +43,7 @@
 
 @property (retain, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 @property(nonatomic , retain) UIView *optViewController;
-@property(nonatomic, retain)PaySafeMockPaymentAuthorizationProcess *testPaymentAuthorizationProcess;
+@property(nonatomic, strong) PaySafeMockPaymentAuthorizationProcess *testPaymentAuthorizationProcess;
 
 @end
 
@@ -124,7 +124,8 @@
     {
         //Call Mock Library
         self.testPaymentAuthorizationProcess=[[PaySafeMockPaymentAuthorizationProcess alloc]init];
-        self.testPaymentAuthorizationProcess.authTestDelegate =self;
+        self.testPaymentAuthorizationProcess.authTestDelegate = self;
+        
         
         [self.testPaymentAuthorizationProcess showPaymentSummeryView:viewController delgate:self.testPaymentAuthorizationProcess withIdentifier:PaySafeDef.merchantIdentifier withMerchantID:PaySafeDef.merchantUserID withMerchantPwd:PaySafeDef.merchantPassword withMerchantCountry:PaySafeDef.countryCode withMerchantCurrency:PaySafeDef.currencyCode withRequestData:dataDictionary withCartData:cartData];
     }
