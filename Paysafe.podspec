@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/paysafegroup/paysafe_sdk_ios.git'
   s.license          = 'MIT'
   s.author           = { 'Paysafe' => 'DeveloperCentre@OptimalPayments.com' }
-  s.source           = { :git => 'https://github.com/paysafegroup/paysafe_sdk_ios.git',:commit => '40d4ef74cb3d3ec8371ab49a757d7f227b564498', :tag => '1.1.2' }
+  s.source           = { :git => 'https://github.com/paysafegroup/paysafe_sdk_ios.git',:commit => '4bf14d8af04c357a2ffed6597f3a128f639203cb', :tag => '1.1.2' }
   s.platform = :ios,'7.1'
   s.requires_arc = true
   s.source_files = 'iOS_SDK/PaymentKit/*.{h,m}','iOS_SDK/MockPassKItLib/*.{h,m}'
