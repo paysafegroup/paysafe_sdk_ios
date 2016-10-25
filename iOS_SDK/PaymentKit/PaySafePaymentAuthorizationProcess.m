@@ -342,7 +342,7 @@
     
     NSDictionary *res = [NSJSONSerialization JSONObjectWithData:self.responseData options:NSJSONReadingMutableLeaves error:&error];
     [self hideActivityViewer];
-    [self.authDelegate callBackResponseFromOPTSDK:res];
+    [self.authDelegate callBackResponseFromPaysafeSDK:res];
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
@@ -352,12 +352,12 @@
     NSDictionary *res = [NSJSONSerialization JSONObjectWithData:self.responseData options:NSJSONReadingMutableLeaves error:&myError];
     
     [self hideActivityViewer];
-    [self.authDelegate callBackResponseFromOPTSDK:res];
+    [self.authDelegate callBackResponseFromPaysafeSDK:res];
 }
 
 - (void)callBackResponseFromOPAYMockSDK:(NSDictionary*)response
 {
-    [self.authDelegate callBackResponseFromOPTSDK:response];
+    [self.authDelegate callBackResponseFromPaysafeSDK:response];
 }
 
 //////// ANIMATION ///////////
