@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B852C32BC8EC7CA38B7B114 /* libPods-TestMerchAppExample_Swift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 991FE69DBF87181EBE89AC47 /* libPods-TestMerchAppExample_Swift.a */; };
 		531A3B091AE8BB5F004FE5FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531A3B081AE8BB5F004FE5FA /* AppDelegate.swift */; };
 		531A3B0B1AE8BB5F004FE5FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531A3B0A1AE8BB5F004FE5FA /* ViewController.swift */; };
 		531A3B0E1AE8BB5F004FE5FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 531A3B0C1AE8BB5F004FE5FA /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 		533BAB8A1B31785100BCBDE7 /* SWMenuScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533BAB891B31785100BCBDE7 /* SWMenuScreen.swift */; };
 		534092961B32A308003A0F0D /* AppConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 534092951B32A308003A0F0D /* AppConstants.m */; };
 		535C126D1B256C9C00FD1ADF /* SWCreditCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535C126C1B256C9C00FD1ADF /* SWCreditCardViewController.swift */; };
+		632097261DBF776C00836539 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 632097251DBF776C00836539 /* Podfile */; };
 		635B2E3A1DB9CEFE0050D2FC /* PaySafeMockPaymentSummaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 635B2E391DB9CEFE0050D2FC /* PaySafeMockPaymentSummaryViewController.xib */; };
 		AD0B3BFE1BC7B8B100E66881 /* iOS_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD0B3BFD1BC7B8B100E66881 /* iOS_SDK.framework */; };
 /* End PBXBuildFile section */
@@ -52,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		056550D0CFC09CB48D1F97CB /* Pods-TestMerchAppExample_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestMerchAppExample_Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestMerchAppExample_Swift/Pods-TestMerchAppExample_Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		531A3B031AE8BB5F004FE5FA /* TestMerchAppExample_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestMerchAppExample_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		531A3B071AE8BB5F004FE5FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		531A3B081AE8BB5F004FE5FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AppDelegate.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -90,7 +93,10 @@
 		534092941B32A308003A0F0D /* AppConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConstants.h; sourceTree = "<group>"; };
 		534092951B32A308003A0F0D /* AppConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppConstants.m; sourceTree = "<group>"; };
 		535C126C1B256C9C00FD1ADF /* SWCreditCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = SWCreditCardViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		632097251DBF776C00836539 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		635B2E391DB9CEFE0050D2FC /* PaySafeMockPaymentSummaryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PaySafeMockPaymentSummaryViewController.xib; path = iOS_SDK.framework/Headers/PaySafeMockPaymentSummaryViewController.xib; sourceTree = "<group>"; };
+		991FE69DBF87181EBE89AC47 /* libPods-TestMerchAppExample_Swift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestMerchAppExample_Swift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8D565EF15E9408F7E410915 /* Pods-TestMerchAppExample_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestMerchAppExample_Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestMerchAppExample_Swift/Pods-TestMerchAppExample_Swift.release.xcconfig"; sourceTree = "<group>"; };
 		AD0B3BFD1BC7B8B100E66881 /* iOS_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iOS_SDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +106,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD0B3BFE1BC7B8B100E66881 /* iOS_SDK.framework in Frameworks */,
+				3B852C32BC8EC7CA38B7B114 /* libPods-TestMerchAppExample_Swift.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,12 +120,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19DB16755EB5C947B920378F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				991FE69DBF87181EBE89AC47 /* libPods-TestMerchAppExample_Swift.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		34F77AC9E9F63D3B4BF03D09 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				056550D0CFC09CB48D1F97CB /* Pods-TestMerchAppExample_Swift.debug.xcconfig */,
+				A8D565EF15E9408F7E410915 /* Pods-TestMerchAppExample_Swift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		531A3AFA1AE8BB5E004FE5FA = {
 			isa = PBXGroup;
 			children = (
+				632097251DBF776C00836539 /* Podfile */,
 				531A3B051AE8BB5F004FE5FA /* TestMerchAppExample_Swift */,
 				531A3B1B1AE8BB5F004FE5FA /* TestMerchAppExample_SwiftTests */,
 				531A3B041AE8BB5F004FE5FA /* Products */,
+				34F77AC9E9F63D3B4BF03D09 /* Pods */,
+				19DB16755EB5C947B920378F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -238,9 +265,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 531A3B221AE8BB5F004FE5FA /* Build configuration list for PBXNativeTarget "TestMerchAppExample_Swift" */;
 			buildPhases = (
+				B7AB44FD2BBA78D9F4CCCBD5 /* [CP] Check Pods Manifest.lock */,
 				531A3AFF1AE8BB5F004FE5FA /* Sources */,
 				531A3B001AE8BB5F004FE5FA /* Frameworks */,
 				531A3B011AE8BB5F004FE5FA /* Resources */,
+				24BCB53BB3290598157718A9 /* [CP] Embed Pods Frameworks */,
+				041ECD43335134A9401F7028 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -337,6 +367,7 @@
 				531A3B311AE8BDC4004FE5FA /* BuyNow_btn.png in Resources */,
 				531A3B461AE8BDD2004FE5FA /* ApplePayBTN_32pt__white_logo_@2x.png in Resources */,
 				635B2E3A1DB9CEFE0050D2FC /* PaySafeMockPaymentSummaryViewController.xib in Resources */,
+				632097261DBF776C00836539 /* Podfile in Resources */,
 				531A3B431AE8BDD2004FE5FA /* ApplePayBTN_32pt__black_logo_@3x.png in Resources */,
 				531A3B471AE8BDD2004FE5FA /* ApplePayBTN_32pt__white_logo_@3x.png in Resources */,
 				531A3B511AE8BE02004FE5FA /* MerchantRealConfiguration.plist in Resources */,
@@ -353,6 +384,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		041ECD43335134A9401F7028 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestMerchAppExample_Swift/Pods-TestMerchAppExample_Swift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		24BCB53BB3290598157718A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestMerchAppExample_Swift/Pods-TestMerchAppExample_Swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7AB44FD2BBA78D9F4CCCBD5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		531A3AFF1AE8BB5F004FE5FA /* Sources */ = {
@@ -486,6 +565,7 @@
 		};
 		531A3B231AE8BB5F004FE5FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 056550D0CFC09CB48D1F97CB /* Pods-TestMerchAppExample_Swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -513,6 +593,7 @@
 		};
 		531A3B241AE8BB5F004FE5FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8D565EF15E9408F7E410915 /* Pods-TestMerchAppExample_Swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
