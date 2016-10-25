@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.loadDataFrmPlist()
 
-        PaysafeAuthController = PaySafePaymentAuthorizationProcess(merchantIdentifier: plistDataDictionary!["merchantIdentifier"]!  as? String, withMerchantID: plistDataDictionary!["OptiMerchantID"]!  as? String, withMerchantPwd: plistDataDictionary!["OptiMerchantPassword"]!  as? String, withMerchantCountry: plistDataDictionary!["countryCode"]!  as? String, withMerchantCurrency: plistDataDictionary!["CurrencyCode"]!  as? String)
+        PaysafeAuthController = PaySafePaymentAuthorizationProcess(merchantIdentifier: plistDataDictionary!["merchantIdentifier"]!  as? String, withMerchantID: plistDataDictionary!["MerchantID"]!  as? String, withMerchantPwd: plistDataDictionary!["MerchantPassword"]!  as? String, withMerchantCountry: plistDataDictionary!["countryCode"]!  as? String, withMerchantCurrency: plistDataDictionary!["CurrencyCode"]!  as? String)
         return true
     }
     

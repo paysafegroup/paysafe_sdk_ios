@@ -2,9 +2,9 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>OptiMerchantPassword</key>
+	<key>MerchantPassword</key>
 	<string>Single Use API Key Password</string>
-	<key>OptiMerchantID</key>
+	<key>MerchantID</key>
 	<string>Single Use API Key ID</string>
 	<key>countryCode</key>
 	<string>US</string>
