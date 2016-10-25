@@ -136,7 +136,7 @@
 /* ----- OPTPaymentAuthorizationViewControllerDelegate ---- */
 #pragma mark OPTPaymentAuthorizationViewControllerDelegate
  
--(void)callBackResponseFromOPTSDK:(NSDictionary*)response
+-(void)callBackResponseFromPaysafeSDK:(NSDictionary*)response
 {
     if(response)
     {
@@ -274,7 +274,7 @@
 
 -(void)getTokenUseingCard:(NSDictionary *)response
 {
-    [self callBackResponseFromOPTSDK:response];
+    [self callBackResponseFromPaysafeSDK:response];
 }
 
 /*

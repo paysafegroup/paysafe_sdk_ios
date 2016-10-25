@@ -110,7 +110,7 @@
     self.PaysafeAuthPaymentController = [[PaySafePaymentAuthorizationProcess alloc] initWithMerchantIdentifier:appleMerchantIdentifier withMerchantID:merchantUserID withMerchantPwd:merchantPassword withMerchantCountry:merchantCountryCode withMerchantCurrency:merchantCurrencyCode];
 }
 
--(void)callBackResponseFromOPTSDK:(NSDictionary *)response
+-(void)callBackResponseFromPaysafeSDK:(NSDictionary *)response
 {
     [self callSplitResponse:response];
 }

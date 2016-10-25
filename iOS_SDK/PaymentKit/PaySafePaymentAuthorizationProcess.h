@@ -18,7 +18,7 @@
  to the app.
  Need to implment this method by declaring this delegate (where ever we are using this class).
  */
-- (void)callBackResponseFromOPTSDK:(NSDictionary*)response;
+- (void)callBackResponseFromPaysafeSDK:(NSDictionary*)response;
 /*
  This method will return response as below.
  1) Payment token from apple pay.

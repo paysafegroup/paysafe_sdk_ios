@@ -86,7 +86,7 @@ class TVViewController: UIViewController , UITextFieldDelegate, AuthorizationPro
     }
     
     
-    func callBackResponseFromOPTSDK(response: [NSObject : AnyObject]!) {
+    func callBackResponseFromPaysafeSDK(response: [NSObject : AnyObject]!) {
         
         if (response != nil){
             if let nameObject: AnyObject = response["error"] {
