@@ -43,9 +43,9 @@ class TestMerchAppExample_SwiftTests: XCTestCase {
         
         self.accountIDTextField.text = merchantAccountNo
         
-        let merchantPassword = myDictionary.objectForKey("OptiMerchantPassword") as! String
+        let merchantPassword = myDictionary.objectForKey("MerchantPassword") as! String
         
-        let appleMerchantIdentifier = myDictionary.objectForKey("OptiMerchantID") as! String
+        let appleMerchantIdentifier = myDictionary.objectForKey("MerchantID") as! String
         
         opayEnrollmentProcess = OPAYEnrollmentProcess(merchantAccountNo:merchantAccountNo,withMerchantID: appleMerchantIdentifier, withMerchantPwd: merchantPassword)
         opayEnrollmentProcess.enrollmentProcessDelegate = self

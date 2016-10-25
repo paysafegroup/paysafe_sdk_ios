@@ -101,8 +101,8 @@
     
     NSMutableDictionary *myDictionary = [[NSMutableDictionary alloc] initWithContentsOfFile:path];
     
-    NSString *merchantUserID = [myDictionary objectForKey:@"OptiMerchantID"];
-    NSString *merchantPassword =[myDictionary objectForKey:@"OptiMerchantPassword"];
+    NSString *merchantUserID = [myDictionary objectForKey:@"MerchantID"];
+    NSString *merchantPassword =[myDictionary objectForKey:@"MerchantPassword"];
     NSString *merchantCountryCode = [myDictionary objectForKey:@"countryCode"];
     NSString *merchantCurrencyCode = [myDictionary objectForKey:@"CurrencyCode"];
     NSString *appleMerchantIdentifier = [myDictionary objectForKey:@"merchantIdentifier"];
