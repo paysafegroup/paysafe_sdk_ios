@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
     
   s.name             = 'Paysafe'
-  s.version          = '1.1.0'
+  s.version          = '1.2.0'
   s.summary          = 'A Paysafe apple pay SDK.'
   s.homepage         = 'https://github.com/paysafegroup/paysafe_sdk_ios'
   
@@ -39,7 +39,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
   
-  s.source           = { :git => 'https://github.com/paysafegroup/paysafe_sdk_ios.git',:commit => '4bf14d8af04c357a2ffed6597f3a128f639203cb', :tag => '1.1.2' }
+  s.source           = { :git => 'https://github.com/paysafegroup/paysafe_sdk_ios.git',:commit => '99791151d0a590bbfb2f7dda0166c1ed41e89b12', :tag => '1.2.0' }
   
   # s.platform     = :ios
   # When using multiple platforms
