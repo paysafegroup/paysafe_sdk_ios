@@ -10,11 +10,13 @@
 
 #import <Foundation/Foundation.h>
 #import "PaySafeMockDataStore.h"
-#import <AddressBook/AddressBook.h>
+#import <Contacts/Contacts.h>
+#import <ContactsUI/ContactsUI.h>
 
 @interface PaySafeMockAddressStore : NSObject <PaySafeMockDataStore>
 
-- (ABRecordRef)contactForSelectedItemObscure:(BOOL)obscure;
+- (CNContact *)contactForSelectedItemObscure:(BOOL)obscure;
+
 @end
 
 #endif

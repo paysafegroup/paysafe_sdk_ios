@@ -6,11 +6,18 @@
 
 #import "AppConstants.h"
 #import "OPTAuthorizationProcess.h"
-#import <iOS_SDK/PaySafePaymentAuthorizationProcess.h>
+//#import "OPAYAuthenticationProcess.h"
+
+//#import "OPayPaymentAccountOperationsProcess.h"
+//#import "OPayPaymentProfilesOperationsProcess.h"
+//#import "OPayPaymentAddressOperationsProcess.h"
+//#import "OPayPaymentPurchaseOperationsProcess.h"
+//#import "PaySafeDef.h"
+//#import "PaySafeConstants.h"
+//#import <iOS_SDK/PaySafePaymentAuthorizationProcess.h>
 
 
 //#import "OPAYPaymentAuthorizationProcess.h"
-
 //#import <iOS_SDK/OPAYPaymentPurchaseOperationsProcess.h>
 //OPAYPaymentPurchaseOperationsProcess
 

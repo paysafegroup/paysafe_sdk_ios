@@ -15,15 +15,21 @@
     return [self californiaShippingMethods];
 }
 
-- (void)fetchShippingCostsForAddress:(ABRecordRef)address completion:(void (^)(NSArray *shippingMethods, NSError *error))completion {
+- (void)fetchShippingCostsForAddress:(CNContact *)address completion:(void (^)(NSArray *shippingMethods, NSError *error))completion {
+    
     // you could, for example, go to UPS here and calculate shipping costs to that address.
-    ABMultiValueRef addressValues = ABRecordCopyValue(address, kABPersonAddressProperty);
+    NSArray *addresses = address.postalAddresses;
+    
     NSString *state;
-    if (ABMultiValueGetCount(addressValues) > 0) {
-        CFDictionaryRef dict = ABMultiValueCopyValueAtIndex(addressValues, 0);
-        state = CFDictionaryGetValue(dict, kABPersonAddressStateKey);
-        CFRelease(dict);
+    
+    if (addresses.count > 0) {
+        
+        CNPostalAddress *postalAddress = [addresses objectAtIndex:0];
+        
+        state = postalAddress.state;
+        postalAddress = nil;
     }
+    
     if (!state) {
         completion(nil, [NSError new]);
     }
@@ -32,11 +38,16 @@
     } else {
         completion([self internationalShippingMethods], nil);
     }
-    CFRelease(addressValues);
+    
+    addresses = nil;
+    state = nil;
+    
+    //CFRelease(addressValues);
 }
 
+
 - (NSArray *)californiaShippingMethods {
-    PKShippingMethod *normalItem =[PKShippingMethod summaryItemWithLabel:@"Llama California Shipping" amount:[NSDecimalNumber decimalNumberWithString:@"1.00"]];
+    PKShippingMethod *normalItem =[PKShippingMethod summaryItemWithLabel:@"Llama California Shipping" amount:[NSDecimalNumber decimalNumberWithString:@"0.01"]];
     normalItem.detail = @"3-5 Business Days";
     normalItem.identifier = normalItem.label;
     PKShippingMethod *expressItem =

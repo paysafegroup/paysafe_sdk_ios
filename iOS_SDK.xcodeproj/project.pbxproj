@@ -22,40 +22,40 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		635B490C1D7FE3CE00F53F17 /* PaySafeApplePayPaymentTokenInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 635B49001D7FE3CE00F53F17 /* PaySafeApplePayPaymentTokenInfo.h */; };
-		635B490D1D7FE3CE00F53F17 /* PaySafeApplePayPaymentTokenInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 635B49011D7FE3CE00F53F17 /* PaySafeApplePayPaymentTokenInfo.m */; };
-		635B490E1D7FE3CE00F53F17 /* PaySafeConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 635B49021D7FE3CE00F53F17 /* PaySafeConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		635B490F1D7FE3CE00F53F17 /* PaySafeConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 635B49031D7FE3CE00F53F17 /* PaySafeConstants.m */; };
-		635B49101D7FE3CE00F53F17 /* PaySafeDef.h in Headers */ = {isa = PBXBuildFile; fileRef = 635B49041D7FE3CE00F53F17 /* PaySafeDef.h */; };
-		635B49111D7FE3CE00F53F17 /* PaySafeDef.m in Sources */ = {isa = PBXBuildFile; fileRef = 635B49051D7FE3CE00F53F17 /* PaySafeDef.m */; };
-		635B49121D7FE3CE00F53F17 /* PaySafePayment.h in Headers */ = {isa = PBXBuildFile; fileRef = 635B49061D7FE3CE00F53F17 /* PaySafePayment.h */; };
-		635B49131D7FE3CE00F53F17 /* PaySafePayment.m in Sources */ = {isa = PBXBuildFile; fileRef = 635B49071D7FE3CE00F53F17 /* PaySafePayment.m */; };
-		635B49141D7FE3CE00F53F17 /* PaySafePaymentAuthorizationProcess.h in Headers */ = {isa = PBXBuildFile; fileRef = 635B49081D7FE3CE00F53F17 /* PaySafePaymentAuthorizationProcess.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		635B49151D7FE3CE00F53F17 /* PaySafePaymentAuthorizationProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 635B49091D7FE3CE00F53F17 /* PaySafePaymentAuthorizationProcess.m */; };
-		635B49161D7FE3CE00F53F17 /* PaySafeRequestApplePaySingleUseTokens.h in Headers */ = {isa = PBXBuildFile; fileRef = 635B490A1D7FE3CE00F53F17 /* PaySafeRequestApplePaySingleUseTokens.h */; };
-		635B49171D7FE3CE00F53F17 /* PaySafeRequestApplePaySingleUseTokens.m in Sources */ = {isa = PBXBuildFile; fileRef = 635B490B1D7FE3CE00F53F17 /* PaySafeRequestApplePaySingleUseTokens.m */; };
-		635B492C1D7FE3E000F53F17 /* PaySafeMockAddressStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 635B49181D7FE3E000F53F17 /* PaySafeMockAddressStore.h */; };
-		635B492D1D7FE3E000F53F17 /* PaySafeMockAddressStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 635B49191D7FE3E000F53F17 /* PaySafeMockAddressStore.m */; };
-		635B492E1D7FE3E000F53F17 /* PaySafeMockApplePayDef.h in Headers */ = {isa = PBXBuildFile; fileRef = 635B491A1D7FE3E000F53F17 /* PaySafeMockApplePayDef.h */; };
-		635B492F1D7FE3E000F53F17 /* PaySafeMockApplePayDef.m in Sources */ = {isa = PBXBuildFile; fileRef = 635B491B1D7FE3E000F53F17 /* PaySafeMockApplePayDef.m */; };
-		635B49301D7FE3E000F53F17 /* PaySafeMockCardStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 635B491C1D7FE3E000F53F17 /* PaySafeMockCardStore.h */; };
-		635B49311D7FE3E000F53F17 /* PaySafeMockCardStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 635B491D1D7FE3E000F53F17 /* PaySafeMockCardStore.m */; };
-		635B49321D7FE3E000F53F17 /* PaySafeMockDataStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 635B491E1D7FE3E000F53F17 /* PaySafeMockDataStore.h */; };
-		635B49331D7FE3E000F53F17 /* PaySafeMockDataTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 635B491F1D7FE3E000F53F17 /* PaySafeMockDataTableViewController.h */; };
-		635B49341D7FE3E000F53F17 /* PaySafeMockDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 635B49201D7FE3E000F53F17 /* PaySafeMockDataTableViewController.m */; };
-		635B49351D7FE3E000F53F17 /* PaySafeMockPayment.h in Headers */ = {isa = PBXBuildFile; fileRef = 635B49211D7FE3E000F53F17 /* PaySafeMockPayment.h */; };
-		635B49361D7FE3E000F53F17 /* PaySafeMockPayment.m in Sources */ = {isa = PBXBuildFile; fileRef = 635B49221D7FE3E000F53F17 /* PaySafeMockPayment.m */; };
-		635B49371D7FE3E000F53F17 /* PaySafeMockPaymentAuthorizationProcess.h in Headers */ = {isa = PBXBuildFile; fileRef = 635B49231D7FE3E000F53F17 /* PaySafeMockPaymentAuthorizationProcess.h */; };
-		635B49381D7FE3E000F53F17 /* PaySafeMockPaymentAuthorizationProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 635B49241D7FE3E000F53F17 /* PaySafeMockPaymentAuthorizationProcess.m */; };
-		635B49391D7FE3E000F53F17 /* PaySafeMockPaymentSummaryViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 635B49251D7FE3E000F53F17 /* PaySafeMockPaymentSummaryViewController.h */; };
-		635B493A1D7FE3E000F53F17 /* PaySafeMockPaymentSummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 635B49261D7FE3E000F53F17 /* PaySafeMockPaymentSummaryViewController.m */; };
-		635B493B1D7FE3E000F53F17 /* PaySafeMockShippingManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 635B49281D7FE3E000F53F17 /* PaySafeMockShippingManager.h */; };
-		635B493C1D7FE3E000F53F17 /* PaySafeMockShippingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 635B49291D7FE3E000F53F17 /* PaySafeMockShippingManager.m */; };
-		635B493D1D7FE3E000F53F17 /* PaySafeMockShippingMethodStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 635B492A1D7FE3E000F53F17 /* PaySafeMockShippingMethodStore.h */; };
-		635B493E1D7FE3E000F53F17 /* PaySafeMockShippingMethodStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 635B492B1D7FE3E000F53F17 /* PaySafeMockShippingMethodStore.m */; };
-		635B493F1D7FE47100F53F17 /* PaySafeMockPaymentSummaryViewController.xib in Headers */ = {isa = PBXBuildFile; fileRef = 635B49271D7FE3E000F53F17 /* PaySafeMockPaymentSummaryViewController.xib */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD805E5B1BC79EF800D8FFE8 /* PaySafeApplePayPaymentTokenInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = AD805E531BC79EF800D8FFE8 /* PaySafeApplePayPaymentTokenInfo.h */; };
+		AD805E5C1BC79EF800D8FFE8 /* PaySafeApplePayPaymentTokenInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = AD805E541BC79EF800D8FFE8 /* PaySafeApplePayPaymentTokenInfo.m */; };
+		AD805E5D1BC79EF800D8FFE8 /* PaySafeDef.h in Headers */ = {isa = PBXBuildFile; fileRef = AD805E551BC79EF800D8FFE8 /* PaySafeDef.h */; };
+		AD805E5E1BC79EF800D8FFE8 /* PaySafeDef.m in Sources */ = {isa = PBXBuildFile; fileRef = AD805E561BC79EF800D8FFE8 /* PaySafeDef.m */; };
+		AD805E5F1BC79EF800D8FFE8 /* PaySafePayment.h in Headers */ = {isa = PBXBuildFile; fileRef = AD805E571BC79EF800D8FFE8 /* PaySafePayment.h */; };
+		AD805E601BC79EF800D8FFE8 /* PaySafePayment.m in Sources */ = {isa = PBXBuildFile; fileRef = AD805E581BC79EF800D8FFE8 /* PaySafePayment.m */; };
+		AD805E611BC79EF800D8FFE8 /* PaySafeRequestApplePaySingleUseTokens.h in Headers */ = {isa = PBXBuildFile; fileRef = AD805E591BC79EF800D8FFE8 /* PaySafeRequestApplePaySingleUseTokens.h */; };
+		AD805E621BC79EF800D8FFE8 /* PaySafeRequestApplePaySingleUseTokens.m in Sources */ = {isa = PBXBuildFile; fileRef = AD805E5A1BC79EF800D8FFE8 /* PaySafeRequestApplePaySingleUseTokens.m */; };
+		ADD9C1A91BC7985D00981AB7 /* PaySafeConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = ADD9C1A71BC7985D00981AB7 /* PaySafeConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ADD9C1AA1BC7985D00981AB7 /* PaySafeConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD9C1A81BC7985D00981AB7 /* PaySafeConstants.m */; };
+		ADD9C1AD1BC7989B00981AB7 /* PaySafePaymentAuthorizationProcess.h in Headers */ = {isa = PBXBuildFile; fileRef = ADD9C1AB1BC7989B00981AB7 /* PaySafePaymentAuthorizationProcess.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ADD9C1AE1BC7989B00981AB7 /* PaySafePaymentAuthorizationProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD9C1AC1BC7989B00981AB7 /* PaySafePaymentAuthorizationProcess.m */; };
+		ADD9C2171BC79E1300981AB7 /* PaySafeMockAddressStore.h in Headers */ = {isa = PBXBuildFile; fileRef = ADD9C2011BC79E1300981AB7 /* PaySafeMockAddressStore.h */; };
+		ADD9C2181BC79E1300981AB7 /* PaySafeMockAddressStore.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD9C2021BC79E1300981AB7 /* PaySafeMockAddressStore.m */; };
+		ADD9C2191BC79E1300981AB7 /* PaySafeMockApplePayDef.h in Headers */ = {isa = PBXBuildFile; fileRef = ADD9C2031BC79E1300981AB7 /* PaySafeMockApplePayDef.h */; };
+		ADD9C21A1BC79E1300981AB7 /* PaySafeMockApplePayDef.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD9C2041BC79E1300981AB7 /* PaySafeMockApplePayDef.m */; };
+		ADD9C21B1BC79E1300981AB7 /* PaySafeMockCardStore.h in Headers */ = {isa = PBXBuildFile; fileRef = ADD9C2051BC79E1300981AB7 /* PaySafeMockCardStore.h */; };
+		ADD9C21C1BC79E1300981AB7 /* PaySafeMockCardStore.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD9C2061BC79E1300981AB7 /* PaySafeMockCardStore.m */; };
+		ADD9C21D1BC79E1300981AB7 /* PaySafeMockDataStore.h in Headers */ = {isa = PBXBuildFile; fileRef = ADD9C2071BC79E1300981AB7 /* PaySafeMockDataStore.h */; };
+		ADD9C21E1BC79E1300981AB7 /* PaySafeMockDataTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = ADD9C2081BC79E1300981AB7 /* PaySafeMockDataTableViewController.h */; };
+		ADD9C21F1BC79E1300981AB7 /* PaySafeMockDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD9C2091BC79E1300981AB7 /* PaySafeMockDataTableViewController.m */; };
+		ADD9C2201BC79E1300981AB7 /* PaySafeMockPayment.h in Headers */ = {isa = PBXBuildFile; fileRef = ADD9C20A1BC79E1300981AB7 /* PaySafeMockPayment.h */; };
+		ADD9C2211BC79E1300981AB7 /* PaySafeMockPayment.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD9C20B1BC79E1300981AB7 /* PaySafeMockPayment.m */; };
+		ADD9C2221BC79E1300981AB7 /* PaySafeMockPaymentAuthorizationProcess.h in Headers */ = {isa = PBXBuildFile; fileRef = ADD9C20C1BC79E1300981AB7 /* PaySafeMockPaymentAuthorizationProcess.h */; };
+		ADD9C2231BC79E1300981AB7 /* PaySafeMockPaymentAuthorizationProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD9C20D1BC79E1300981AB7 /* PaySafeMockPaymentAuthorizationProcess.m */; };
+		ADD9C2241BC79E1300981AB7 /* PaySafeMockPaymentSummaryViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = ADD9C20E1BC79E1300981AB7 /* PaySafeMockPaymentSummaryViewController.h */; };
+		ADD9C2251BC79E1300981AB7 /* PaySafeMockPaymentSummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD9C20F1BC79E1300981AB7 /* PaySafeMockPaymentSummaryViewController.m */; };
+		ADD9C2261BC79E1300981AB7 /* PaySafeMockShippingManager.h in Headers */ = {isa = PBXBuildFile; fileRef = ADD9C2111BC79E1300981AB7 /* PaySafeMockShippingManager.h */; };
+		ADD9C2271BC79E1300981AB7 /* PaySafeMockShippingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD9C2121BC79E1300981AB7 /* PaySafeMockShippingManager.m */; };
+		ADD9C2281BC79E1300981AB7 /* PaySafeMockShippingMethodStore.h in Headers */ = {isa = PBXBuildFile; fileRef = ADD9C2131BC79E1300981AB7 /* PaySafeMockShippingMethodStore.h */; };
+		ADD9C2291BC79E1300981AB7 /* PaySafeMockShippingMethodStore.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD9C2141BC79E1300981AB7 /* PaySafeMockShippingMethodStore.m */; };
 		ADD9C22A1BC79E1300981AB7 /* PKPayment+OPAYMockKeys.h in Headers */ = {isa = PBXBuildFile; fileRef = ADD9C2151BC79E1300981AB7 /* PKPayment+OPAYMockKeys.h */; };
 		ADD9C22B1BC79E1300981AB7 /* PKPayment+OPAYMockKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD9C2161BC79E1300981AB7 /* PKPayment+OPAYMockKeys.m */; };
+		ADD9C22C1BC79E3400981AB7 /* PaySafeMockPaymentSummaryViewController.xib in Headers */ = {isa = PBXBuildFile; fileRef = ADD9C2101BC79E1300981AB7 /* PaySafeMockPaymentSummaryViewController.xib */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,40 +81,39 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		635B49001D7FE3CE00F53F17 /* PaySafeApplePayPaymentTokenInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaySafeApplePayPaymentTokenInfo.h; path = PaymentKit/PaySafeApplePayPaymentTokenInfo.h; sourceTree = "<group>"; };
-		635B49011D7FE3CE00F53F17 /* PaySafeApplePayPaymentTokenInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaySafeApplePayPaymentTokenInfo.m; path = PaymentKit/PaySafeApplePayPaymentTokenInfo.m; sourceTree = "<group>"; };
-		635B49021D7FE3CE00F53F17 /* PaySafeConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaySafeConstants.h; path = PaymentKit/PaySafeConstants.h; sourceTree = "<group>"; };
-		635B49031D7FE3CE00F53F17 /* PaySafeConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaySafeConstants.m; path = PaymentKit/PaySafeConstants.m; sourceTree = "<group>"; };
-		635B49041D7FE3CE00F53F17 /* PaySafeDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaySafeDef.h; path = PaymentKit/PaySafeDef.h; sourceTree = "<group>"; };
-		635B49051D7FE3CE00F53F17 /* PaySafeDef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaySafeDef.m; path = PaymentKit/PaySafeDef.m; sourceTree = "<group>"; };
-		635B49061D7FE3CE00F53F17 /* PaySafePayment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaySafePayment.h; path = PaymentKit/PaySafePayment.h; sourceTree = "<group>"; };
-		635B49071D7FE3CE00F53F17 /* PaySafePayment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaySafePayment.m; path = PaymentKit/PaySafePayment.m; sourceTree = "<group>"; };
-		635B49081D7FE3CE00F53F17 /* PaySafePaymentAuthorizationProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaySafePaymentAuthorizationProcess.h; path = PaymentKit/PaySafePaymentAuthorizationProcess.h; sourceTree = "<group>"; };
-		635B49091D7FE3CE00F53F17 /* PaySafePaymentAuthorizationProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaySafePaymentAuthorizationProcess.m; path = PaymentKit/PaySafePaymentAuthorizationProcess.m; sourceTree = "<group>"; };
-		635B490A1D7FE3CE00F53F17 /* PaySafeRequestApplePaySingleUseTokens.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaySafeRequestApplePaySingleUseTokens.h; path = PaymentKit/PaySafeRequestApplePaySingleUseTokens.h; sourceTree = "<group>"; };
-		635B490B1D7FE3CE00F53F17 /* PaySafeRequestApplePaySingleUseTokens.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaySafeRequestApplePaySingleUseTokens.m; path = PaymentKit/PaySafeRequestApplePaySingleUseTokens.m; sourceTree = "<group>"; };
-		635B49181D7FE3E000F53F17 /* PaySafeMockAddressStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaySafeMockAddressStore.h; path = MockPassKItLib/PaySafeMockAddressStore.h; sourceTree = "<group>"; };
-		635B49191D7FE3E000F53F17 /* PaySafeMockAddressStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaySafeMockAddressStore.m; path = MockPassKItLib/PaySafeMockAddressStore.m; sourceTree = "<group>"; };
-		635B491A1D7FE3E000F53F17 /* PaySafeMockApplePayDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaySafeMockApplePayDef.h; path = MockPassKItLib/PaySafeMockApplePayDef.h; sourceTree = "<group>"; };
-		635B491B1D7FE3E000F53F17 /* PaySafeMockApplePayDef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaySafeMockApplePayDef.m; path = MockPassKItLib/PaySafeMockApplePayDef.m; sourceTree = "<group>"; };
-		635B491C1D7FE3E000F53F17 /* PaySafeMockCardStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaySafeMockCardStore.h; path = MockPassKItLib/PaySafeMockCardStore.h; sourceTree = "<group>"; };
-		635B491D1D7FE3E000F53F17 /* PaySafeMockCardStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaySafeMockCardStore.m; path = MockPassKItLib/PaySafeMockCardStore.m; sourceTree = "<group>"; };
-		635B491E1D7FE3E000F53F17 /* PaySafeMockDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaySafeMockDataStore.h; path = MockPassKItLib/PaySafeMockDataStore.h; sourceTree = "<group>"; };
-		635B491F1D7FE3E000F53F17 /* PaySafeMockDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaySafeMockDataTableViewController.h; path = MockPassKItLib/PaySafeMockDataTableViewController.h; sourceTree = "<group>"; };
-		635B49201D7FE3E000F53F17 /* PaySafeMockDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaySafeMockDataTableViewController.m; path = MockPassKItLib/PaySafeMockDataTableViewController.m; sourceTree = "<group>"; };
-		635B49211D7FE3E000F53F17 /* PaySafeMockPayment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaySafeMockPayment.h; path = MockPassKItLib/PaySafeMockPayment.h; sourceTree = "<group>"; };
-		635B49221D7FE3E000F53F17 /* PaySafeMockPayment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaySafeMockPayment.m; path = MockPassKItLib/PaySafeMockPayment.m; sourceTree = "<group>"; };
-		635B49231D7FE3E000F53F17 /* PaySafeMockPaymentAuthorizationProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaySafeMockPaymentAuthorizationProcess.h; path = MockPassKItLib/PaySafeMockPaymentAuthorizationProcess.h; sourceTree = "<group>"; };
-		635B49241D7FE3E000F53F17 /* PaySafeMockPaymentAuthorizationProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaySafeMockPaymentAuthorizationProcess.m; path = MockPassKItLib/PaySafeMockPaymentAuthorizationProcess.m; sourceTree = "<group>"; };
-		635B49251D7FE3E000F53F17 /* PaySafeMockPaymentSummaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaySafeMockPaymentSummaryViewController.h; path = MockPassKItLib/PaySafeMockPaymentSummaryViewController.h; sourceTree = "<group>"; };
-		635B49261D7FE3E000F53F17 /* PaySafeMockPaymentSummaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaySafeMockPaymentSummaryViewController.m; path = MockPassKItLib/PaySafeMockPaymentSummaryViewController.m; sourceTree = "<group>"; };
-		635B49271D7FE3E000F53F17 /* PaySafeMockPaymentSummaryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PaySafeMockPaymentSummaryViewController.xib; path = MockPassKItLib/PaySafeMockPaymentSummaryViewController.xib; sourceTree = "<group>"; };
-		635B49281D7FE3E000F53F17 /* PaySafeMockShippingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaySafeMockShippingManager.h; path = MockPassKItLib/PaySafeMockShippingManager.h; sourceTree = "<group>"; };
-		635B49291D7FE3E000F53F17 /* PaySafeMockShippingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaySafeMockShippingManager.m; path = MockPassKItLib/PaySafeMockShippingManager.m; sourceTree = "<group>"; };
-		635B492A1D7FE3E000F53F17 /* PaySafeMockShippingMethodStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaySafeMockShippingMethodStore.h; path = MockPassKItLib/PaySafeMockShippingMethodStore.h; sourceTree = "<group>"; };
-		635B492B1D7FE3E000F53F17 /* PaySafeMockShippingMethodStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaySafeMockShippingMethodStore.m; path = MockPassKItLib/PaySafeMockShippingMethodStore.m; sourceTree = "<group>"; };
-		63E12A0C1DBA0D1300EB2ADA /* Paysafe.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = Paysafe.podspec; sourceTree = "<group>"; };
+		AD805E531BC79EF800D8FFE8 /* PaySafeApplePayPaymentTokenInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaySafeApplePayPaymentTokenInfo.h; path = PaymentKit/PaySafeApplePayPaymentTokenInfo.h; sourceTree = "<group>"; };
+		AD805E541BC79EF800D8FFE8 /* PaySafeApplePayPaymentTokenInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaySafeApplePayPaymentTokenInfo.m; path = PaymentKit/PaySafeApplePayPaymentTokenInfo.m; sourceTree = "<group>"; };
+		AD805E551BC79EF800D8FFE8 /* PaySafeDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaySafeDef.h; path = PaymentKit/PaySafeDef.h; sourceTree = "<group>"; };
+		AD805E561BC79EF800D8FFE8 /* PaySafeDef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaySafeDef.m; path = PaymentKit/PaySafeDef.m; sourceTree = "<group>"; };
+		AD805E571BC79EF800D8FFE8 /* PaySafePayment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaySafePayment.h; path = PaymentKit/PaySafePayment.h; sourceTree = "<group>"; };
+		AD805E581BC79EF800D8FFE8 /* PaySafePayment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaySafePayment.m; path = PaymentKit/PaySafePayment.m; sourceTree = "<group>"; };
+		AD805E591BC79EF800D8FFE8 /* PaySafeRequestApplePaySingleUseTokens.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaySafeRequestApplePaySingleUseTokens.h; path = PaymentKit/PaySafeRequestApplePaySingleUseTokens.h; sourceTree = "<group>"; };
+		AD805E5A1BC79EF800D8FFE8 /* PaySafeRequestApplePaySingleUseTokens.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaySafeRequestApplePaySingleUseTokens.m; path = PaymentKit/PaySafeRequestApplePaySingleUseTokens.m; sourceTree = "<group>"; };
 		ADD9C1931BC7972900981AB7 /* libiOS_SDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libiOS_SDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADD9C1A71BC7985D00981AB7 /* PaySafeConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaySafeConstants.h; path = PaymentKit/PaySafeConstants.h; sourceTree = "<group>"; };
+		ADD9C1A81BC7985D00981AB7 /* PaySafeConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaySafeConstants.m; path = PaymentKit/PaySafeConstants.m; sourceTree = "<group>"; };
+		ADD9C1AB1BC7989B00981AB7 /* PaySafePaymentAuthorizationProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaySafePaymentAuthorizationProcess.h; path = PaymentKit/PaySafePaymentAuthorizationProcess.h; sourceTree = "<group>"; };
+		ADD9C1AC1BC7989B00981AB7 /* PaySafePaymentAuthorizationProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaySafePaymentAuthorizationProcess.m; path = PaymentKit/PaySafePaymentAuthorizationProcess.m; sourceTree = "<group>"; };
+		ADD9C2011BC79E1300981AB7 /* PaySafeMockAddressStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaySafeMockAddressStore.h; path = MockPassKItLib/PaySafeMockAddressStore.h; sourceTree = "<group>"; };
+		ADD9C2021BC79E1300981AB7 /* PaySafeMockAddressStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaySafeMockAddressStore.m; path = MockPassKItLib/PaySafeMockAddressStore.m; sourceTree = "<group>"; };
+		ADD9C2031BC79E1300981AB7 /* PaySafeMockApplePayDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaySafeMockApplePayDef.h; path = MockPassKItLib/PaySafeMockApplePayDef.h; sourceTree = "<group>"; };
+		ADD9C2041BC79E1300981AB7 /* PaySafeMockApplePayDef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaySafeMockApplePayDef.m; path = MockPassKItLib/PaySafeMockApplePayDef.m; sourceTree = "<group>"; };
+		ADD9C2051BC79E1300981AB7 /* PaySafeMockCardStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaySafeMockCardStore.h; path = MockPassKItLib/PaySafeMockCardStore.h; sourceTree = "<group>"; };
+		ADD9C2061BC79E1300981AB7 /* PaySafeMockCardStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaySafeMockCardStore.m; path = MockPassKItLib/PaySafeMockCardStore.m; sourceTree = "<group>"; };
+		ADD9C2071BC79E1300981AB7 /* PaySafeMockDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaySafeMockDataStore.h; path = MockPassKItLib/PaySafeMockDataStore.h; sourceTree = "<group>"; };
+		ADD9C2081BC79E1300981AB7 /* PaySafeMockDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaySafeMockDataTableViewController.h; path = MockPassKItLib/PaySafeMockDataTableViewController.h; sourceTree = "<group>"; };
+		ADD9C2091BC79E1300981AB7 /* PaySafeMockDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaySafeMockDataTableViewController.m; path = MockPassKItLib/PaySafeMockDataTableViewController.m; sourceTree = "<group>"; };
+		ADD9C20A1BC79E1300981AB7 /* PaySafeMockPayment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaySafeMockPayment.h; path = MockPassKItLib/PaySafeMockPayment.h; sourceTree = "<group>"; };
+		ADD9C20B1BC79E1300981AB7 /* PaySafeMockPayment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaySafeMockPayment.m; path = MockPassKItLib/PaySafeMockPayment.m; sourceTree = "<group>"; };
+		ADD9C20C1BC79E1300981AB7 /* PaySafeMockPaymentAuthorizationProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaySafeMockPaymentAuthorizationProcess.h; path = MockPassKItLib/PaySafeMockPaymentAuthorizationProcess.h; sourceTree = "<group>"; };
+		ADD9C20D1BC79E1300981AB7 /* PaySafeMockPaymentAuthorizationProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaySafeMockPaymentAuthorizationProcess.m; path = MockPassKItLib/PaySafeMockPaymentAuthorizationProcess.m; sourceTree = "<group>"; };
+		ADD9C20E1BC79E1300981AB7 /* PaySafeMockPaymentSummaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaySafeMockPaymentSummaryViewController.h; path = MockPassKItLib/PaySafeMockPaymentSummaryViewController.h; sourceTree = "<group>"; };
+		ADD9C20F1BC79E1300981AB7 /* PaySafeMockPaymentSummaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaySafeMockPaymentSummaryViewController.m; path = MockPassKItLib/PaySafeMockPaymentSummaryViewController.m; sourceTree = "<group>"; };
+		ADD9C2101BC79E1300981AB7 /* PaySafeMockPaymentSummaryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PaySafeMockPaymentSummaryViewController.xib; path = MockPassKItLib/PaySafeMockPaymentSummaryViewController.xib; sourceTree = "<group>"; };
+		ADD9C2111BC79E1300981AB7 /* PaySafeMockShippingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaySafeMockShippingManager.h; path = MockPassKItLib/PaySafeMockShippingManager.h; sourceTree = "<group>"; };
+		ADD9C2121BC79E1300981AB7 /* PaySafeMockShippingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaySafeMockShippingManager.m; path = MockPassKItLib/PaySafeMockShippingManager.m; sourceTree = "<group>"; };
+		ADD9C2131BC79E1300981AB7 /* PaySafeMockShippingMethodStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaySafeMockShippingMethodStore.h; path = MockPassKItLib/PaySafeMockShippingMethodStore.h; sourceTree = "<group>"; };
+		ADD9C2141BC79E1300981AB7 /* PaySafeMockShippingMethodStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaySafeMockShippingMethodStore.m; path = MockPassKItLib/PaySafeMockShippingMethodStore.m; sourceTree = "<group>"; };
 		ADD9C2151BC79E1300981AB7 /* PKPayment+OPAYMockKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "PKPayment+OPAYMockKeys.h"; path = "MockPassKItLib/PKPayment+OPAYMockKeys.h"; sourceTree = "<group>"; };
 		ADD9C2161BC79E1300981AB7 /* PKPayment+OPAYMockKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "PKPayment+OPAYMockKeys.m"; path = "MockPassKItLib/PKPayment+OPAYMockKeys.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,7 +132,6 @@
 		ADD9C18A1BC7972900981AB7 = {
 			isa = PBXGroup;
 			children = (
-				63E12A0C1DBA0D1300EB2ADA /* Paysafe.podspec */,
 				ADD9C1951BC7972900981AB7 /* iOS_SDK */,
 				ADD9C1941BC7972900981AB7 /* Products */,
 			);
@@ -159,18 +157,18 @@
 		ADD9C1A61BC7981A00981AB7 /* PaymentKit */ = {
 			isa = PBXGroup;
 			children = (
-				635B49001D7FE3CE00F53F17 /* PaySafeApplePayPaymentTokenInfo.h */,
-				635B49011D7FE3CE00F53F17 /* PaySafeApplePayPaymentTokenInfo.m */,
-				635B49021D7FE3CE00F53F17 /* PaySafeConstants.h */,
-				635B49031D7FE3CE00F53F17 /* PaySafeConstants.m */,
-				635B49041D7FE3CE00F53F17 /* PaySafeDef.h */,
-				635B49051D7FE3CE00F53F17 /* PaySafeDef.m */,
-				635B49061D7FE3CE00F53F17 /* PaySafePayment.h */,
-				635B49071D7FE3CE00F53F17 /* PaySafePayment.m */,
-				635B49081D7FE3CE00F53F17 /* PaySafePaymentAuthorizationProcess.h */,
-				635B49091D7FE3CE00F53F17 /* PaySafePaymentAuthorizationProcess.m */,
-				635B490A1D7FE3CE00F53F17 /* PaySafeRequestApplePaySingleUseTokens.h */,
-				635B490B1D7FE3CE00F53F17 /* PaySafeRequestApplePaySingleUseTokens.m */,
+				AD805E531BC79EF800D8FFE8 /* PaySafeApplePayPaymentTokenInfo.h */,
+				AD805E541BC79EF800D8FFE8 /* PaySafeApplePayPaymentTokenInfo.m */,
+				AD805E551BC79EF800D8FFE8 /* PaySafeDef.h */,
+				AD805E561BC79EF800D8FFE8 /* PaySafeDef.m */,
+				AD805E571BC79EF800D8FFE8 /* PaySafePayment.h */,
+				AD805E581BC79EF800D8FFE8 /* PaySafePayment.m */,
+				AD805E591BC79EF800D8FFE8 /* PaySafeRequestApplePaySingleUseTokens.h */,
+				AD805E5A1BC79EF800D8FFE8 /* PaySafeRequestApplePaySingleUseTokens.m */,
+				ADD9C1A71BC7985D00981AB7 /* PaySafeConstants.h */,
+				ADD9C1A81BC7985D00981AB7 /* PaySafeConstants.m */,
+				ADD9C1AB1BC7989B00981AB7 /* PaySafePaymentAuthorizationProcess.h */,
+				ADD9C1AC1BC7989B00981AB7 /* PaySafePaymentAuthorizationProcess.m */,
 			);
 			name = PaymentKit;
 			sourceTree = "<group>";
@@ -178,26 +176,26 @@
 		ADD9C2001BC79DE100981AB7 /* MockPassKItLib */ = {
 			isa = PBXGroup;
 			children = (
-				635B49181D7FE3E000F53F17 /* PaySafeMockAddressStore.h */,
-				635B49191D7FE3E000F53F17 /* PaySafeMockAddressStore.m */,
-				635B491A1D7FE3E000F53F17 /* PaySafeMockApplePayDef.h */,
-				635B491B1D7FE3E000F53F17 /* PaySafeMockApplePayDef.m */,
-				635B491C1D7FE3E000F53F17 /* PaySafeMockCardStore.h */,
-				635B491D1D7FE3E000F53F17 /* PaySafeMockCardStore.m */,
-				635B491E1D7FE3E000F53F17 /* PaySafeMockDataStore.h */,
-				635B491F1D7FE3E000F53F17 /* PaySafeMockDataTableViewController.h */,
-				635B49201D7FE3E000F53F17 /* PaySafeMockDataTableViewController.m */,
-				635B49211D7FE3E000F53F17 /* PaySafeMockPayment.h */,
-				635B49221D7FE3E000F53F17 /* PaySafeMockPayment.m */,
-				635B49231D7FE3E000F53F17 /* PaySafeMockPaymentAuthorizationProcess.h */,
-				635B49241D7FE3E000F53F17 /* PaySafeMockPaymentAuthorizationProcess.m */,
-				635B49251D7FE3E000F53F17 /* PaySafeMockPaymentSummaryViewController.h */,
-				635B49261D7FE3E000F53F17 /* PaySafeMockPaymentSummaryViewController.m */,
-				635B49271D7FE3E000F53F17 /* PaySafeMockPaymentSummaryViewController.xib */,
-				635B49281D7FE3E000F53F17 /* PaySafeMockShippingManager.h */,
-				635B49291D7FE3E000F53F17 /* PaySafeMockShippingManager.m */,
-				635B492A1D7FE3E000F53F17 /* PaySafeMockShippingMethodStore.h */,
-				635B492B1D7FE3E000F53F17 /* PaySafeMockShippingMethodStore.m */,
+				ADD9C2011BC79E1300981AB7 /* PaySafeMockAddressStore.h */,
+				ADD9C2021BC79E1300981AB7 /* PaySafeMockAddressStore.m */,
+				ADD9C2031BC79E1300981AB7 /* PaySafeMockApplePayDef.h */,
+				ADD9C2041BC79E1300981AB7 /* PaySafeMockApplePayDef.m */,
+				ADD9C2051BC79E1300981AB7 /* PaySafeMockCardStore.h */,
+				ADD9C2061BC79E1300981AB7 /* PaySafeMockCardStore.m */,
+				ADD9C2071BC79E1300981AB7 /* PaySafeMockDataStore.h */,
+				ADD9C2081BC79E1300981AB7 /* PaySafeMockDataTableViewController.h */,
+				ADD9C2091BC79E1300981AB7 /* PaySafeMockDataTableViewController.m */,
+				ADD9C20A1BC79E1300981AB7 /* PaySafeMockPayment.h */,
+				ADD9C20B1BC79E1300981AB7 /* PaySafeMockPayment.m */,
+				ADD9C20C1BC79E1300981AB7 /* PaySafeMockPaymentAuthorizationProcess.h */,
+				ADD9C20D1BC79E1300981AB7 /* PaySafeMockPaymentAuthorizationProcess.m */,
+				ADD9C20E1BC79E1300981AB7 /* PaySafeMockPaymentSummaryViewController.h */,
+				ADD9C20F1BC79E1300981AB7 /* PaySafeMockPaymentSummaryViewController.m */,
+				ADD9C2101BC79E1300981AB7 /* PaySafeMockPaymentSummaryViewController.xib */,
+				ADD9C2111BC79E1300981AB7 /* PaySafeMockShippingManager.h */,
+				ADD9C2121BC79E1300981AB7 /* PaySafeMockShippingManager.m */,
+				ADD9C2131BC79E1300981AB7 /* PaySafeMockShippingMethodStore.h */,
+				ADD9C2141BC79E1300981AB7 /* PaySafeMockShippingMethodStore.m */,
 				ADD9C2151BC79E1300981AB7 /* PKPayment+OPAYMockKeys.h */,
 				ADD9C2161BC79E1300981AB7 /* PKPayment+OPAYMockKeys.m */,
 			);
@@ -211,24 +209,24 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				635B49141D7FE3CE00F53F17 /* PaySafePaymentAuthorizationProcess.h in Headers */,
-				635B490E1D7FE3CE00F53F17 /* PaySafeConstants.h in Headers */,
-				635B493F1D7FE47100F53F17 /* PaySafeMockPaymentSummaryViewController.xib in Headers */,
-				635B49161D7FE3CE00F53F17 /* PaySafeRequestApplePaySingleUseTokens.h in Headers */,
-				635B49351D7FE3E000F53F17 /* PaySafeMockPayment.h in Headers */,
-				635B493B1D7FE3E000F53F17 /* PaySafeMockShippingManager.h in Headers */,
+				AD805E5B1BC79EF800D8FFE8 /* PaySafeApplePayPaymentTokenInfo.h in Headers */,
+				ADD9C2201BC79E1300981AB7 /* PaySafeMockPayment.h in Headers */,
+				ADD9C1AD1BC7989B00981AB7 /* PaySafePaymentAuthorizationProcess.h in Headers */,
+				ADD9C22C1BC79E3400981AB7 /* PaySafeMockPaymentSummaryViewController.xib in Headers */,
+				ADD9C2191BC79E1300981AB7 /* PaySafeMockApplePayDef.h in Headers */,
+				ADD9C2171BC79E1300981AB7 /* PaySafeMockAddressStore.h in Headers */,
+				ADD9C2261BC79E1300981AB7 /* PaySafeMockShippingManager.h in Headers */,
+				AD805E5D1BC79EF800D8FFE8 /* PaySafeDef.h in Headers */,
+				ADD9C2241BC79E1300981AB7 /* PaySafeMockPaymentSummaryViewController.h in Headers */,
+				ADD9C21B1BC79E1300981AB7 /* PaySafeMockCardStore.h in Headers */,
+				ADD9C1A91BC7985D00981AB7 /* PaySafeConstants.h in Headers */,
 				ADD9C22A1BC79E1300981AB7 /* PKPayment+OPAYMockKeys.h in Headers */,
-				635B49391D7FE3E000F53F17 /* PaySafeMockPaymentSummaryViewController.h in Headers */,
-				635B492E1D7FE3E000F53F17 /* PaySafeMockApplePayDef.h in Headers */,
-				635B49371D7FE3E000F53F17 /* PaySafeMockPaymentAuthorizationProcess.h in Headers */,
-				635B490C1D7FE3CE00F53F17 /* PaySafeApplePayPaymentTokenInfo.h in Headers */,
-				635B49101D7FE3CE00F53F17 /* PaySafeDef.h in Headers */,
-				635B49301D7FE3E000F53F17 /* PaySafeMockCardStore.h in Headers */,
-				635B492C1D7FE3E000F53F17 /* PaySafeMockAddressStore.h in Headers */,
-				635B49121D7FE3CE00F53F17 /* PaySafePayment.h in Headers */,
-				635B49331D7FE3E000F53F17 /* PaySafeMockDataTableViewController.h in Headers */,
-				635B49321D7FE3E000F53F17 /* PaySafeMockDataStore.h in Headers */,
-				635B493D1D7FE3E000F53F17 /* PaySafeMockShippingMethodStore.h in Headers */,
+				ADD9C21D1BC79E1300981AB7 /* PaySafeMockDataStore.h in Headers */,
+				ADD9C2221BC79E1300981AB7 /* PaySafeMockPaymentAuthorizationProcess.h in Headers */,
+				ADD9C2281BC79E1300981AB7 /* PaySafeMockShippingMethodStore.h in Headers */,
+				AD805E611BC79EF800D8FFE8 /* PaySafeRequestApplePaySingleUseTokens.h in Headers */,
+				ADD9C21E1BC79E1300981AB7 /* PaySafeMockDataTableViewController.h in Headers */,
+				AD805E5F1BC79EF800D8FFE8 /* PaySafePayment.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +258,7 @@
 		ADD9C18B1BC7972900981AB7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = OptimalPayments;
 				TargetAttributes = {
 					ADD9C1921BC7972900981AB7 = {
@@ -326,22 +324,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				635B493C1D7FE3E000F53F17 /* PaySafeMockShippingManager.m in Sources */,
-				635B49361D7FE3E000F53F17 /* PaySafeMockPayment.m in Sources */,
+				AD805E621BC79EF800D8FFE8 /* PaySafeRequestApplePaySingleUseTokens.m in Sources */,
+				ADD9C1AA1BC7985D00981AB7 /* PaySafeConstants.m in Sources */,
+				ADD9C2231BC79E1300981AB7 /* PaySafeMockPaymentAuthorizationProcess.m in Sources */,
+				AD805E5E1BC79EF800D8FFE8 /* PaySafeDef.m in Sources */,
+				AD805E601BC79EF800D8FFE8 /* PaySafePayment.m in Sources */,
 				ADD9C22B1BC79E1300981AB7 /* PKPayment+OPAYMockKeys.m in Sources */,
-				635B49311D7FE3E000F53F17 /* PaySafeMockCardStore.m in Sources */,
-				635B49171D7FE3CE00F53F17 /* PaySafeRequestApplePaySingleUseTokens.m in Sources */,
-				635B492D1D7FE3E000F53F17 /* PaySafeMockAddressStore.m in Sources */,
-				635B490D1D7FE3CE00F53F17 /* PaySafeApplePayPaymentTokenInfo.m in Sources */,
-				635B49341D7FE3E000F53F17 /* PaySafeMockDataTableViewController.m in Sources */,
-				635B49381D7FE3E000F53F17 /* PaySafeMockPaymentAuthorizationProcess.m in Sources */,
-				635B492F1D7FE3E000F53F17 /* PaySafeMockApplePayDef.m in Sources */,
-				635B49131D7FE3CE00F53F17 /* PaySafePayment.m in Sources */,
-				635B493A1D7FE3E000F53F17 /* PaySafeMockPaymentSummaryViewController.m in Sources */,
-				635B493E1D7FE3E000F53F17 /* PaySafeMockShippingMethodStore.m in Sources */,
-				635B49111D7FE3CE00F53F17 /* PaySafeDef.m in Sources */,
-				635B49151D7FE3CE00F53F17 /* PaySafePaymentAuthorizationProcess.m in Sources */,
-				635B490F1D7FE3CE00F53F17 /* PaySafeConstants.m in Sources */,
+				ADD9C2211BC79E1300981AB7 /* PaySafeMockPayment.m in Sources */,
+				ADD9C1AE1BC7989B00981AB7 /* PaySafePaymentAuthorizationProcess.m in Sources */,
+				ADD9C2251BC79E1300981AB7 /* PaySafeMockPaymentSummaryViewController.m in Sources */,
+				ADD9C21F1BC79E1300981AB7 /* PaySafeMockDataTableViewController.m in Sources */,
+				ADD9C2271BC79E1300981AB7 /* PaySafeMockShippingManager.m in Sources */,
+				AD805E5C1BC79EF800D8FFE8 /* PaySafeApplePayPaymentTokenInfo.m in Sources */,
+				ADD9C2291BC79E1300981AB7 /* PaySafeMockShippingMethodStore.m in Sources */,
+				ADD9C21A1BC79E1300981AB7 /* PaySafeMockApplePayDef.m in Sources */,
+				ADD9C21C1BC79E1300981AB7 /* PaySafeMockCardStore.m in Sources */,
+				ADD9C2181BC79E1300981AB7 /* PaySafeMockAddressStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,8 +367,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
@@ -411,8 +411,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;

@@ -1,5 +1,5 @@
 //
-//  PaySafeMockPayment.h
+//  OPAYMockPayment.h
 //
 //  Created by sachin on 26/02/15.
 //  Copyright (c) 2015 PaySafe. All rights reserved.

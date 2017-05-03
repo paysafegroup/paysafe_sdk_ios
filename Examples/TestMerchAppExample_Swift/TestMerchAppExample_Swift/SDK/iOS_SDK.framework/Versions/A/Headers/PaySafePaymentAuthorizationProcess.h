@@ -3,7 +3,7 @@
 //  iOS_SDK
 //
 //  Created by Sachin Barage on 09/10/15.
-//  Copyright © 2015 Paysafe. All rights reserved.
+//  Copyright © 2015 PaySafe. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -11,14 +11,14 @@
 
 
 
-@protocol PaySafePaymentAuthorizationProcessDelegate <NSObject>
+@protocol OPAYPaymentAuthorizationProcessDelegate<NSObject>
 
 @required
 /* This method will return the Customer vault Payment token
  to the app.
  Need to implment this method by declaring this delegate (where ever we are using this class).
  */
-- (void)callBackResponseFromPaysafeSDK:(NSDictionary*)response;
+- (void)callBackResponseFromOPTSDK:(NSDictionary*)response;
 /*
  This method will return response as below.
  1) Payment token from apple pay.
@@ -36,7 +36,7 @@
  
  2)Will get "Null" value while network problem.
  
- 3) paysafe return the error response in below format,
+ 3) Optimal return the error response in below format,
  
  error =
  {
@@ -59,7 +59,7 @@
 
 @interface PaySafePaymentAuthorizationProcess : NSObject <NSURLConnectionDelegate,PKPaymentAuthorizationViewControllerDelegate>
 
-@property(nonatomic, assign)id<PaySafePaymentAuthorizationProcessDelegate>authDelegate;
+@property(nonatomic, assign)id<OPAYPaymentAuthorizationProcessDelegate>authDelegate;
 
 
 - (id)initWithMerchantIdentifier:(NSString*)merchantIdentifier withMerchantID:(NSString*)optiMerchantID withMerchantPwd:(NSString*)optiMerchantPwd withMerchantCountry:(NSString*)merchantCountry withMerchantCurrency:(NSString*)merchantCurrency;

@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func backPressed(x:UIStoryboardSegue) {
-        self.navigationController?.popViewControllerAnimated(true)
+    @IBAction func backPressed(_ x:UIStoryboardSegue) {
+        self.navigationController?.popViewController(animated: true)
     }
 }

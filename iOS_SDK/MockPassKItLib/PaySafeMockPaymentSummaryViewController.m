@@ -109,13 +109,13 @@ NSString *const OPTTestPaymentSectionTitlePayment = @"Payment";
     {
         [payment performSelector:@selector(setShippingMethod:) withObject:self.shippingMethodStore.selectedItem];
     }
-    ABRecordRef shippingRecord = [self.shippingAddressStore contactForSelectedItemObscure:NO];
+    CNContact *shippingRecord = [self.shippingAddressStore contactForSelectedItemObscure:NO];
    if ([payment respondsToSelector:@selector(setShippingAddress:)] && shippingRecord) {
-        [payment performSelector:@selector(setShippingAddress:) withObject:(__bridge id)(shippingRecord)];
+       [payment performSelector:@selector(setShippingAddress:) withObject:shippingRecord];
     }
-    ABRecordRef billingRecord = [self.billingAddressStore contactForSelectedItemObscure:NO];
+    CNContact *billingRecord = [self.billingAddressStore contactForSelectedItemObscure:NO];
     if ([payment respondsToSelector:@selector(setBillingAddress:)] && billingRecord) {
-        [payment performSelector:@selector(setBillingAddress:) withObject:(__bridge id)(billingRecord)];
+        [payment performSelector:@selector(setBillingAddress:) withObject:billingRecord];
     }
  
 #pragma clang diagnostic pop
@@ -236,9 +236,9 @@ NSString *const OPTTestPaymentSectionTitlePayment = @"Payment";
         self.payButton.enabled = NO;
         self.tableView.userInteractionEnabled = NO;
    
-       ABRecordRef record = [self.shippingAddressStore contactForSelectedItemObscure:YES];
+        CNContact *record = [self.shippingAddressStore contactForSelectedItemObscure:YES];
         [self.delegate paymentAuthorizationViewController:(PKPaymentAuthorizationViewController *)self
-                                 didSelectShippingAddress:record
+                                 didSelectShippingContact:record
                                                completion:^(PKPaymentAuthorizationStatus status, NSArray *shippingMethods, NSArray *summaryItems) {
                                                    if (status == PKPaymentAuthorizationStatusFailure) {
                                                        [self.delegate paymentAuthorizationViewControllerDidFinish:(PKPaymentAuthorizationViewController *)self];
@@ -252,7 +252,8 @@ NSString *const OPTTestPaymentSectionTitlePayment = @"Payment";
                                                    self.tableView.userInteractionEnabled = YES;
                                                    [self.activityIndicator stopAnimating];
                                                }];
-    
+        
+        
     }
 }
 

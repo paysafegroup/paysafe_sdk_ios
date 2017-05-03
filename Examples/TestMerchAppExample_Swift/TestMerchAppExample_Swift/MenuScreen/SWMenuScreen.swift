@@ -22,24 +22,24 @@ class SWMenuScreen :UIViewController
         self.title = "PaySafe"
     }
     
-    @IBAction func applePayBtnSelected(sender:UIButton)
+    @IBAction func applePayBtnSelected(_ sender:UIButton)
     {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewControllerWithIdentifier("Tvviewcontroller") 
+        let vc = storyboard.instantiateViewController(withIdentifier: "Tvviewcontroller") 
         
         self.navigationController?.pushViewController(vc, animated: true)
     }
 
-    @IBAction func nonApplePayBtnSelected(sender:UIButton)
+    @IBAction func nonApplePayBtnSelected(_ sender:UIButton)
     {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewControllerWithIdentifier("SWCreditCardViewController") 
+        let vc = storyboard.instantiateViewController(withIdentifier: "SWCreditCardViewController") 
         self.navigationController?.pushViewController(vc, animated: true)
     }
 
-    @IBAction func backPressed(x:UIStoryboardSegue) 
+    @IBAction func backPressed(_ x:UIStoryboardSegue) 
     {
-        self.navigationController?.popViewControllerAnimated(true)
+        self.navigationController?.popViewController(animated: true)
     }
 
 }

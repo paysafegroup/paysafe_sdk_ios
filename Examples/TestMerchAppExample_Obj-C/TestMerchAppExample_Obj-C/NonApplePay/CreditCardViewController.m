@@ -27,8 +27,6 @@
     self.title=@"Non Apple Pay";
 
     // Do any additional setup after loading the view.
-
-    
     scrollView.contentSize=CGSizeMake(320,1500);
     txtCardNo.delegate=self;
     txtCity.delegate=self;
@@ -101,8 +99,8 @@
     
     NSMutableDictionary *myDictionary = [[NSMutableDictionary alloc] initWithContentsOfFile:path];
     
-    NSString *merchantUserID = [myDictionary objectForKey:@"MerchantID"];
-    NSString *merchantPassword =[myDictionary objectForKey:@"MerchantPassword"];
+    NSString *merchantUserID = [myDictionary objectForKey:@"OptiMerchantID-Client"];
+    NSString *merchantPassword =[myDictionary objectForKey:@"OptiMerchantPassword-Client"];
     NSString *merchantCountryCode = [myDictionary objectForKey:@"countryCode"];
     NSString *merchantCurrencyCode = [myDictionary objectForKey:@"CurrencyCode"];
     NSString *appleMerchantIdentifier = [myDictionary objectForKey:@"merchantIdentifier"];
@@ -110,7 +108,7 @@
     self.PaysafeAuthPaymentController = [[PaySafePaymentAuthorizationProcess alloc] initWithMerchantIdentifier:appleMerchantIdentifier withMerchantID:merchantUserID withMerchantPwd:merchantPassword withMerchantCountry:merchantCountryCode withMerchantCurrency:merchantCurrencyCode];
 }
 
--(void)callBackResponseFromPaysafeSDK:(NSDictionary *)response
+-(void)callBackResponseFromOPTSDK:(NSDictionary *)response
 {
     [self callSplitResponse:response];
 }

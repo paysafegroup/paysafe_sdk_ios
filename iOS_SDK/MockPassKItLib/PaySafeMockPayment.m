@@ -7,7 +7,6 @@
 
 #import "PaySafeMockPayment.h"
 #import "PaySafeMockApplePayDef.h"
-#import <PassKit/PassKit.h>
 
 @implementation PaySafeMockPayment
 

@@ -28,14 +28,14 @@ class TestMerchAppExample_SwiftTests: XCTestCase {
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measureBlock() {
+        self.measure() {
             // Put the code you want to measure the time of here.
         }
     }
     
-    func testEnrollmentProcess()
+    /*func testEnrollmentProcess()
     {
-        /*let filepath = NSBundle.mainBundle().pathForResource("MerchantRealConfiguration", ofType: "plist")
+        let filepath = NSBundle.mainBundle().pathForResource("MerchantRealConfiguration", ofType: "plist")
         //var myDictionary: NSDictionary?
         let myDictionary:NSDictionary! = NSDictionary.init(contentsOfFile: filepath!)
         
@@ -43,11 +43,13 @@ class TestMerchAppExample_SwiftTests: XCTestCase {
         
         self.accountIDTextField.text = merchantAccountNo
         
-        let merchantPassword = myDictionary.objectForKey("MerchantPassword") as! String
+        let merchantPassword = myDictionary.objectForKey(
+     
+     ) as! String
         
-        let appleMerchantIdentifier = myDictionary.objectForKey("MerchantID") as! String
+        let appleMerchantIdentifier = myDictionary.objectForKey("OptiMerchantID") as! String
         
         opayEnrollmentProcess = OPAYEnrollmentProcess(merchantAccountNo:merchantAccountNo,withMerchantID: appleMerchantIdentifier, withMerchantPwd: merchantPassword)
-        opayEnrollmentProcess.enrollmentProcessDelegate = self*/
-    }
+        opayEnrollmentProcess.enrollmentProcessDelegate = self
+    }*/
 }

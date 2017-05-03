@@ -6,12 +6,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <AddressBook/AddressBook.h>
-
+#import <Contacts/Contacts.h>
+#import <ContactsUI/ContactsUI.h>
 
 @interface PaySafeMockShippingManager : NSObject
 
 - (NSArray *)defaultShippingMethods;
-- (void)fetchShippingCostsForAddress:(ABRecordRef)address completion:(void (^)(NSArray *shippingMethods, NSError *error))completion;
+- (void)fetchShippingCostsForAddress:(CNContact *)address completion:(void (^)(NSArray *shippingMethods, NSError *error))completion;
 
 @end

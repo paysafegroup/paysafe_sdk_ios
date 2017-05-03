@@ -8,7 +8,7 @@
 #import <Foundation/Foundation.h>
 #import <PassKit/PassKit.h>
 
-@protocol PaySafeMockPaymentAuthorizationProcessDelegate<NSObject>
+@protocol OPAYMockPaymentAuthorizationProcessDelegate<NSObject>
 
 @required
 /* This method will return the Customer vault Payment token
@@ -20,7 +20,7 @@
 
 @interface PaySafeMockPaymentAuthorizationProcess : NSObject<PKPaymentAuthorizationViewControllerDelegate>
 
-@property(nonatomic, assign)id<PaySafeMockPaymentAuthorizationProcessDelegate>authTestDelegate;
+@property(nonatomic, assign)id<OPAYMockPaymentAuthorizationProcessDelegate>authTestDelegate;
 
 -(BOOL)isHavingStub;
 

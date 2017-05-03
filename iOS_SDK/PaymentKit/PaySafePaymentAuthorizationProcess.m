@@ -1,9 +1,9 @@
 //
-//  PaySafePaymentAuthorizationProcess.m
+//  OPAYPaymentAuthorizationProcess.m
 //  iOS_SDK
 //
 //  Created by Sachin Barage on 09/10/15.
-//  Copyright © 2015 Paysafe. All rights reserved.
+//  Copyright © 2015 PaySafe. All rights reserved.
 //
 
 #import <Availability.h>
@@ -20,7 +20,7 @@
 #define SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
 
 
-@interface PaySafePaymentAuthorizationProcess ()  <UIViewControllerTransitioningDelegate,NSURLConnectionDelegate,PKPaymentAuthorizationViewControllerDelegate,PaySafeMockPaymentAuthorizationProcessDelegate>
+@interface PaySafePaymentAuthorizationProcess ()  <UIViewControllerTransitioningDelegate,NSURLConnectionDelegate,PKPaymentAuthorizationViewControllerDelegate,OPAYMockPaymentAuthorizationProcessDelegate>
 {
     NSURLConnection *connection;
     
@@ -43,7 +43,7 @@
 
 @property (retain, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 @property(nonatomic , retain) UIView *optViewController;
-@property(nonatomic, strong) PaySafeMockPaymentAuthorizationProcess *testPaymentAuthorizationProcess;
+@property(nonatomic, retain)PaySafeMockPaymentAuthorizationProcess *testPaymentAuthorizationProcess;
 
 @end
 
@@ -124,8 +124,7 @@
     {
         //Call Mock Library
         self.testPaymentAuthorizationProcess=[[PaySafeMockPaymentAuthorizationProcess alloc]init];
-        self.testPaymentAuthorizationProcess.authTestDelegate = self;
-        
+        self.testPaymentAuthorizationProcess.authTestDelegate =self;
         
         [self.testPaymentAuthorizationProcess showPaymentSummeryView:viewController delgate:self.testPaymentAuthorizationProcess withIdentifier:PaySafeDef.merchantIdentifier withMerchantID:PaySafeDef.merchantUserID withMerchantPwd:PaySafeDef.merchantPassword withMerchantCountry:PaySafeDef.countryCode withMerchantCurrency:PaySafeDef.currencyCode withRequestData:dataDictionary withCartData:cartData];
     }
@@ -342,7 +341,7 @@
     
     NSDictionary *res = [NSJSONSerialization JSONObjectWithData:self.responseData options:NSJSONReadingMutableLeaves error:&error];
     [self hideActivityViewer];
-    [self.authDelegate callBackResponseFromPaysafeSDK:res];
+    [self.authDelegate callBackResponseFromOPTSDK:res];
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
@@ -352,12 +351,12 @@
     NSDictionary *res = [NSJSONSerialization JSONObjectWithData:self.responseData options:NSJSONReadingMutableLeaves error:&myError];
     
     [self hideActivityViewer];
-    [self.authDelegate callBackResponseFromPaysafeSDK:res];
+    [self.authDelegate callBackResponseFromOPTSDK:res];
 }
 
 - (void)callBackResponseFromOPAYMockSDK:(NSDictionary*)response
 {
-    [self.authDelegate callBackResponseFromPaysafeSDK:response];
+    [self.authDelegate callBackResponseFromOPTSDK:response];
 }
 
 //////// ANIMATION ///////////

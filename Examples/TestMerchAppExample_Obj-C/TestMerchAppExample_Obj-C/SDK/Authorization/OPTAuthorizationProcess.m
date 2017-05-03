@@ -69,7 +69,7 @@
         
     projectsUrl = [NSURL  URLWithString:urlString];
     
-    NSString *userIDPassword= [NSString stringWithFormat:@"%@:%@", [myDictionary objectForKey:@"MerchantID"], [myDictionary objectForKey:@"MerchantPassword"]];
+    NSString *userIDPassword= [NSString stringWithFormat:@"%@:%@", [myDictionary objectForKey:@"OptiMerchantID-Client"], [myDictionary objectForKey:@"OptiMerchantPassword-Client"]];
     NSData *plainData = [userIDPassword dataUsingEncoding:NSUTF8StringEncoding];
     NSString *base64String = [plainData base64EncodedStringWithOptions:0];
     
@@ -93,7 +93,7 @@
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
     
     [self.responseData setLength:0];
-    NSHTTPURLResponse *httpResponse =(NSHTTPURLResponse *)response;
+    //NSHTTPURLResponse *httpResponse =(NSHTTPURLResponse *)response;
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
