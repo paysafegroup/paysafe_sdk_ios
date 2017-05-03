@@ -14,7 +14,7 @@
 #import "CreditCardViewController.h"
 
 
-@interface HomeViewController : UIViewController <OPAYPaymentAuthorizationProcessDelegate, UITextFieldDelegate, AuthorizationProcessDelegate>
+@interface HomeViewController : UIViewController <PaySafePaymentAuthorizationProcessDelegate, UITextFieldDelegate, AuthorizationProcessDelegate>
 {
     
 }

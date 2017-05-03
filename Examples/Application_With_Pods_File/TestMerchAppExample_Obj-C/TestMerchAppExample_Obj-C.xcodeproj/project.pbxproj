@@ -40,9 +40,11 @@
 		5342437E1AE8B06A003DCD29 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5342437C1AE8B06A003DCD29 /* HomeViewController.m */; };
 		534243871AE8B180003DCD29 /* OPTAuthorizationProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 534243851AE8B180003DCD29 /* OPTAuthorizationProcess.m */; };
 		53BD56641B1EF91B004E6D88 /* MenuScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 53BD56631B1EF91B004E6D88 /* MenuScreen.m */; };
-		AD0B3BFA1BC7B2C800E66881 /* iOS_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD0B3BF91BC7B2C800E66881 /* iOS_SDK.framework */; settings = {ASSET_TAGS = (); }; };
-		AD0B3BFC1BC7B70600E66881 /* OPAYMockPaymentSummaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD0B3BFB1BC7B70600E66881 /* OPAYMockPaymentSummaryViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		632097241DBF771600836539 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 632097231DBF771600836539 /* Podfile */; };
+		635B2E381DB9CE0D0050D2FC /* PaySafeMockPaymentSummaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 635B2E371DB9CE0D0050D2FC /* PaySafeMockPaymentSummaryViewController.xib */; };
+		AD0B3BFA1BC7B2C800E66881 /* iOS_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD0B3BF91BC7B2C800E66881 /* iOS_SDK.framework */; };
 		B6D7D4F21B0DB306009C1342 /* CreditCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D7D4F11B0DB306009C1342 /* CreditCardViewController.m */; };
+		D5BF90A295D23C06744C1371 /* libPods-TestMerchAppExample_Obj-C.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F5CABF67D2585788A03478 /* libPods-TestMerchAppExample_Obj-C.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B796B90AB0DEA88506462D5 /* Pods-TestMerchAppExample_Obj-C.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestMerchAppExample_Obj-C.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestMerchAppExample_Obj-C/Pods-TestMerchAppExample_Obj-C.debug.xcconfig"; sourceTree = "<group>"; };
 		533C51991B30267A00F91BCD /* AppConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConstants.h; sourceTree = "<group>"; };
 		533C519A1B30267A00F91BCD /* AppConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppConstants.m; sourceTree = "<group>"; };
 		534243141AE8AB09003DCD29 /* TestMerchAppExample_Obj-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TestMerchAppExample_Obj-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,10 +103,13 @@
 		534243881AE8B2E6003DCD29 /* TestMerchAppExample_Obj-C.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "TestMerchAppExample_Obj-C.entitlements"; sourceTree = "<group>"; };
 		53BD56621B1EF91B004E6D88 /* MenuScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuScreen.h; sourceTree = "<group>"; };
 		53BD56631B1EF91B004E6D88 /* MenuScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuScreen.m; sourceTree = "<group>"; };
+		632097231DBF771600836539 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		635B2E371DB9CE0D0050D2FC /* PaySafeMockPaymentSummaryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PaySafeMockPaymentSummaryViewController.xib; path = iOS_SDK.framework/Headers/PaySafeMockPaymentSummaryViewController.xib; sourceTree = "<group>"; };
+		83F5CABF67D2585788A03478 /* libPods-TestMerchAppExample_Obj-C.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestMerchAppExample_Obj-C.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD0B3BF91BC7B2C800E66881 /* iOS_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iOS_SDK.framework; sourceTree = "<group>"; };
-		AD0B3BFB1BC7B70600E66881 /* OPAYMockPaymentSummaryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OPAYMockPaymentSummaryViewController.xib; path = iOS_SDK.framework/Headers/OPAYMockPaymentSummaryViewController.xib; sourceTree = "<group>"; };
 		B6D7D4F01B0DB306009C1342 /* CreditCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditCardViewController.h; sourceTree = "<group>"; };
 		B6D7D4F11B0DB306009C1342 /* CreditCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditCardViewController.m; sourceTree = "<group>"; };
+		D8D25E49C3BAD9BCDEF99B42 /* Pods-TestMerchAppExample_Obj-C.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestMerchAppExample_Obj-C.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestMerchAppExample_Obj-C/Pods-TestMerchAppExample_Obj-C.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD0B3BFA1BC7B2C800E66881 /* iOS_SDK.framework in Frameworks */,
+				D5BF90A295D23C06744C1371 /* libPods-TestMerchAppExample_Obj-C.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,9 +132,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37A78D12874930A40A95A563 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B796B90AB0DEA88506462D5 /* Pods-TestMerchAppExample_Obj-C.debug.xcconfig */,
+				D8D25E49C3BAD9BCDEF99B42 /* Pods-TestMerchAppExample_Obj-C.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5342430B1AE8AB09003DCD29 = {
 			isa = PBXGroup;
 			children = (
+				632097231DBF771600836539 /* Podfile */,
 				534243161AE8AB09003DCD29 /* TestMerchAppExample_Obj-C */,
 				5342434F1AE8AFD1003DCD29 /* 32pt */,
 				5342435C1AE8AFD1003DCD29 /* Authorization.png */,
@@ -141,6 +158,8 @@
 				534243781AE8B022003DCD29 /* OptimalImg.png */,
 				534243301AE8AB09003DCD29 /* TestMerchAppExample_Obj-CTests */,
 				534243151AE8AB09003DCD29 /* Products */,
+				37A78D12874930A40A95A563 /* Pods */,
+				FE2AC7A605839B60FD10CCA1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -228,7 +247,7 @@
 		5342437F1AE8B0D1003DCD29 /* SDK */ = {
 			isa = PBXGroup;
 			children = (
-				AD0B3BFB1BC7B70600E66881 /* OPAYMockPaymentSummaryViewController.xib */,
+				635B2E371DB9CE0D0050D2FC /* PaySafeMockPaymentSummaryViewController.xib */,
 				AD0B3BF91BC7B2C800E66881 /* iOS_SDK.framework */,
 				534243801AE8B122003DCD29 /* Authorization */,
 			);
@@ -244,6 +263,14 @@
 			name = Authorization;
 			sourceTree = "<group>";
 		};
+		FE2AC7A605839B60FD10CCA1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83F5CABF67D2585788A03478 /* libPods-TestMerchAppExample_Obj-C.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -251,9 +278,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 534243371AE8AB09003DCD29 /* Build configuration list for PBXNativeTarget "TestMerchAppExample_Obj-C" */;
 			buildPhases = (
+				4026D1E75C0FABEE6988DE99 /* [CP] Check Pods Manifest.lock */,
 				534243101AE8AB09003DCD29 /* Sources */,
 				534243111AE8AB09003DCD29 /* Frameworks */,
 				534243121AE8AB09003DCD29 /* Resources */,
+				850DC52BD7E81208BB5B15CB /* [CP] Embed Pods Frameworks */,
+				89B67B9432DB8911B313A34F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -351,9 +381,10 @@
 				534243771AE8AFD1003DCD29 /* shoe.png in Resources */,
 				534243641AE8AFD1003DCD29 /* ApplePayBTN_32pt__black_logo_@2x.png in Resources */,
 				5342436D1AE8AFD1003DCD29 /* ApplePayBTN_32pt__whiteLine_logo_@3x.png in Resources */,
-				AD0B3BFC1BC7B70600E66881 /* OPAYMockPaymentSummaryViewController.xib in Resources */,
+				635B2E381DB9CE0D0050D2FC /* PaySafeMockPaymentSummaryViewController.xib in Resources */,
 				534243751AE8AFD1003DCD29 /* payNow_img.png in Resources */,
 				534243691AE8AFD1003DCD29 /* ApplePayBTN_32pt__white_logo_@3x.png in Resources */,
+				632097241DBF771600836539 /* Podfile in Resources */,
 				534243681AE8AFD1003DCD29 /* ApplePayBTN_32pt__white_logo_@2x.png in Resources */,
 				5342436F1AE8AFD1003DCD29 /* ApplePayBTN_32pt__whiteLine_textLogo_@3x.png in Resources */,
 			);
@@ -367,6 +398,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4026D1E75C0FABEE6988DE99 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		850DC52BD7E81208BB5B15CB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestMerchAppExample_Obj-C/Pods-TestMerchAppExample_Obj-C-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89B67B9432DB8911B313A34F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestMerchAppExample_Obj-C/Pods-TestMerchAppExample_Obj-C-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		534243101AE8AB09003DCD29 /* Sources */ = {
@@ -500,6 +579,7 @@
 		};
 		534243381AE8AB09003DCD29 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B796B90AB0DEA88506462D5 /* Pods-TestMerchAppExample_Obj-C.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -524,6 +604,7 @@
 		};
 		534243391AE8AB09003DCD29 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8D25E49C3BAD9BCDEF99B42 /* Pods-TestMerchAppExample_Obj-C.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

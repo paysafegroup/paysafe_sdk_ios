@@ -10,7 +10,7 @@
 
 import Foundation
 
-class TVViewController: UIViewController , UITextFieldDelegate, AuthorizationProcessDelegate,OPAYPaymentAuthorizationProcessDelegate
+class TVViewController: UIViewController , UITextFieldDelegate, AuthorizationProcessDelegate,PaySafePaymentAuthorizationProcessDelegate
 {
     
     @IBOutlet var payNowButton : UIButton?
@@ -25,7 +25,8 @@ class TVViewController: UIViewController , UITextFieldDelegate, AuthorizationPro
     
     var authorizationData: NSDictionary = NSDictionary()
     
-    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+    
     
     override func viewDidLoad() {
         
@@ -34,7 +35,7 @@ class TVViewController: UIViewController , UITextFieldDelegate, AuthorizationPro
         self.title = "Apple Pay"
         
         if(appDelegate.PaysafeAuthController?.isApplePaySupport() == false){
-            payNowButton?.setImage(UIImage(named: "payNow_img"), for: UIControlState())
+            payNowButton?.setImage(UIImage(named: "payNow_img"), forState: .Normal)
             isApplePaySupports = false
         }
         else
@@ -42,14 +43,14 @@ class TVViewController: UIViewController , UITextFieldDelegate, AuthorizationPro
             isApplePaySupports = true
         }
         
-        authrizationBtn?.isHidden = true
+        authrizationBtn?.hidden = true
         
         self.merchantRefField?.delegate = self
         self.amountField?.delegate = self
         
     }
     
-@IBAction func tvPayNowSelected(_ sender:UIButton) {
+@IBAction func tvPayNowSelected(sender:UIButton) {
     
         let amount: String! = amountField?.text
         if (amount == "" || amount == nil )
@@ -59,15 +60,9 @@ class TVViewController: UIViewController , UITextFieldDelegate, AuthorizationPro
         }
         
 #if (arch(i386) || arch(x86_64)) && os(iOS)
-// Running on simulator
-    if #available(iOS 9, *) {
-        appDelegate.PaysafeAuthController?.authDelegate = self
-        appDelegate.PaysafeAuthController?.beginPayment(self, withRequestData: createDataDictionary(), withCartData: createCartData())
-    }
-    else {
-        showAlertView("Alert", errorMessage: "Device does not support Apple Pay!")
-        //callNonApplePayFlow()
-    }
+    
+      appDelegate.PaysafeAuthController?.authDelegate = self
+      appDelegate.PaysafeAuthController?.beginPayment(self, withRequestData: createDataDictionary(), withCartData: createCartData())
     
 #else
     
@@ -79,47 +74,50 @@ class TVViewController: UIViewController , UITextFieldDelegate, AuthorizationPro
     else
     {
         showAlertView("Alert", errorMessage: "Device does not support Apple Pay!")
-        //callNonApplePayFlow()
+        callNonApplePayFlow()
     }
 #endif
 }
     
-    @IBAction func authorizeBtnSelected(_ sender:UIButton) {
+    @IBAction func authorizeBtnSelected(sender:UIButton) {
         let authObj:OPTAuthorizationProcess = OPTAuthorizationProcess()
         authObj.processDelegate = self
-        authObj.prepareRequest(forAuthorization: createAuthDataDictonary())
+        authObj.prepareRequestForAuthorization(createAuthDataDictonary())
     }
     
-    /* -------------Delegate method called when webservice call completion from OPAYPaymentAuthorizationProcess------------*/
-    func callBackResponse(fromOPTSDK response: [AnyHashable: Any]!) {
+    
+    func callBackResponseFromPaysafeSDK(response: [NSObject : AnyObject]!) {
         
         if (response != nil){
-            //if let nameObject: AnyObject = response["error"] as! NSDictionary {
-            if let nameObject = response["error"] as? NSDictionary {
+            if let nameObject: AnyObject = response["error"] {
                 var errorCode: String = String()
                 var errorMsg: String = String()
-                if let errCode: AnyObject = nameObject["code"] as! NSString {
+                if let errCode: AnyObject = nameObject["code"]{
                     if let nameString = errCode as? String {
                         errorCode = nameString
                     }
                 }
                 
-                if let errCode: AnyObject = nameObject["message"] as! NSString {
+                
+                if let errCode: AnyObject = nameObject["message"]{
                     if let nameString = errCode as? String {
                         errorMsg = nameString
                     }
                 }
+                
                 
                 self .showAlertView(errorCode, errorMessage: errorMsg)
                 
                 
             }
             else{
-                authorizationData = response as NSDictionary
+                authorizationData = response
                 
-                authrizationBtn?.isHidden = false
                 
-                let tokenData: AnyObject = response["paymentToken"]! as AnyObject
+                authrizationBtn?.hidden = false
+                
+                
+                let tokenData: AnyObject = response["paymentToken"]!
                 self .showAlertView("Success", errorMessage: "Your payment token is ::\(tokenData)")
             }
         }else{
@@ -127,42 +125,37 @@ class TVViewController: UIViewController , UITextFieldDelegate, AuthorizationPro
         }
     }
     
-    func callBackResponseFromOptimalRequest(_ response: [AnyHashable: Any]!) {
-        print("callBackResponseFromOptimalRequest")
+    func callBackResponseFromOptimalRequest(response: [NSObject : AnyObject]!) {
+        print("callBackResponseFromPaysafeRequest")
         print(response)
       //  let jsonResult = response as? Dictionary<String, AnyObject>
     }
     
-    
-    /*
-    func callBackAuthorizationProcess(_ dictonary: [AnyHashable: Any]!) {
+    func callBackAuthorizationProcess(dictonary: [NSObject : AnyObject]!) {
         var errorCode: String = String()
         var errorMsg: String = String()
         
         if(dictonary != nil)
         {
-            if let nameObject: AnyObject = dictonary["error"] as? NSDictionary {
-                if let errCode: AnyObject = nameObject["code"] as! NSString {
+            if let nameObject: AnyObject = dictonary["error"] {
+                if let errCode: AnyObject = nameObject["code"]{
                     if let nameString = errCode as? String {
                         errorCode = nameString
                     }
                 }
                 
-                if let errCode: AnyObject = nameObject["message"] as! NSString {
+                if let errCode: AnyObject = nameObject["message"]{
                     if let nameString = errCode as? String {
                         errorMsg = nameString
                     }
                 }
                 
-                self .showAlertView(errorCode, errorMessage: errorMsg) // on 23-02-2017
-                
-            }else if let nameObject: AnyObject = dictonary["status"] as? NSDictionary {
+            }else if let nameObject: AnyObject = dictonary["status"]{
                 if let nameString = nameObject as? String {
                     if nameString == "COMPLETED"{
                         errorCode = nameString
-                        
                     }
-                    if let nameObject: AnyObject = dictonary["settleWithAuth"] as! NSDictionary {
+                    if let nameObject: AnyObject = dictonary["settleWithAuth"]{
                         if let nameString = nameObject as? Int {
                             if nameString == 0{
                                 errorMsg = "Authorization completed, please proceed for settlement."
@@ -172,85 +165,27 @@ class TVViewController: UIViewController , UITextFieldDelegate, AuthorizationPro
                         }
                     }
                 }
-                
-                self .showAlertView(errorCode, errorMessage: errorMsg)  // on 23-02-2017
-                
             }
             else{
-                
-                //print(dictonary) // on 23-02-2017
-                
-                if let string = dictonary["id"] {
-                    print(string)
-                    
-                    let tobePrinted = string as! String
-                    
-                    self .showAlertView(errorCode, errorMessage:tobePrinted)
-                    
-                }
-                
+                print(dictonary)
             }
             
-            //self .showAlertView(errorCode, errorMessage: errorMsg) //commented on //23-02-2017
+            
+            self .showAlertView(errorCode, errorMessage: errorMsg)
        
         }
     }
-    */
-
-    func callBackAuthorizationProcess(_ dictonary: [AnyHashable: Any]!) {
-        var errorCode: String = String()
-        var errorMsg: String = String()
-        
-        if(dictonary != nil)
-        {
-            if let nameObject: AnyObject = dictonary["error"] as? NSDictionary {
-                if let errCode: AnyObject = nameObject["code"] as! NSString {
-                    if let nameString = errCode as? String {
-                        errorCode = nameString
-                    }
-                }
-                
-                if let errMsg: AnyObject = nameObject["message"] as! NSString {
-                    if let nameString = errMsg as? String {
-                        errorMsg = nameString
-                    }
-                }
-                
-                self .showAlertView(errorCode, errorMessage: errorMsg)
-                
-            }else if let nameObject: AnyObject = dictonary["status"] as? NSString {
-                if let nameString = nameObject as? String {
-                    if nameString == "COMPLETED"{
-                        //errorCode = nameString
-                        
-                        if let nameObject: AnyObject = dictonary["settleWithAuth"] as! NSNumber {
-                            if let nameString = nameObject as? NSNumber {
-                                if nameString == 0 {
-                                    errorCode = "Success"
-                                    errorMsg = "Authorization completed, please proceed for settlement."
-                                }else{
-                                    errorCode = "Success"
-                                    errorMsg = "Settlement got completed, please check your order history."
-                                }
-                                self .showAlertView(errorCode, errorMessage: errorMsg)
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    
     
     
     func createDataDictionary() -> Dictionary<String, Dictionary <String,String>>{
         
         // Merchant shipping methods
-        let shippingMethod1Dictionary: [String: String] = ["shippingName":"Llama California Shipping", "shippingAmount":"0.01", "shippingDes":"3-5 Business Days"]
+        let shippingMethod1Dictionary: [String: String] = ["shippingName":"Llama California Shipping", "shippingAmount":"1.00", "shippingDes":"3-5 Business Days"]
         
         let envType:String = "TEST_ENV";  //PROD_ENV TEST_ENV
         
         let timeIntrval:String = "30.0";  //Time interval for connection to Optimal server
+        
         
         let enviDictionary: [String: String] = ["EnvType":envType, "TimeIntrval":timeIntrval]
         
@@ -273,13 +208,13 @@ class TVViewController: UIViewController , UITextFieldDelegate, AuthorizationPro
         return dataDictonary
     }
     
-    func showAlertView(_ errorCode:String, errorMessage:String){
+    func showAlertView(errorCode:String, errorMessage:String){
         let alert = UIAlertView(title: errorCode, message: errorMessage, delegate: self, cancelButtonTitle: "OK")
         alert .show()
     }
     
-    @IBAction func isPurchase(_ sender:UISwitch){
-        isOn = sender.isOn
+    @IBAction func isPurchase(sender:UISwitch){
+        isOn = sender.on
         
         if(isOn){
             print("True")
@@ -288,40 +223,38 @@ class TVViewController: UIViewController , UITextFieldDelegate, AuthorizationPro
         }
     }
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
         self.view.endEditing(true);
         return false
     }
     
-    func createAuthDataDictonary() -> Dictionary<String, Any>{
+    func createAuthDataDictonary() -> Dictionary<String, AnyObject>{
         
-        let tokenData: AnyObject = authorizationData["paymentToken"]! as AnyObject
+        let tokenData: AnyObject = authorizationData["paymentToken"]!
         let description: String = "Hand bag - Big"
         let merchantRef: String! = merchantRefField?.text
         let merchantAmt: String! = amountField?.text
         
         let cardDictonary: [String: AnyObject] = ["paymentToken":tokenData]
-        let authDictonary: [String: Any] = ["merchantRefNum":merchantRef as Any, "amount":merchantAmt as Any, "card":cardDictonary as Any, "description":description as Any, "customerIp":[self .getIPAddress()], "settleWithAuth":isOn]
-        
-        
+        let authDictonary: [String: AnyObject] = ["merchantRefNum":merchantRef, "amount":merchantAmt, "card":cardDictonary, "description":description, "customerIp":[self .getIPAddress()], "settleWithAuth":isOn]
         return authDictonary;
     }
     
     func getIPAddress()->NSString{
         var ipAddress:NSString = ""
         
-        let host = CFHostCreateWithName(nil,"www.google.com" as CFString).takeRetainedValue();
-        CFHostStartInfoResolution(host, .addresses, nil);
+        let host = CFHostCreateWithName(nil,"www.google.com").takeRetainedValue();
+        CFHostStartInfoResolution(host, .Addresses, nil);
         var success:DarwinBoolean = true;
         let addresses = CFHostGetAddressing(host, &success)!.takeUnretainedValue() as NSArray;
         if (addresses.count > 0){
-            let theAddress = addresses[0] as! Data;
-            var hostname = [CChar](repeating: 0, count: Int(NI_MAXHOST))
-            if getnameinfo((theAddress as NSData).bytes.bindMemory(to: sockaddr.self, capacity: theAddress.count), socklen_t(theAddress.count),
+            let theAddress = addresses[0] as! NSData;
+            var hostname = [CChar](count: Int(NI_MAXHOST), repeatedValue: 0)
+            if getnameinfo(UnsafePointer(theAddress.bytes), socklen_t(theAddress.length),
                 &hostname, socklen_t(hostname.count), nil, 0, NI_NUMERICHOST) == 0 {
-                    if let numAddress = String(validatingUTF8: hostname) {
+                    if let numAddress = String.fromCString(hostname) {
                         
-                        ipAddress = numAddress as NSString
+                        ipAddress = numAddress
                     }
             }
         }
@@ -331,7 +264,7 @@ class TVViewController: UIViewController , UITextFieldDelegate, AuthorizationPro
     func callNonApplePayFlow()
     {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "SWCreditCardViewController")
+        let vc = storyboard.instantiateViewControllerWithIdentifier("SWCreditCardViewController")
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

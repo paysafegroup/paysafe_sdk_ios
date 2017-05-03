@@ -3,10 +3,11 @@
 //  iOS_SDK
 //
 //  Created by Sachin Barage on 09/10/15.
-//  Copyright © 2015 PaySafe. All rights reserved.
+//  Copyright © 2015 Paysafe. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
+
 
 #define MerchantShippingDictionary @"ShippingMethod" // Used for getting shipping method values dictionary
 #define MerchantShippingName @"shippingName" // Used for shipping method name

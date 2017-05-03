@@ -179,7 +179,7 @@
     return jsonData;
 }
 
-//get token from optimal !!!
+//get token from paysafe !!!
 - (void)requestServiceByName:(NSString *)serviceName
 {
     if (connection != nil)

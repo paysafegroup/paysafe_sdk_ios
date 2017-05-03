@@ -12,64 +12,34 @@
 		534243251AE8AB09003DCD29 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 534243241AE8AB09003DCD29 /* Images.xcassets */; };
 		534243281AE8AB09003DCD29 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 534243261AE8AB09003DCD29 /* LaunchScreen.xib */; };
 		534243341AE8AB09003DCD29 /* TestMerchAppExample_Obj_CTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 534243331AE8AB09003DCD29 /* TestMerchAppExample_Obj_CTests.m */; };
-		6305B9C11D0800B200A003E1 /* OPTAuthorizationProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 6305B9BF1D0800B200A003E1 /* OPTAuthorizationProcess.m */; };
-		6305B9C61D08011500A003E1 /* MenuScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 6305B9C51D08011500A003E1 /* MenuScreen.m */; };
-		6305B9CA1D08019F00A003E1 /* MerchantRealConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6305B9C81D08019F00A003E1 /* MerchantRealConfiguration.plist */; };
-		6305BA091D08041E00A003E1 /* ApplePayBTN_32pt__black_logo_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6305B9F41D08041E00A003E1 /* ApplePayBTN_32pt__black_logo_@2x.png */; };
-		6305BA0A1D08041E00A003E1 /* ApplePayBTN_32pt__black_logo_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6305B9F51D08041E00A003E1 /* ApplePayBTN_32pt__black_logo_@3x.png */; };
-		6305BA0B1D08041E00A003E1 /* ApplePayBTN_32pt__black_textLogo_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6305B9F61D08041E00A003E1 /* ApplePayBTN_32pt__black_textLogo_@2x.png */; };
-		6305BA0C1D08041E00A003E1 /* ApplePayBTN_32pt__black_textLogo_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6305B9F71D08041E00A003E1 /* ApplePayBTN_32pt__black_textLogo_@3x.png */; };
-		6305BA0D1D08041E00A003E1 /* ApplePayBTN_32pt__white_logo_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6305B9F81D08041E00A003E1 /* ApplePayBTN_32pt__white_logo_@2x.png */; };
-		6305BA0E1D08041E00A003E1 /* ApplePayBTN_32pt__white_logo_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6305B9F91D08041E00A003E1 /* ApplePayBTN_32pt__white_logo_@3x.png */; };
-		6305BA0F1D08041E00A003E1 /* ApplePayBTN_32pt__white_textLogo_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6305B9FA1D08041E00A003E1 /* ApplePayBTN_32pt__white_textLogo_@2x.png */; };
-		6305BA101D08041E00A003E1 /* ApplePayBTN_32pt__white_textLogo_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6305B9FB1D08041E00A003E1 /* ApplePayBTN_32pt__white_textLogo_@3x.png */; };
-		6305BA111D08041E00A003E1 /* ApplePayBTN_32pt__whiteLine_logo_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6305B9FC1D08041E00A003E1 /* ApplePayBTN_32pt__whiteLine_logo_@2x.png */; };
-		6305BA121D08041E00A003E1 /* ApplePayBTN_32pt__whiteLine_logo_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6305B9FD1D08041E00A003E1 /* ApplePayBTN_32pt__whiteLine_logo_@3x.png */; };
-		6305BA131D08041E00A003E1 /* ApplePayBTN_32pt__whiteLine_textLogo_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6305B9FE1D08041E00A003E1 /* ApplePayBTN_32pt__whiteLine_textLogo_@2x.png */; };
-		6305BA141D08041E00A003E1 /* ApplePayBTN_32pt__whiteLine_textLogo_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6305B9FF1D08041E00A003E1 /* ApplePayBTN_32pt__whiteLine_textLogo_@3x.png */; };
-		6305BA151D08041E00A003E1 /* Authorization.png in Resources */ = {isa = PBXBuildFile; fileRef = 6305BA001D08041E00A003E1 /* Authorization.png */; };
-		6305BA161D08041E00A003E1 /* BlankGreyScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 6305BA011D08041E00A003E1 /* BlankGreyScreen.png */; };
-		6305BA171D08041E00A003E1 /* BuyNow_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 6305BA021D08041E00A003E1 /* BuyNow_btn.png */; };
-		6305BA181D08041E00A003E1 /* CheckoutImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6305BA031D08041E00A003E1 /* CheckoutImg.png */; };
-		6305BA191D08041E00A003E1 /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = 6305BA041D08041E00A003E1 /* Home.png */; };
-		6305BA1A1D08041E00A003E1 /* OptimalImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6305BA051D08041E00A003E1 /* OptimalImg.png */; };
-		6305BA1B1D08041E00A003E1 /* payNow_img.png in Resources */ = {isa = PBXBuildFile; fileRef = 6305BA061D08041E00A003E1 /* payNow_img.png */; };
-		6305BA1C1D08041E00A003E1 /* Phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 6305BA071D08041E00A003E1 /* Phone.png */; };
-		6305BA1D1D08041E00A003E1 /* shoe.png in Resources */ = {isa = PBXBuildFile; fileRef = 6305BA081D08041E00A003E1 /* shoe.png */; };
+		6305BA421D0821CE00A003E1 /* ApplePayBTN_32pt__black_logo_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6305BA2D1D0821CE00A003E1 /* ApplePayBTN_32pt__black_logo_@2x.png */; };
+		6305BA431D0821CE00A003E1 /* ApplePayBTN_32pt__black_logo_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6305BA2E1D0821CE00A003E1 /* ApplePayBTN_32pt__black_logo_@3x.png */; };
+		6305BA441D0821CE00A003E1 /* ApplePayBTN_32pt__black_textLogo_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6305BA2F1D0821CE00A003E1 /* ApplePayBTN_32pt__black_textLogo_@2x.png */; };
+		6305BA451D0821CE00A003E1 /* ApplePayBTN_32pt__black_textLogo_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6305BA301D0821CE00A003E1 /* ApplePayBTN_32pt__black_textLogo_@3x.png */; };
+		6305BA461D0821CE00A003E1 /* ApplePayBTN_32pt__white_logo_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6305BA311D0821CE00A003E1 /* ApplePayBTN_32pt__white_logo_@2x.png */; };
+		6305BA471D0821CE00A003E1 /* ApplePayBTN_32pt__white_logo_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6305BA321D0821CE00A003E1 /* ApplePayBTN_32pt__white_logo_@3x.png */; };
+		6305BA481D0821CE00A003E1 /* ApplePayBTN_32pt__white_textLogo_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6305BA331D0821CE00A003E1 /* ApplePayBTN_32pt__white_textLogo_@2x.png */; };
+		6305BA491D0821CE00A003E1 /* ApplePayBTN_32pt__white_textLogo_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6305BA341D0821CE00A003E1 /* ApplePayBTN_32pt__white_textLogo_@3x.png */; };
+		6305BA4A1D0821CE00A003E1 /* ApplePayBTN_32pt__whiteLine_logo_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6305BA351D0821CE00A003E1 /* ApplePayBTN_32pt__whiteLine_logo_@2x.png */; };
+		6305BA4B1D0821CE00A003E1 /* ApplePayBTN_32pt__whiteLine_logo_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6305BA361D0821CE00A003E1 /* ApplePayBTN_32pt__whiteLine_logo_@3x.png */; };
+		6305BA4C1D0821CE00A003E1 /* ApplePayBTN_32pt__whiteLine_textLogo_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6305BA371D0821CE00A003E1 /* ApplePayBTN_32pt__whiteLine_textLogo_@2x.png */; };
+		6305BA4D1D0821CE00A003E1 /* ApplePayBTN_32pt__whiteLine_textLogo_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6305BA381D0821CE00A003E1 /* ApplePayBTN_32pt__whiteLine_textLogo_@3x.png */; };
+		6305BA4E1D0821CE00A003E1 /* Authorization.png in Resources */ = {isa = PBXBuildFile; fileRef = 6305BA391D0821CE00A003E1 /* Authorization.png */; };
+		6305BA4F1D0821CE00A003E1 /* BlankGreyScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 6305BA3A1D0821CE00A003E1 /* BlankGreyScreen.png */; };
+		6305BA501D0821CE00A003E1 /* BuyNow_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 6305BA3B1D0821CE00A003E1 /* BuyNow_btn.png */; };
+		6305BA511D0821CE00A003E1 /* CheckoutImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6305BA3C1D0821CE00A003E1 /* CheckoutImg.png */; };
+		6305BA521D0821CE00A003E1 /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = 6305BA3D1D0821CE00A003E1 /* Home.png */; };
+		6305BA531D0821CE00A003E1 /* OptimalImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6305BA3E1D0821CE00A003E1 /* OptimalImg.png */; };
+		6305BA541D0821CE00A003E1 /* payNow_img.png in Resources */ = {isa = PBXBuildFile; fileRef = 6305BA3F1D0821CE00A003E1 /* payNow_img.png */; };
+		6305BA551D0821CE00A003E1 /* Phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 6305BA401D0821CE00A003E1 /* Phone.png */; };
+		6305BA561D0821CE00A003E1 /* shoe.png in Resources */ = {isa = PBXBuildFile; fileRef = 6305BA411D0821CE00A003E1 /* shoe.png */; };
+		6305BA5A1D08223A00A003E1 /* MenuScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 6305BA591D08223A00A003E1 /* MenuScreen.m */; };
+		6305BA601D08224200A003E1 /* OPTAuthorizationProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 6305BA5E1D08224200A003E1 /* OPTAuthorizationProcess.m */; };
+		6305BA611D08224200A003E1 /* iOS_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6305BA5F1D08224200A003E1 /* iOS_SDK.framework */; };
+		6305BA631D08224B00A003E1 /* MerchantRealConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6305BA621D08224B00A003E1 /* MerchantRealConfiguration.plist */; };
 		6313E8501CF2D611002C8A1F /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313E84C1CF2D611002C8A1F /* HomeViewController.m */; };
 		6313E8511CF2D611002C8A1F /* CreditCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313E84F1CF2D611002C8A1F /* CreditCardViewController.m */; };
-		6313E8551CF2EB7F002C8A1F /* OPayPaymentAddressOperationsProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313E8541CF2EB7F002C8A1F /* OPayPaymentAddressOperationsProcess.m */; };
-		6313E8671CF2F140002C8A1F /* OPayPaymentProfilesOperationsProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313E8661CF2F140002C8A1F /* OPayPaymentProfilesOperationsProcess.m */; };
-		6313E86B1CF2F3A4002C8A1F /* OPayPaymentAccountOperationsProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313E86A1CF2F3A4002C8A1F /* OPayPaymentAccountOperationsProcess.m */; };
-		6313E86F1CF2F5A2002C8A1F /* OPayPaymentPurchaseOperationsProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 6313E86E1CF2F5A2002C8A1F /* OPayPaymentPurchaseOperationsProcess.m */; };
-		635B48FB1D7EDCAB00F53F17 /* iOS_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 635B48FA1D7EDCAB00F53F17 /* iOS_SDK.framework */; };
-		635B48FD1D7EDCB500F53F17 /* PaySafeMockPaymentSummaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 635B48FC1D7EDCB500F53F17 /* PaySafeMockPaymentSummaryViewController.xib */; };
-		63DD771D1D068E6E00591AAD /* LOCALDef.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DD771C1D068E6E00591AAD /* LOCALDef.m */; };
-		63FFA9E11CD3393D006ED849 /* DirectDebitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FFA9CA1CD3393D006ED849 /* DirectDebitViewController.m */; };
-		63FFA9E21CD3393D006ED849 /* CancelPurchaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FFA9CE1CD3393D006ED849 /* CancelPurchaseViewController.m */; };
-		63FFA9E31CD3393D006ED849 /* LookUpPurchaseIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FFA9D01CD3393D006ED849 /* LookUpPurchaseIDViewController.m */; };
-		63FFA9E41CD3393D006ED849 /* LookUpPurchaseMerchantRefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FFA9D21CD3393D006ED849 /* LookUpPurchaseMerchantRefViewController.m */; };
-		63FFA9E51CD3393D006ED849 /* SubmitPurchaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FFA9D41CD3393D006ED849 /* SubmitPurchaseViewController.m */; };
-		63FFA9E61CD3393E006ED849 /* PurchaseOperationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FFA9D61CD3393D006ED849 /* PurchaseOperationsViewController.m */; };
-		63FFA9E71CD3393E006ED849 /* PurchaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FFA9D81CD3393D006ED849 /* PurchaseViewController.m */; };
-		63FFAA051CD33946006ED849 /* AddressesOperationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FFA9ED1CD33946006ED849 /* AddressesOperationsViewController.m */; };
-		63FFAA061CD33946006ED849 /* AddressCreateUpdateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FFA9F01CD33946006ED849 /* AddressCreateUpdateViewController.m */; };
-		63FFAA081CD33946006ED849 /* AddressDeleteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FFA9F41CD33946006ED849 /* AddressDeleteViewController.m */; };
-		63FFAA091CD33946006ED849 /* AddressLookUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FFA9F61CD33946006ED849 /* AddressLookUpViewController.m */; };
-		63FFAA0A1CD33946006ED849 /* CustomerVaultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FFA9F81CD33946006ED849 /* CustomerVaultViewController.m */; };
-		63FFAA0B1CD33946006ED849 /* ProfileCreateUpdateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FFA9FC1CD33946006ED849 /* ProfileCreateUpdateViewController.m */; };
-		63FFAA0C1CD33946006ED849 /* ProfileDeleteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FFA9FE1CD33946006ED849 /* ProfileDeleteViewController.m */; };
-		63FFAA0D1CD33946006ED849 /* ProfileLookUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FFAA001CD33946006ED849 /* ProfileLookUpViewController.m */; };
-		63FFAA0E1CD33946006ED849 /* ProfileLookUpWithSubComponentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FFAA021CD33946006ED849 /* ProfileLookUpWithSubComponentsViewController.m */; };
-		63FFAA0F1CD33946006ED849 /* ProfilesOperationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FFAA041CD33946006ED849 /* ProfilesOperationsViewController.m */; };
-		63FFAA121CD35973006ED849 /* AccountOperationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FFAA111CD35973006ED849 /* AccountOperationsViewController.m */; };
-		63FFAA151CD359A1006ED849 /* AccountsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FFAA141CD359A1006ED849 /* AccountsViewController.m */; };
-		63FFAA221CD359CD006ED849 /* ACHCreateUpdateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FFAA171CD359CD006ED849 /* ACHCreateUpdateViewController.m */; };
-		63FFAA231CD359CD006ED849 /* BACSCreateUpdateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FFAA191CD359CD006ED849 /* BACSCreateUpdateViewController.m */; };
-		63FFAA241CD359CD006ED849 /* DeleteAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FFAA1B1CD359CD006ED849 /* DeleteAccountViewController.m */; };
-		63FFAA251CD359CD006ED849 /* EFTCreateUpdateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FFAA1D1CD359CD006ED849 /* EFTCreateUpdateViewController.m */; };
-		63FFAA261CD359CD006ED849 /* LookUpAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FFAA1F1CD359CD006ED849 /* LookUpAccountViewController.m */; };
-		63FFAA271CD359CD006ED849 /* SEPACreateUpdateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FFAA211CD359CD006ED849 /* SEPACreateUpdateViewController.m */; };
+		635B49411D7FE4C000F53F17 /* PaySafeMockPaymentSummaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 635B49401D7FE4C000F53F17 /* PaySafeMockPaymentSummaryViewController.xib */; };
 		74DA6A7D1CFACF71001B3BE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74DA6A7B1CFACF71001B3BE2 /* Main.storyboard */; };
 		74FEAD5F1CD0037200F11131 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 74FEAD5D1CD0037200F11131 /* NSData+Base64.m */; };
 		75E0AB171CCCCB3A0071BAC4 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 75E0AB161CCCCB3A0071BAC4 /* Utils.m */; };
@@ -87,6 +57,7 @@
 
 /* Begin PBXFileReference section */
 		534243141AE8AB09003DCD29 /* TestMerchAppExample_Obj-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TestMerchAppExample_Obj-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		534243181AE8AB09003DCD29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		534243191AE8AB09003DCD29 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5342431B1AE8AB09003DCD29 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5342431C1AE8AB09003DCD29 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -96,99 +67,38 @@
 		534243321AE8AB09003DCD29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		534243331AE8AB09003DCD29 /* TestMerchAppExample_Obj_CTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestMerchAppExample_Obj_CTests.m; sourceTree = "<group>"; };
 		534243881AE8B2E6003DCD29 /* TestMerchAppExample_Obj-C.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "TestMerchAppExample_Obj-C.entitlements"; sourceTree = "<group>"; };
-		6305B9BE1D0800B200A003E1 /* OPTAuthorizationProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPTAuthorizationProcess.h; sourceTree = "<group>"; };
-		6305B9BF1D0800B200A003E1 /* OPTAuthorizationProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OPTAuthorizationProcess.m; sourceTree = "<group>"; };
-		6305B9C41D08011500A003E1 /* MenuScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuScreen.h; sourceTree = "<group>"; };
-		6305B9C51D08011500A003E1 /* MenuScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuScreen.m; sourceTree = "<group>"; };
-		6305B9C81D08019F00A003E1 /* MerchantRealConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = MerchantRealConfiguration.plist; path = SupportingFiles/MerchantRealConfiguration.plist; sourceTree = "<group>"; };
-		6305B9CB1D0801E100A003E1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6305B9F41D08041E00A003E1 /* ApplePayBTN_32pt__black_logo_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ApplePayBTN_32pt__black_logo_@2x.png"; sourceTree = "<group>"; };
-		6305B9F51D08041E00A003E1 /* ApplePayBTN_32pt__black_logo_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ApplePayBTN_32pt__black_logo_@3x.png"; sourceTree = "<group>"; };
-		6305B9F61D08041E00A003E1 /* ApplePayBTN_32pt__black_textLogo_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ApplePayBTN_32pt__black_textLogo_@2x.png"; sourceTree = "<group>"; };
-		6305B9F71D08041E00A003E1 /* ApplePayBTN_32pt__black_textLogo_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ApplePayBTN_32pt__black_textLogo_@3x.png"; sourceTree = "<group>"; };
-		6305B9F81D08041E00A003E1 /* ApplePayBTN_32pt__white_logo_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ApplePayBTN_32pt__white_logo_@2x.png"; sourceTree = "<group>"; };
-		6305B9F91D08041E00A003E1 /* ApplePayBTN_32pt__white_logo_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ApplePayBTN_32pt__white_logo_@3x.png"; sourceTree = "<group>"; };
-		6305B9FA1D08041E00A003E1 /* ApplePayBTN_32pt__white_textLogo_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ApplePayBTN_32pt__white_textLogo_@2x.png"; sourceTree = "<group>"; };
-		6305B9FB1D08041E00A003E1 /* ApplePayBTN_32pt__white_textLogo_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ApplePayBTN_32pt__white_textLogo_@3x.png"; sourceTree = "<group>"; };
-		6305B9FC1D08041E00A003E1 /* ApplePayBTN_32pt__whiteLine_logo_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ApplePayBTN_32pt__whiteLine_logo_@2x.png"; sourceTree = "<group>"; };
-		6305B9FD1D08041E00A003E1 /* ApplePayBTN_32pt__whiteLine_logo_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ApplePayBTN_32pt__whiteLine_logo_@3x.png"; sourceTree = "<group>"; };
-		6305B9FE1D08041E00A003E1 /* ApplePayBTN_32pt__whiteLine_textLogo_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ApplePayBTN_32pt__whiteLine_textLogo_@2x.png"; sourceTree = "<group>"; };
-		6305B9FF1D08041E00A003E1 /* ApplePayBTN_32pt__whiteLine_textLogo_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ApplePayBTN_32pt__whiteLine_textLogo_@3x.png"; sourceTree = "<group>"; };
-		6305BA001D08041E00A003E1 /* Authorization.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Authorization.png; sourceTree = "<group>"; };
-		6305BA011D08041E00A003E1 /* BlankGreyScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BlankGreyScreen.png; sourceTree = "<group>"; };
-		6305BA021D08041E00A003E1 /* BuyNow_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BuyNow_btn.png; sourceTree = "<group>"; };
-		6305BA031D08041E00A003E1 /* CheckoutImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheckoutImg.png; sourceTree = "<group>"; };
-		6305BA041D08041E00A003E1 /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home.png; sourceTree = "<group>"; };
-		6305BA051D08041E00A003E1 /* OptimalImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OptimalImg.png; sourceTree = "<group>"; };
-		6305BA061D08041E00A003E1 /* payNow_img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = payNow_img.png; sourceTree = "<group>"; };
-		6305BA071D08041E00A003E1 /* Phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Phone.png; sourceTree = "<group>"; };
-		6305BA081D08041E00A003E1 /* shoe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shoe.png; sourceTree = "<group>"; };
+		6305BA2D1D0821CE00A003E1 /* ApplePayBTN_32pt__black_logo_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ApplePayBTN_32pt__black_logo_@2x.png"; sourceTree = "<group>"; };
+		6305BA2E1D0821CE00A003E1 /* ApplePayBTN_32pt__black_logo_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ApplePayBTN_32pt__black_logo_@3x.png"; sourceTree = "<group>"; };
+		6305BA2F1D0821CE00A003E1 /* ApplePayBTN_32pt__black_textLogo_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ApplePayBTN_32pt__black_textLogo_@2x.png"; sourceTree = "<group>"; };
+		6305BA301D0821CE00A003E1 /* ApplePayBTN_32pt__black_textLogo_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ApplePayBTN_32pt__black_textLogo_@3x.png"; sourceTree = "<group>"; };
+		6305BA311D0821CE00A003E1 /* ApplePayBTN_32pt__white_logo_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ApplePayBTN_32pt__white_logo_@2x.png"; sourceTree = "<group>"; };
+		6305BA321D0821CE00A003E1 /* ApplePayBTN_32pt__white_logo_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ApplePayBTN_32pt__white_logo_@3x.png"; sourceTree = "<group>"; };
+		6305BA331D0821CE00A003E1 /* ApplePayBTN_32pt__white_textLogo_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ApplePayBTN_32pt__white_textLogo_@2x.png"; sourceTree = "<group>"; };
+		6305BA341D0821CE00A003E1 /* ApplePayBTN_32pt__white_textLogo_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ApplePayBTN_32pt__white_textLogo_@3x.png"; sourceTree = "<group>"; };
+		6305BA351D0821CE00A003E1 /* ApplePayBTN_32pt__whiteLine_logo_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ApplePayBTN_32pt__whiteLine_logo_@2x.png"; sourceTree = "<group>"; };
+		6305BA361D0821CE00A003E1 /* ApplePayBTN_32pt__whiteLine_logo_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ApplePayBTN_32pt__whiteLine_logo_@3x.png"; sourceTree = "<group>"; };
+		6305BA371D0821CE00A003E1 /* ApplePayBTN_32pt__whiteLine_textLogo_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ApplePayBTN_32pt__whiteLine_textLogo_@2x.png"; sourceTree = "<group>"; };
+		6305BA381D0821CE00A003E1 /* ApplePayBTN_32pt__whiteLine_textLogo_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ApplePayBTN_32pt__whiteLine_textLogo_@3x.png"; sourceTree = "<group>"; };
+		6305BA391D0821CE00A003E1 /* Authorization.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Authorization.png; sourceTree = "<group>"; };
+		6305BA3A1D0821CE00A003E1 /* BlankGreyScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BlankGreyScreen.png; sourceTree = "<group>"; };
+		6305BA3B1D0821CE00A003E1 /* BuyNow_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BuyNow_btn.png; sourceTree = "<group>"; };
+		6305BA3C1D0821CE00A003E1 /* CheckoutImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheckoutImg.png; sourceTree = "<group>"; };
+		6305BA3D1D0821CE00A003E1 /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home.png; sourceTree = "<group>"; };
+		6305BA3E1D0821CE00A003E1 /* OptimalImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OptimalImg.png; sourceTree = "<group>"; };
+		6305BA3F1D0821CE00A003E1 /* payNow_img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = payNow_img.png; sourceTree = "<group>"; };
+		6305BA401D0821CE00A003E1 /* Phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Phone.png; sourceTree = "<group>"; };
+		6305BA411D0821CE00A003E1 /* shoe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shoe.png; sourceTree = "<group>"; };
+		6305BA581D08223A00A003E1 /* MenuScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuScreen.h; sourceTree = "<group>"; };
+		6305BA591D08223A00A003E1 /* MenuScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuScreen.m; sourceTree = "<group>"; };
+		6305BA5D1D08224200A003E1 /* OPTAuthorizationProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPTAuthorizationProcess.h; sourceTree = "<group>"; };
+		6305BA5E1D08224200A003E1 /* OPTAuthorizationProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OPTAuthorizationProcess.m; sourceTree = "<group>"; };
+		6305BA5F1D08224200A003E1 /* iOS_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iOS_SDK.framework; sourceTree = "<group>"; };
+		6305BA621D08224B00A003E1 /* MerchantRealConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = MerchantRealConfiguration.plist; path = SupportingFiles/MerchantRealConfiguration.plist; sourceTree = "<group>"; };
 		6313E84B1CF2D611002C8A1F /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		6313E84C1CF2D611002C8A1F /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		6313E84E1CF2D611002C8A1F /* CreditCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditCardViewController.h; sourceTree = "<group>"; };
 		6313E84F1CF2D611002C8A1F /* CreditCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditCardViewController.m; sourceTree = "<group>"; };
-		6313E8531CF2EB7F002C8A1F /* OPayPaymentAddressOperationsProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPayPaymentAddressOperationsProcess.h; sourceTree = "<group>"; };
-		6313E8541CF2EB7F002C8A1F /* OPayPaymentAddressOperationsProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OPayPaymentAddressOperationsProcess.m; sourceTree = "<group>"; };
-		6313E8651CF2F140002C8A1F /* OPayPaymentProfilesOperationsProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPayPaymentProfilesOperationsProcess.h; sourceTree = "<group>"; };
-		6313E8661CF2F140002C8A1F /* OPayPaymentProfilesOperationsProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OPayPaymentProfilesOperationsProcess.m; sourceTree = "<group>"; };
-		6313E8691CF2F3A4002C8A1F /* OPayPaymentAccountOperationsProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPayPaymentAccountOperationsProcess.h; sourceTree = "<group>"; };
-		6313E86A1CF2F3A4002C8A1F /* OPayPaymentAccountOperationsProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OPayPaymentAccountOperationsProcess.m; sourceTree = "<group>"; };
-		6313E86D1CF2F5A2002C8A1F /* OPayPaymentPurchaseOperationsProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OPayPaymentPurchaseOperationsProcess.h; sourceTree = "<group>"; };
-		6313E86E1CF2F5A2002C8A1F /* OPayPaymentPurchaseOperationsProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OPayPaymentPurchaseOperationsProcess.m; sourceTree = "<group>"; };
-		635B48FA1D7EDCAB00F53F17 /* iOS_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iOS_SDK.framework; sourceTree = "<group>"; };
-		635B48FC1D7EDCB500F53F17 /* PaySafeMockPaymentSummaryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PaySafeMockPaymentSummaryViewController.xib; path = iOS_SDK.framework/Headers/PaySafeMockPaymentSummaryViewController.xib; sourceTree = "<group>"; };
-		63DD771B1D068E6E00591AAD /* LOCALDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOCALDef.h; sourceTree = "<group>"; };
-		63DD771C1D068E6E00591AAD /* LOCALDef.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOCALDef.m; sourceTree = "<group>"; };
-		63FFA9C91CD3393D006ED849 /* DirectDebitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectDebitViewController.h; sourceTree = "<group>"; };
-		63FFA9CA1CD3393D006ED849 /* DirectDebitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectDebitViewController.m; sourceTree = "<group>"; };
-		63FFA9CD1CD3393D006ED849 /* CancelPurchaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CancelPurchaseViewController.h; sourceTree = "<group>"; };
-		63FFA9CE1CD3393D006ED849 /* CancelPurchaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CancelPurchaseViewController.m; sourceTree = "<group>"; };
-		63FFA9CF1CD3393D006ED849 /* LookUpPurchaseIDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LookUpPurchaseIDViewController.h; sourceTree = "<group>"; };
-		63FFA9D01CD3393D006ED849 /* LookUpPurchaseIDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LookUpPurchaseIDViewController.m; sourceTree = "<group>"; };
-		63FFA9D11CD3393D006ED849 /* LookUpPurchaseMerchantRefViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LookUpPurchaseMerchantRefViewController.h; sourceTree = "<group>"; };
-		63FFA9D21CD3393D006ED849 /* LookUpPurchaseMerchantRefViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LookUpPurchaseMerchantRefViewController.m; sourceTree = "<group>"; };
-		63FFA9D31CD3393D006ED849 /* SubmitPurchaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubmitPurchaseViewController.h; sourceTree = "<group>"; };
-		63FFA9D41CD3393D006ED849 /* SubmitPurchaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubmitPurchaseViewController.m; sourceTree = "<group>"; };
-		63FFA9D51CD3393D006ED849 /* PurchaseOperationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchaseOperationsViewController.h; sourceTree = "<group>"; };
-		63FFA9D61CD3393D006ED849 /* PurchaseOperationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurchaseOperationsViewController.m; sourceTree = "<group>"; };
-		63FFA9D71CD3393D006ED849 /* PurchaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchaseViewController.h; sourceTree = "<group>"; };
-		63FFA9D81CD3393D006ED849 /* PurchaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurchaseViewController.m; sourceTree = "<group>"; };
-		63FFA9EC1CD33946006ED849 /* AddressesOperationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressesOperationsViewController.h; sourceTree = "<group>"; };
-		63FFA9ED1CD33946006ED849 /* AddressesOperationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressesOperationsViewController.m; sourceTree = "<group>"; };
-		63FFA9EF1CD33946006ED849 /* AddressCreateUpdateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressCreateUpdateViewController.h; sourceTree = "<group>"; };
-		63FFA9F01CD33946006ED849 /* AddressCreateUpdateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressCreateUpdateViewController.m; sourceTree = "<group>"; };
-		63FFA9F31CD33946006ED849 /* AddressDeleteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressDeleteViewController.h; sourceTree = "<group>"; };
-		63FFA9F41CD33946006ED849 /* AddressDeleteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressDeleteViewController.m; sourceTree = "<group>"; };
-		63FFA9F51CD33946006ED849 /* AddressLookUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressLookUpViewController.h; sourceTree = "<group>"; };
-		63FFA9F61CD33946006ED849 /* AddressLookUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressLookUpViewController.m; sourceTree = "<group>"; };
-		63FFA9F71CD33946006ED849 /* CustomerVaultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerVaultViewController.h; sourceTree = "<group>"; };
-		63FFA9F81CD33946006ED849 /* CustomerVaultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerVaultViewController.m; sourceTree = "<group>"; };
-		63FFA9FB1CD33946006ED849 /* ProfileCreateUpdateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileCreateUpdateViewController.h; sourceTree = "<group>"; };
-		63FFA9FC1CD33946006ED849 /* ProfileCreateUpdateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileCreateUpdateViewController.m; sourceTree = "<group>"; };
-		63FFA9FD1CD33946006ED849 /* ProfileDeleteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileDeleteViewController.h; sourceTree = "<group>"; };
-		63FFA9FE1CD33946006ED849 /* ProfileDeleteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileDeleteViewController.m; sourceTree = "<group>"; };
-		63FFA9FF1CD33946006ED849 /* ProfileLookUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileLookUpViewController.h; sourceTree = "<group>"; };
-		63FFAA001CD33946006ED849 /* ProfileLookUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileLookUpViewController.m; sourceTree = "<group>"; };
-		63FFAA011CD33946006ED849 /* ProfileLookUpWithSubComponentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileLookUpWithSubComponentsViewController.h; sourceTree = "<group>"; };
-		63FFAA021CD33946006ED849 /* ProfileLookUpWithSubComponentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileLookUpWithSubComponentsViewController.m; sourceTree = "<group>"; };
-		63FFAA031CD33946006ED849 /* ProfilesOperationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfilesOperationsViewController.h; sourceTree = "<group>"; };
-		63FFAA041CD33946006ED849 /* ProfilesOperationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfilesOperationsViewController.m; sourceTree = "<group>"; };
-		63FFAA101CD35973006ED849 /* AccountOperationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountOperationsViewController.h; sourceTree = "<group>"; };
-		63FFAA111CD35973006ED849 /* AccountOperationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountOperationsViewController.m; sourceTree = "<group>"; };
-		63FFAA131CD359A1006ED849 /* AccountsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountsViewController.h; sourceTree = "<group>"; };
-		63FFAA141CD359A1006ED849 /* AccountsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountsViewController.m; sourceTree = "<group>"; };
-		63FFAA161CD359CD006ED849 /* ACHCreateUpdateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACHCreateUpdateViewController.h; sourceTree = "<group>"; };
-		63FFAA171CD359CD006ED849 /* ACHCreateUpdateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACHCreateUpdateViewController.m; sourceTree = "<group>"; };
-		63FFAA181CD359CD006ED849 /* BACSCreateUpdateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BACSCreateUpdateViewController.h; sourceTree = "<group>"; };
-		63FFAA191CD359CD006ED849 /* BACSCreateUpdateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BACSCreateUpdateViewController.m; sourceTree = "<group>"; };
-		63FFAA1A1CD359CD006ED849 /* DeleteAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteAccountViewController.h; sourceTree = "<group>"; };
-		63FFAA1B1CD359CD006ED849 /* DeleteAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteAccountViewController.m; sourceTree = "<group>"; };
-		63FFAA1C1CD359CD006ED849 /* EFTCreateUpdateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFTCreateUpdateViewController.h; sourceTree = "<group>"; };
-		63FFAA1D1CD359CD006ED849 /* EFTCreateUpdateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFTCreateUpdateViewController.m; sourceTree = "<group>"; };
-		63FFAA1E1CD359CD006ED849 /* LookUpAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LookUpAccountViewController.h; sourceTree = "<group>"; };
-		63FFAA1F1CD359CD006ED849 /* LookUpAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LookUpAccountViewController.m; sourceTree = "<group>"; };
-		63FFAA201CD359CD006ED849 /* SEPACreateUpdateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEPACreateUpdateViewController.h; sourceTree = "<group>"; };
-		63FFAA211CD359CD006ED849 /* SEPACreateUpdateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEPACreateUpdateViewController.m; sourceTree = "<group>"; };
+		635B49401D7FE4C000F53F17 /* PaySafeMockPaymentSummaryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PaySafeMockPaymentSummaryViewController.xib; path = iOS_SDK.framework/Headers/PaySafeMockPaymentSummaryViewController.xib; sourceTree = "<group>"; };
 		74DA6A7C1CFACF71001B3BE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		74FEAD5C1CD0037200F11131 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
 		74FEAD5D1CD0037200F11131 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
@@ -202,7 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				635B48FB1D7EDCAB00F53F17 /* iOS_SDK.framework in Frameworks */,
+				6305BA611D08224200A003E1 /* iOS_SDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,7 +132,6 @@
 				534243161AE8AB09003DCD29 /* TestMerchAppExample_Obj-C */,
 				534243151AE8AB09003DCD29 /* Products */,
 				534243301AE8AB09003DCD29 /* TestMerchAppExample_Obj-CTests */,
-				55EACEE31E6D96DE0064132D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -240,11 +149,9 @@
 			children = (
 				5342431B1AE8AB09003DCD29 /* AppDelegate.h */,
 				5342431C1AE8AB09003DCD29 /* AppDelegate.m */,
-				6305B9C31D08011500A003E1 /* MenuScreen */,
+				6305BA571D08223A00A003E1 /* MenuScreen */,
 				6313E84A1CF2D611002C8A1F /* ApplePay */,
 				6313E84D1CF2D611002C8A1F /* NonApplePay */,
-				63FFA9E81CD33946006ED849 /* CustomerVault */,
-				63FFA9B61CD3393D006ED849 /* DirectDebit */,
 				75E0AB111CCCCB010071BAC4 /* Utils */,
 				534243171AE8AB09003DCD29 /* Supporting Files */,
 			);
@@ -254,15 +161,15 @@
 		534243171AE8AB09003DCD29 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6305B9CB1D0801E100A003E1 /* Info.plist */,
-				6305B9C81D08019F00A003E1 /* MerchantRealConfiguration.plist */,
+				6305BA621D08224B00A003E1 /* MerchantRealConfiguration.plist */,
 				74DA6A7B1CFACF71001B3BE2 /* Main.storyboard */,
 				534243261AE8AB09003DCD29 /* LaunchScreen.xib */,
 				534243881AE8B2E6003DCD29 /* TestMerchAppExample_Obj-C.entitlements */,
 				534243241AE8AB09003DCD29 /* Images.xcassets */,
+				534243181AE8AB09003DCD29 /* Info.plist */,
 				534243191AE8AB09003DCD29 /* main.m */,
-				6305B9CD1D08031900A003E1 /* Resources */,
-				6305B9BC1D0800B200A003E1 /* SDK */,
+				6305BA5B1D08224200A003E1 /* SDK */,
+				6305BA2C1D0821CE00A003E1 /* Resources */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -284,67 +191,60 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		55EACEE31E6D96DE0064132D /* Frameworks */ = {
+		6305BA2C1D0821CE00A003E1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6305BA2D1D0821CE00A003E1 /* ApplePayBTN_32pt__black_logo_@2x.png */,
+				6305BA2E1D0821CE00A003E1 /* ApplePayBTN_32pt__black_logo_@3x.png */,
+				6305BA2F1D0821CE00A003E1 /* ApplePayBTN_32pt__black_textLogo_@2x.png */,
+				6305BA301D0821CE00A003E1 /* ApplePayBTN_32pt__black_textLogo_@3x.png */,
+				6305BA311D0821CE00A003E1 /* ApplePayBTN_32pt__white_logo_@2x.png */,
+				6305BA321D0821CE00A003E1 /* ApplePayBTN_32pt__white_logo_@3x.png */,
+				6305BA331D0821CE00A003E1 /* ApplePayBTN_32pt__white_textLogo_@2x.png */,
+				6305BA341D0821CE00A003E1 /* ApplePayBTN_32pt__white_textLogo_@3x.png */,
+				6305BA351D0821CE00A003E1 /* ApplePayBTN_32pt__whiteLine_logo_@2x.png */,
+				6305BA361D0821CE00A003E1 /* ApplePayBTN_32pt__whiteLine_logo_@3x.png */,
+				6305BA371D0821CE00A003E1 /* ApplePayBTN_32pt__whiteLine_textLogo_@2x.png */,
+				6305BA381D0821CE00A003E1 /* ApplePayBTN_32pt__whiteLine_textLogo_@3x.png */,
+				6305BA391D0821CE00A003E1 /* Authorization.png */,
+				6305BA3A1D0821CE00A003E1 /* BlankGreyScreen.png */,
+				6305BA3B1D0821CE00A003E1 /* BuyNow_btn.png */,
+				6305BA3C1D0821CE00A003E1 /* CheckoutImg.png */,
+				6305BA3D1D0821CE00A003E1 /* Home.png */,
+				6305BA3E1D0821CE00A003E1 /* OptimalImg.png */,
+				6305BA3F1D0821CE00A003E1 /* payNow_img.png */,
+				6305BA401D0821CE00A003E1 /* Phone.png */,
+				6305BA411D0821CE00A003E1 /* shoe.png */,
 			);
-			name = Frameworks;
+			path = Resources;
 			sourceTree = "<group>";
 		};
-		6305B9BC1D0800B200A003E1 /* SDK */ = {
+		6305BA571D08223A00A003E1 /* MenuScreen */ = {
 			isa = PBXGroup;
 			children = (
-				635B48FA1D7EDCAB00F53F17 /* iOS_SDK.framework */,
-				635B48FC1D7EDCB500F53F17 /* PaySafeMockPaymentSummaryViewController.xib */,
-				6305B9BD1D0800B200A003E1 /* Authorization */,
-			);
-			path = SDK;
-			sourceTree = "<group>";
-		};
-		6305B9BD1D0800B200A003E1 /* Authorization */ = {
-			isa = PBXGroup;
-			children = (
-				6305B9BE1D0800B200A003E1 /* OPTAuthorizationProcess.h */,
-				6305B9BF1D0800B200A003E1 /* OPTAuthorizationProcess.m */,
-			);
-			path = Authorization;
-			sourceTree = "<group>";
-		};
-		6305B9C31D08011500A003E1 /* MenuScreen */ = {
-			isa = PBXGroup;
-			children = (
-				6305B9C41D08011500A003E1 /* MenuScreen.h */,
-				6305B9C51D08011500A003E1 /* MenuScreen.m */,
+				6305BA581D08223A00A003E1 /* MenuScreen.h */,
+				6305BA591D08223A00A003E1 /* MenuScreen.m */,
 			);
 			path = MenuScreen;
 			sourceTree = "<group>";
 		};
-		6305B9CD1D08031900A003E1 /* Resources */ = {
+		6305BA5B1D08224200A003E1 /* SDK */ = {
 			isa = PBXGroup;
 			children = (
-				6305B9F41D08041E00A003E1 /* ApplePayBTN_32pt__black_logo_@2x.png */,
-				6305B9F51D08041E00A003E1 /* ApplePayBTN_32pt__black_logo_@3x.png */,
-				6305B9F61D08041E00A003E1 /* ApplePayBTN_32pt__black_textLogo_@2x.png */,
-				6305B9F71D08041E00A003E1 /* ApplePayBTN_32pt__black_textLogo_@3x.png */,
-				6305B9F81D08041E00A003E1 /* ApplePayBTN_32pt__white_logo_@2x.png */,
-				6305B9F91D08041E00A003E1 /* ApplePayBTN_32pt__white_logo_@3x.png */,
-				6305B9FA1D08041E00A003E1 /* ApplePayBTN_32pt__white_textLogo_@2x.png */,
-				6305B9FB1D08041E00A003E1 /* ApplePayBTN_32pt__white_textLogo_@3x.png */,
-				6305B9FC1D08041E00A003E1 /* ApplePayBTN_32pt__whiteLine_logo_@2x.png */,
-				6305B9FD1D08041E00A003E1 /* ApplePayBTN_32pt__whiteLine_logo_@3x.png */,
-				6305B9FE1D08041E00A003E1 /* ApplePayBTN_32pt__whiteLine_textLogo_@2x.png */,
-				6305B9FF1D08041E00A003E1 /* ApplePayBTN_32pt__whiteLine_textLogo_@3x.png */,
-				6305BA001D08041E00A003E1 /* Authorization.png */,
-				6305BA011D08041E00A003E1 /* BlankGreyScreen.png */,
-				6305BA021D08041E00A003E1 /* BuyNow_btn.png */,
-				6305BA031D08041E00A003E1 /* CheckoutImg.png */,
-				6305BA041D08041E00A003E1 /* Home.png */,
-				6305BA051D08041E00A003E1 /* OptimalImg.png */,
-				6305BA061D08041E00A003E1 /* payNow_img.png */,
-				6305BA071D08041E00A003E1 /* Phone.png */,
-				6305BA081D08041E00A003E1 /* shoe.png */,
+				635B49401D7FE4C000F53F17 /* PaySafeMockPaymentSummaryViewController.xib */,
+				6305BA5C1D08224200A003E1 /* Authorization */,
+				6305BA5F1D08224200A003E1 /* iOS_SDK.framework */,
 			);
-			path = Resources;
+			path = SDK;
+			sourceTree = "<group>";
+		};
+		6305BA5C1D08224200A003E1 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				6305BA5D1D08224200A003E1 /* OPTAuthorizationProcess.h */,
+				6305BA5E1D08224200A003E1 /* OPTAuthorizationProcess.m */,
+			);
+			path = Authorization;
 			sourceTree = "<group>";
 		};
 		6313E84A1CF2D611002C8A1F /* ApplePay */ = {
@@ -365,175 +265,6 @@
 			path = NonApplePay;
 			sourceTree = "<group>";
 		};
-		6313E8521CF2EB7F002C8A1F /* APICall */ = {
-			isa = PBXGroup;
-			children = (
-				6313E8531CF2EB7F002C8A1F /* OPayPaymentAddressOperationsProcess.h */,
-				6313E8541CF2EB7F002C8A1F /* OPayPaymentAddressOperationsProcess.m */,
-			);
-			path = APICall;
-			sourceTree = "<group>";
-		};
-		6313E8641CF2F140002C8A1F /* APICall */ = {
-			isa = PBXGroup;
-			children = (
-				6313E8651CF2F140002C8A1F /* OPayPaymentProfilesOperationsProcess.h */,
-				6313E8661CF2F140002C8A1F /* OPayPaymentProfilesOperationsProcess.m */,
-			);
-			path = APICall;
-			sourceTree = "<group>";
-		};
-		6313E8681CF2F3A4002C8A1F /* APICall */ = {
-			isa = PBXGroup;
-			children = (
-				6313E8691CF2F3A4002C8A1F /* OPayPaymentAccountOperationsProcess.h */,
-				6313E86A1CF2F3A4002C8A1F /* OPayPaymentAccountOperationsProcess.m */,
-			);
-			path = APICall;
-			sourceTree = "<group>";
-		};
-		6313E86C1CF2F5A2002C8A1F /* APICall */ = {
-			isa = PBXGroup;
-			children = (
-				6313E86D1CF2F5A2002C8A1F /* OPayPaymentPurchaseOperationsProcess.h */,
-				6313E86E1CF2F5A2002C8A1F /* OPayPaymentPurchaseOperationsProcess.m */,
-			);
-			name = APICall;
-			path = ../APICall;
-			sourceTree = "<group>";
-		};
-		63FFA9B61CD3393D006ED849 /* DirectDebit */ = {
-			isa = PBXGroup;
-			children = (
-				63FFA9C91CD3393D006ED849 /* DirectDebitViewController.h */,
-				63FFA9CA1CD3393D006ED849 /* DirectDebitViewController.m */,
-				63FFA9CB1CD3393D006ED849 /* Purchase */,
-			);
-			path = DirectDebit;
-			sourceTree = "<group>";
-		};
-		63FFA9CB1CD3393D006ED849 /* Purchase */ = {
-			isa = PBXGroup;
-			children = (
-				63FFA9D71CD3393D006ED849 /* PurchaseViewController.h */,
-				63FFA9D81CD3393D006ED849 /* PurchaseViewController.m */,
-				63FFA9D51CD3393D006ED849 /* PurchaseOperationsViewController.h */,
-				63FFA9D61CD3393D006ED849 /* PurchaseOperationsViewController.m */,
-				63FFA9CC1CD3393D006ED849 /* Operations */,
-				6313E86C1CF2F5A2002C8A1F /* APICall */,
-			);
-			path = Purchase;
-			sourceTree = "<group>";
-		};
-		63FFA9CC1CD3393D006ED849 /* Operations */ = {
-			isa = PBXGroup;
-			children = (
-				63FFA9D31CD3393D006ED849 /* SubmitPurchaseViewController.h */,
-				63FFA9D41CD3393D006ED849 /* SubmitPurchaseViewController.m */,
-				63FFA9CD1CD3393D006ED849 /* CancelPurchaseViewController.h */,
-				63FFA9CE1CD3393D006ED849 /* CancelPurchaseViewController.m */,
-				63FFA9CF1CD3393D006ED849 /* LookUpPurchaseIDViewController.h */,
-				63FFA9D01CD3393D006ED849 /* LookUpPurchaseIDViewController.m */,
-				63FFA9D11CD3393D006ED849 /* LookUpPurchaseMerchantRefViewController.h */,
-				63FFA9D21CD3393D006ED849 /* LookUpPurchaseMerchantRefViewController.m */,
-			);
-			path = Operations;
-			sourceTree = "<group>";
-		};
-		63FFA9E81CD33946006ED849 /* CustomerVault */ = {
-			isa = PBXGroup;
-			children = (
-				63FFA9F71CD33946006ED849 /* CustomerVaultViewController.h */,
-				63FFA9F81CD33946006ED849 /* CustomerVaultViewController.m */,
-				63FFA9F91CD33946006ED849 /* Profiles */,
-				63FFA9EB1CD33946006ED849 /* Addresses */,
-				63FFA9E91CD33946006ED849 /* Account */,
-			);
-			path = CustomerVault;
-			sourceTree = "<group>";
-		};
-		63FFA9E91CD33946006ED849 /* Account */ = {
-			isa = PBXGroup;
-			children = (
-				63FFAA131CD359A1006ED849 /* AccountsViewController.h */,
-				63FFAA141CD359A1006ED849 /* AccountsViewController.m */,
-				63FFAA101CD35973006ED849 /* AccountOperationsViewController.h */,
-				63FFAA111CD35973006ED849 /* AccountOperationsViewController.m */,
-				63FFA9EA1CD33946006ED849 /* Operations */,
-				6313E8681CF2F3A4002C8A1F /* APICall */,
-			);
-			path = Account;
-			sourceTree = "<group>";
-		};
-		63FFA9EA1CD33946006ED849 /* Operations */ = {
-			isa = PBXGroup;
-			children = (
-				63FFAA161CD359CD006ED849 /* ACHCreateUpdateViewController.h */,
-				63FFAA171CD359CD006ED849 /* ACHCreateUpdateViewController.m */,
-				63FFAA181CD359CD006ED849 /* BACSCreateUpdateViewController.h */,
-				63FFAA191CD359CD006ED849 /* BACSCreateUpdateViewController.m */,
-				63FFAA1C1CD359CD006ED849 /* EFTCreateUpdateViewController.h */,
-				63FFAA1D1CD359CD006ED849 /* EFTCreateUpdateViewController.m */,
-				63FFAA201CD359CD006ED849 /* SEPACreateUpdateViewController.h */,
-				63FFAA211CD359CD006ED849 /* SEPACreateUpdateViewController.m */,
-				63FFAA1E1CD359CD006ED849 /* LookUpAccountViewController.h */,
-				63FFAA1F1CD359CD006ED849 /* LookUpAccountViewController.m */,
-				63FFAA1A1CD359CD006ED849 /* DeleteAccountViewController.h */,
-				63FFAA1B1CD359CD006ED849 /* DeleteAccountViewController.m */,
-			);
-			path = Operations;
-			sourceTree = "<group>";
-		};
-		63FFA9EB1CD33946006ED849 /* Addresses */ = {
-			isa = PBXGroup;
-			children = (
-				63FFA9EC1CD33946006ED849 /* AddressesOperationsViewController.h */,
-				63FFA9ED1CD33946006ED849 /* AddressesOperationsViewController.m */,
-				63FFA9EE1CD33946006ED849 /* Operations */,
-				6313E8521CF2EB7F002C8A1F /* APICall */,
-			);
-			path = Addresses;
-			sourceTree = "<group>";
-		};
-		63FFA9EE1CD33946006ED849 /* Operations */ = {
-			isa = PBXGroup;
-			children = (
-				63FFA9EF1CD33946006ED849 /* AddressCreateUpdateViewController.h */,
-				63FFA9F01CD33946006ED849 /* AddressCreateUpdateViewController.m */,
-				63FFA9F51CD33946006ED849 /* AddressLookUpViewController.h */,
-				63FFA9F61CD33946006ED849 /* AddressLookUpViewController.m */,
-				63FFA9F31CD33946006ED849 /* AddressDeleteViewController.h */,
-				63FFA9F41CD33946006ED849 /* AddressDeleteViewController.m */,
-			);
-			path = Operations;
-			sourceTree = "<group>";
-		};
-		63FFA9F91CD33946006ED849 /* Profiles */ = {
-			isa = PBXGroup;
-			children = (
-				63FFAA031CD33946006ED849 /* ProfilesOperationsViewController.h */,
-				63FFAA041CD33946006ED849 /* ProfilesOperationsViewController.m */,
-				63FFA9FA1CD33946006ED849 /* Operations */,
-				6313E8641CF2F140002C8A1F /* APICall */,
-			);
-			path = Profiles;
-			sourceTree = "<group>";
-		};
-		63FFA9FA1CD33946006ED849 /* Operations */ = {
-			isa = PBXGroup;
-			children = (
-				63FFA9FB1CD33946006ED849 /* ProfileCreateUpdateViewController.h */,
-				63FFA9FC1CD33946006ED849 /* ProfileCreateUpdateViewController.m */,
-				63FFA9FD1CD33946006ED849 /* ProfileDeleteViewController.h */,
-				63FFA9FE1CD33946006ED849 /* ProfileDeleteViewController.m */,
-				63FFA9FF1CD33946006ED849 /* ProfileLookUpViewController.h */,
-				63FFAA001CD33946006ED849 /* ProfileLookUpViewController.m */,
-				63FFAA011CD33946006ED849 /* ProfileLookUpWithSubComponentsViewController.h */,
-				63FFAA021CD33946006ED849 /* ProfileLookUpWithSubComponentsViewController.m */,
-			);
-			path = Operations;
-			sourceTree = "<group>";
-		};
 		75E0AB111CCCCB010071BAC4 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -542,8 +273,6 @@
 				75E0AB121CCCCB1D0071BAC4 /* Constant.h */,
 				75E0AB151CCCCB3A0071BAC4 /* Utils.h */,
 				75E0AB161CCCCB3A0071BAC4 /* Utils.m */,
-				63DD771B1D068E6E00591AAD /* LOCALDef.h */,
-				63DD771C1D068E6E00591AAD /* LOCALDef.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -592,22 +321,13 @@
 		5342430C1AE8AB09003DCD29 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = opus;
 				TargetAttributes = {
 					534243131AE8AB09003DCD29 = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = JQ29TUS2B9;
+						DevelopmentTeam = QY7YNV42K5;
 						SystemCapabilities = {
-							com.apple.ApplePay = {
-								enabled = 1;
-							};
-							com.apple.GameCenter = {
-								enabled = 0;
-							};
-							com.apple.InAppPurchase = {
-								enabled = 0;
-							};
 							com.apple.OMC = {
 								enabled = 1;
 							};
@@ -643,32 +363,32 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6305BA561D0821CE00A003E1 /* shoe.png in Resources */,
 				74DA6A7D1CFACF71001B3BE2 /* Main.storyboard in Resources */,
-				6305BA0D1D08041E00A003E1 /* ApplePayBTN_32pt__white_logo_@2x.png in Resources */,
-				6305BA1D1D08041E00A003E1 /* shoe.png in Resources */,
+				6305BA421D0821CE00A003E1 /* ApplePayBTN_32pt__black_logo_@2x.png in Resources */,
+				6305BA431D0821CE00A003E1 /* ApplePayBTN_32pt__black_logo_@3x.png in Resources */,
+				6305BA4B1D0821CE00A003E1 /* ApplePayBTN_32pt__whiteLine_logo_@3x.png in Resources */,
+				6305BA521D0821CE00A003E1 /* Home.png in Resources */,
+				6305BA511D0821CE00A003E1 /* CheckoutImg.png in Resources */,
+				6305BA461D0821CE00A003E1 /* ApplePayBTN_32pt__white_logo_@2x.png in Resources */,
+				6305BA491D0821CE00A003E1 /* ApplePayBTN_32pt__white_textLogo_@3x.png in Resources */,
+				6305BA451D0821CE00A003E1 /* ApplePayBTN_32pt__black_textLogo_@3x.png in Resources */,
 				534243281AE8AB09003DCD29 /* LaunchScreen.xib in Resources */,
-				6305BA111D08041E00A003E1 /* ApplePayBTN_32pt__whiteLine_logo_@2x.png in Resources */,
-				6305BA121D08041E00A003E1 /* ApplePayBTN_32pt__whiteLine_logo_@3x.png in Resources */,
-				635B48FD1D7EDCB500F53F17 /* PaySafeMockPaymentSummaryViewController.xib in Resources */,
-				6305B9CA1D08019F00A003E1 /* MerchantRealConfiguration.plist in Resources */,
-				6305BA0E1D08041E00A003E1 /* ApplePayBTN_32pt__white_logo_@3x.png in Resources */,
-				6305BA0C1D08041E00A003E1 /* ApplePayBTN_32pt__black_textLogo_@3x.png in Resources */,
-				6305BA0F1D08041E00A003E1 /* ApplePayBTN_32pt__white_textLogo_@2x.png in Resources */,
-				6305BA0B1D08041E00A003E1 /* ApplePayBTN_32pt__black_textLogo_@2x.png in Resources */,
-				6305BA1C1D08041E00A003E1 /* Phone.png in Resources */,
-				6305BA151D08041E00A003E1 /* Authorization.png in Resources */,
-				6305BA1A1D08041E00A003E1 /* OptimalImg.png in Resources */,
-				6305BA101D08041E00A003E1 /* ApplePayBTN_32pt__white_textLogo_@3x.png in Resources */,
-				6305BA181D08041E00A003E1 /* CheckoutImg.png in Resources */,
-				6305BA0A1D08041E00A003E1 /* ApplePayBTN_32pt__black_logo_@3x.png in Resources */,
-				6305BA191D08041E00A003E1 /* Home.png in Resources */,
-				6305BA091D08041E00A003E1 /* ApplePayBTN_32pt__black_logo_@2x.png in Resources */,
-				6305BA1B1D08041E00A003E1 /* payNow_img.png in Resources */,
+				6305BA501D0821CE00A003E1 /* BuyNow_btn.png in Resources */,
+				6305BA541D0821CE00A003E1 /* payNow_img.png in Resources */,
+				6305BA631D08224B00A003E1 /* MerchantRealConfiguration.plist in Resources */,
+				6305BA441D0821CE00A003E1 /* ApplePayBTN_32pt__black_textLogo_@2x.png in Resources */,
 				534243251AE8AB09003DCD29 /* Images.xcassets in Resources */,
-				6305BA161D08041E00A003E1 /* BlankGreyScreen.png in Resources */,
-				6305BA171D08041E00A003E1 /* BuyNow_btn.png in Resources */,
-				6305BA131D08041E00A003E1 /* ApplePayBTN_32pt__whiteLine_textLogo_@2x.png in Resources */,
-				6305BA141D08041E00A003E1 /* ApplePayBTN_32pt__whiteLine_textLogo_@3x.png in Resources */,
+				6305BA481D0821CE00A003E1 /* ApplePayBTN_32pt__white_textLogo_@2x.png in Resources */,
+				6305BA531D0821CE00A003E1 /* OptimalImg.png in Resources */,
+				6305BA4C1D0821CE00A003E1 /* ApplePayBTN_32pt__whiteLine_textLogo_@2x.png in Resources */,
+				6305BA4F1D0821CE00A003E1 /* BlankGreyScreen.png in Resources */,
+				6305BA551D0821CE00A003E1 /* Phone.png in Resources */,
+				635B49411D7FE4C000F53F17 /* PaySafeMockPaymentSummaryViewController.xib in Resources */,
+				6305BA4A1D0821CE00A003E1 /* ApplePayBTN_32pt__whiteLine_logo_@2x.png in Resources */,
+				6305BA4E1D0821CE00A003E1 /* Authorization.png in Resources */,
+				6305BA471D0821CE00A003E1 /* ApplePayBTN_32pt__white_logo_@3x.png in Resources */,
+				6305BA4D1D0821CE00A003E1 /* ApplePayBTN_32pt__whiteLine_textLogo_@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -686,44 +406,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63FFAA231CD359CD006ED849 /* BACSCreateUpdateViewController.m in Sources */,
-				63FFAA151CD359A1006ED849 /* AccountsViewController.m in Sources */,
-				6313E86F1CF2F5A2002C8A1F /* OPayPaymentPurchaseOperationsProcess.m in Sources */,
-				63FFA9E31CD3393D006ED849 /* LookUpPurchaseIDViewController.m in Sources */,
-				63FFA9E61CD3393E006ED849 /* PurchaseOperationsViewController.m in Sources */,
+				6305BA5A1D08223A00A003E1 /* MenuScreen.m in Sources */,
 				5342431D1AE8AB09003DCD29 /* AppDelegate.m in Sources */,
-				63FFAA061CD33946006ED849 /* AddressCreateUpdateViewController.m in Sources */,
 				75E0AB171CCCCB3A0071BAC4 /* Utils.m in Sources */,
-				63FFA9E71CD3393E006ED849 /* PurchaseViewController.m in Sources */,
-				63FFAA0D1CD33946006ED849 /* ProfileLookUpViewController.m in Sources */,
-				63FFA9E11CD3393D006ED849 /* DirectDebitViewController.m in Sources */,
-				63FFAA271CD359CD006ED849 /* SEPACreateUpdateViewController.m in Sources */,
-				63FFAA261CD359CD006ED849 /* LookUpAccountViewController.m in Sources */,
-				63FFA9E41CD3393D006ED849 /* LookUpPurchaseMerchantRefViewController.m in Sources */,
 				5342431A1AE8AB09003DCD29 /* main.m in Sources */,
-				63FFAA091CD33946006ED849 /* AddressLookUpViewController.m in Sources */,
-				63FFAA0A1CD33946006ED849 /* CustomerVaultViewController.m in Sources */,
-				63FFAA221CD359CD006ED849 /* ACHCreateUpdateViewController.m in Sources */,
-				6305B9C11D0800B200A003E1 /* OPTAuthorizationProcess.m in Sources */,
+				6305BA601D08224200A003E1 /* OPTAuthorizationProcess.m in Sources */,
 				6313E8501CF2D611002C8A1F /* HomeViewController.m in Sources */,
-				6313E8551CF2EB7F002C8A1F /* OPayPaymentAddressOperationsProcess.m in Sources */,
-				63DD771D1D068E6E00591AAD /* LOCALDef.m in Sources */,
-				63FFA9E51CD3393D006ED849 /* SubmitPurchaseViewController.m in Sources */,
-				63FFAA121CD35973006ED849 /* AccountOperationsViewController.m in Sources */,
-				63FFA9E21CD3393D006ED849 /* CancelPurchaseViewController.m in Sources */,
-				6305B9C61D08011500A003E1 /* MenuScreen.m in Sources */,
-				6313E86B1CF2F3A4002C8A1F /* OPayPaymentAccountOperationsProcess.m in Sources */,
-				63FFAA081CD33946006ED849 /* AddressDeleteViewController.m in Sources */,
-				63FFAA051CD33946006ED849 /* AddressesOperationsViewController.m in Sources */,
 				6313E8511CF2D611002C8A1F /* CreditCardViewController.m in Sources */,
-				63FFAA0F1CD33946006ED849 /* ProfilesOperationsViewController.m in Sources */,
-				63FFAA241CD359CD006ED849 /* DeleteAccountViewController.m in Sources */,
 				74FEAD5F1CD0037200F11131 /* NSData+Base64.m in Sources */,
-				63FFAA0E1CD33946006ED849 /* ProfileLookUpWithSubComponentsViewController.m in Sources */,
-				63FFAA0B1CD33946006ED849 /* ProfileCreateUpdateViewController.m in Sources */,
-				63FFAA0C1CD33946006ED849 /* ProfileDeleteViewController.m in Sources */,
-				63FFAA251CD359CD006ED849 /* EFTCreateUpdateViewController.m in Sources */,
-				6313E8671CF2F140002C8A1F /* OPayPaymentProfilesOperationsProcess.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -778,10 +468,8 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Shamez Budhwani (ZD3YXN3UT3)";
@@ -790,7 +478,6 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -803,7 +490,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -823,10 +510,8 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Shamez Budhwani (ZD3YXN3UT3)";
@@ -835,14 +520,13 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -857,14 +541,13 @@
 				CODE_SIGN_ENTITLEMENTS = "TestMerchAppExample_Obj-C/TestMerchAppExample_Obj-C.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer: Shamez Budhwani (ZD3YXN3UT3)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Shamez Budhwani (ZD3YXN3UT3)";
-				DEVELOPMENT_TEAM = JQ29TUS2B9;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TestMerchAppExample_Obj-C",
 					"$(PROJECT_DIR)/TestMerchAppExample_Obj-C/SDK",
 				);
 				INFOPLIST_FILE = "TestMerchAppExample_Obj-C/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-weak_framework",
@@ -872,8 +555,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.paysafe.test.objc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = PaysafeObjc_Dev_ProvisioningProfile;
+				PROVISIONING_PROFILE = "937682ee-c5ae-48e3-af12-788b751b1019";
 			};
 			name = Debug;
 		};
@@ -884,15 +566,14 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = "TestMerchAppExample_Obj-C/TestMerchAppExample_Obj-C.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer: Shamez Budhwani (ZD3YXN3UT3)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Shamez Budhwani (ZD3YXN3UT3)";
-				DEVELOPMENT_TEAM = JQ29TUS2B9;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TestMerchAppExample_Obj-C",
 					"$(PROJECT_DIR)/TestMerchAppExample_Obj-C/SDK",
 				);
 				INFOPLIST_FILE = "TestMerchAppExample_Obj-C/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-weak_framework",
@@ -900,8 +581,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.paysafe.test.objc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = PaysafeObjc_Dev_ProvisioningProfile;
+				PROVISIONING_PROFILE = "937682ee-c5ae-48e3-af12-788b751b1019";
 			};
 			name = Release;
 		};

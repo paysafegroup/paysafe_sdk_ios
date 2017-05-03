@@ -15,9 +15,11 @@
 {
     id request = [NSMutableDictionary dictionary];
     
+    
     NSMutableDictionary *dict = [NSJSONSerialization JSONObjectWithData:tokenData options:NSJSONReadingMutableContainers error:nil];
     
     [request setObject:dict forKey:@"applePayPaymentToken"];
+    
     
     NSError *jsonSerializationError = nil;
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:request options:NSUTF8StringEncoding error:&jsonSerializationError];

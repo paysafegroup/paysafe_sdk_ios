@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 
-class SWCreditCardViewController : UIViewController , UITextFieldDelegate,OPAYPaymentAuthorizationProcessDelegate
+class SWCreditCardViewController :UIViewController ,UITextFieldDelegate,PaySafePaymentAuthorizationProcessDelegate
 {
     @IBOutlet var  scrollView :UIScrollView!
     @IBOutlet var  txtCardNo:UITextField!
@@ -31,14 +31,13 @@ class SWCreditCardViewController : UIViewController , UITextFieldDelegate,OPAYPa
     
     var  amount:NSString!
     
-    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
         self.title = "Non Apple Pay"
-        
         scrollView.contentSize = CGSize(width:320, height:1200)
         self.txtCardNo!.delegate = self
         self.txtExpMonth!.delegate = self
@@ -55,32 +54,32 @@ class SWCreditCardViewController : UIViewController , UITextFieldDelegate,OPAYPa
     func createDataDictionary() -> Dictionary <String , AnyObject>
     {
         var cardExpData = Dictionary<String, AnyObject>()
-        cardExpData["month"] = txtExpMonth.text as AnyObject?
-        cardExpData["year"] = txtExpYear.text as AnyObject?
+        cardExpData["month"] = txtExpMonth.text
+        cardExpData["year"] = txtExpYear.text
         
         
         var cardBillingAddress = Dictionary<String, AnyObject>()
-         cardBillingAddress["street"] = txtStreet1.text as AnyObject?
-         cardBillingAddress["street2"] = txtStreet2.text as AnyObject?
-         cardBillingAddress["city"] = txtCity.text as AnyObject?
-         cardBillingAddress["country"] = txtCountry.text as AnyObject?
-         cardBillingAddress["state"] = txtState.text as AnyObject?
-         cardBillingAddress["zip"] = txtZip.text as AnyObject?
+         cardBillingAddress["street"] = txtStreet1.text
+         cardBillingAddress["street2"] = txtStreet2.text
+         cardBillingAddress["city"] = txtCity.text
+         cardBillingAddress["country"] = txtCountry.text
+         cardBillingAddress["state"] = txtState.text
+         cardBillingAddress["zip"] = txtZip.text
         
         
         var cardData = Dictionary<String, AnyObject>()
-        cardData["cardNum"] = txtCardNo.text as AnyObject?
-        cardData["holderName"] = txtNameOnCard.text as AnyObject?
-        cardData["cardExpiry"]=cardExpData as AnyObject?
-        cardData["billingAddress"]=cardBillingAddress as AnyObject?
+        cardData["cardNum"] = txtCardNo.text
+        cardData["holderName"] = txtNameOnCard.text
+        cardData["cardExpiry"]=cardExpData
+        cardData["billingAddress"]=cardBillingAddress
         
          var cardDataDetails = Dictionary<String, AnyObject>()
-         cardDataDetails["card"] = cardData as AnyObject?
+         cardDataDetails["card"] = cardData
         
          return cardDataDetails
     }
     
-    @IBAction func confirmBtnSelected(_ sender:UIButton)
+    @IBAction func confirmBtnSelected(sender:UIButton)
     {
         let envType:String = "TEST_ENV";  //PROD_ENV TEST_ENV
         
@@ -90,7 +89,8 @@ class SWCreditCardViewController : UIViewController , UITextFieldDelegate,OPAYPa
         
         appDelegate.PaysafeAuthController?.authDelegate=self
         
-        if (appDelegate.PaysafeAuthController?.responds(to: #selector(PaySafePaymentAuthorizationProcess.beginNonApplePayment(_:withRequestData:withEnvSettingDict:))) != nil)
+        
+        if (appDelegate.PaysafeAuthController?.respondsToSelector(Selector("beginNonApplePayment:withRequestData:withEnvSettingDict:")) != nil)
         {
             appDelegate.PaysafeAuthController?.beginNonApplePayment(self, withRequestData: createDataDictionary(), withEnvSettingDict: enviDictionary)
         }
@@ -100,27 +100,25 @@ class SWCreditCardViewController : UIViewController , UITextFieldDelegate,OPAYPa
         super.didReceiveMemoryWarning()
     }
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
         self.view.endEditing(true);
         return false
     }
     
     // Delegate methods
-    /* -------------Delegate method called when webservice call completion from OPAYPaymentAuthorizationProcess------------*/
-func callBackResponse(fromOPTSDK response: [AnyHashable: Any]!){
-    
+    func callBackResponseFromPaysafeSDK(response: [NSObject : AnyObject]!)
+    {
         if (response != nil){
-            //if let nameObject: AnyObject = response["error"] as! NSDictionary as AnyObject? {
-            if let nameObject = response["error"] as? NSDictionary {
+            if let nameObject: AnyObject = response["error"] {
                 var errorCode: String = String()
                 var errorMsg: String = String()
-                if let errCode: AnyObject = nameObject["code"] as! NSString as AnyObject? {
+                if let errCode: AnyObject = nameObject["code"]{
                     if let nameString = errCode as? String {
                         errorCode = nameString
                     }
                 }
             
-                if let errCode: AnyObject = nameObject["message"] as! String as AnyObject? {
+                if let errCode: AnyObject = nameObject["message"]{
                     if let nameString = errCode as? String {
                         errorMsg = nameString
                     }
@@ -129,7 +127,7 @@ func callBackResponse(fromOPTSDK response: [AnyHashable: Any]!){
             }
             else{
                 
-                let tokenData: AnyObject = response["paymentToken"]! as AnyObject
+                let tokenData: AnyObject = response["paymentToken"]!
                 self .showAlertView("Success", errorMessage: "Your payment token is ::\(tokenData)")
             }
         }else{
@@ -141,7 +139,7 @@ func callBackResponse(fromOPTSDK response: [AnyHashable: Any]!){
     {
         
     }
-    func showAlertView(_ errorCode:String, errorMessage:String){
+    func showAlertView(errorCode:String, errorMessage:String){
         let alert = UIAlertView(title: errorCode, message: errorMessage, delegate: self, cancelButtonTitle: "OK")
         alert .show()
         

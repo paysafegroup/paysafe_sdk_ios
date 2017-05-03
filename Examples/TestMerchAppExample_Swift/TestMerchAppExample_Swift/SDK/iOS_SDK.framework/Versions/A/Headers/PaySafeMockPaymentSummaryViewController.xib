@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment version="2048" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OPAYMockPaymentSummaryViewController">
@@ -26,7 +21,7 @@
             <subviews>
                 <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="HWL-sz-1EN">
                     <rect key="frame" x="178" y="633" width="20" height="20"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <animations/>
                 </activityIndicatorView>
                 <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NkH-cS-cq6">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -34,54 +29,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="8" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="7xh-V2-Cso">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="8" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="7xh-V2-Cso">
                                 <rect key="frame" x="0.0" y="46" width="367" height="518"/>
-                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="518" id="35V-ii-KC2"/>
-                                </constraints>
+                                <animations/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="dataSource" destination="-1" id="yHS-Xa-uTm"/>
                                     <outlet property="delegate" destination="-1" id="Dey-iQ-ERm"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wmz-1a-UJw">
-                                <rect key="frame" x="319" y="8" width="48" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wmz-1a-UJw">
+                                <rect key="frame" x="316" y="8" width="51" height="30"/>
+                                <animations/>
                                 <state key="normal" title="Cancel">
-                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="cancel:" destination="-1" eventType="touchUpInside" id="g7c-bQ-Qpk"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3W7-r3-MuN">
+                            <button opaque="NO" contentMode="center" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3W7-r3-MuN">
                                 <rect key="frame" x="0.0" y="578" width="375" height="48"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="uH4-7h-pNc"/>
                                 </constraints>
                                 <state key="normal" title="Pay">
-                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="makePayment:" destination="-1" eventType="touchUpInside" id="KSE-ol-b6u"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <constraints>
-                            <constraint firstItem="7xh-V2-Cso" firstAttribute="trailing" secondItem="Wmz-1a-UJw" secondAttribute="trailing" id="0U5-jH-9BV"/>
-                            <constraint firstItem="3W7-r3-MuN" firstAttribute="leading" secondItem="7xh-V2-Cso" secondAttribute="leading" id="AqQ-bw-mmf"/>
-                            <constraint firstAttribute="bottom" secondItem="3W7-r3-MuN" secondAttribute="bottom" constant="41" id="B2V-sT-lFJ"/>
-                            <constraint firstItem="3W7-r3-MuN" firstAttribute="leading" secondItem="Q5v-gg-PyO" secondAttribute="leading" id="POm-Vy-4Yx"/>
-                            <constraint firstAttribute="trailing" secondItem="3W7-r3-MuN" secondAttribute="trailing" id="TDz-I4-cy7"/>
-                            <constraint firstItem="3W7-r3-MuN" firstAttribute="top" secondItem="7xh-V2-Cso" secondAttribute="bottom" constant="14" id="VQV-6o-Vy5"/>
-                            <constraint firstItem="7xh-V2-Cso" firstAttribute="trailing" secondItem="Q5v-gg-PyO" secondAttribute="trailingMargin" id="qEy-tk-kZC"/>
-                            <constraint firstItem="7xh-V2-Cso" firstAttribute="top" secondItem="Wmz-1a-UJw" secondAttribute="bottom" constant="8" symbolic="YES" id="xMM-0x-d8F"/>
-                        </constraints>
+                        <animations/>
                     </view>
+                    <animations/>
                     <blurEffect style="extraLight"/>
                 </visualEffectView>
             </subviews>
-            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="NkH-cS-cq6" secondAttribute="trailing" id="YSc-WJ-Lz0"/>
                 <constraint firstAttribute="bottom" secondItem="NkH-cS-cq6" secondAttribute="bottom" id="gav-lY-CZV"/>
@@ -91,6 +79,7 @@
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <point key="canvasLocation" x="350.5" y="303.5"/>
         </view>
     </objects>

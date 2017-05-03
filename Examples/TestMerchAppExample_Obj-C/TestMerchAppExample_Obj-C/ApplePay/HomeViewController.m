@@ -9,8 +9,6 @@
 #import "MenuScreen.h"
 #import "CreditCardViewController.h"
 
-#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
-
 @interface HomeViewController ()
 
 {
@@ -27,7 +25,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title=@"Apple Pay";
-    // Do any additional setup after loading the view.    
+    // Do any additional setup after loading the view.
+    
     [self getDataFromPlist];
     
     if (!([self.PaysafeAuthController isApplePaySupport])) {
@@ -45,8 +44,8 @@
 {
     NSString *path = [[NSBundle mainBundle] pathForResource:@"MerchantRealConfiguration" ofType:@"plist"];
     NSMutableDictionary *myDictionary = [[NSMutableDictionary alloc] initWithContentsOfFile:path];
-    NSString *merchantUserID = [myDictionary objectForKey:@"OptiMerchantID-Client"];
-    NSString *merchantPassword =[myDictionary objectForKey:@"OptiMerchantPassword-Client"];
+    NSString *merchantUserID = [myDictionary objectForKey:@"MerchantID"];
+    NSString *merchantPassword =[myDictionary objectForKey:@"MerchantPassword"];
     NSString *merchantCountryCode = [myDictionary objectForKey:@"countryCode"];
     NSString *merchantCurrencyCode = [myDictionary objectForKey:@"CurrencyCode"];
     NSString *appleMerchantIdentifier = [myDictionary objectForKey:@"merchantIdentifier"];
@@ -60,7 +59,7 @@
 
 -(IBAction)homePayBtnSelected:(id)sender{
     
-    if([amountTxt.text isEqualToString:@""] || [amountTxt.text isEqualToString:nil]) {
+    if([amountTxt.text isEqualToString:@""] || [amountTxt.text isEqualToString:nil]){
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Alert" message:@"Amount should not be empty/zero." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [alert show];
         return;
@@ -68,19 +67,8 @@
     
 #if TARGET_IPHONE_SIMULATOR
     
-    if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"9.0")) {
-        // code here
-        self.PaysafeAuthController.authDelegate = self;
-        [self.PaysafeAuthController beginPayment:self withRequestData:[self createDataDictionary] withCartData:[self cartData]];
-    }
-    else {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Alert"
-                                                        message:@"Device does not support Apple Pay!"
-                                                       delegate:nil
-                                              cancelButtonTitle:@"OK"
-                                              otherButtonTitles:nil];
-        [alert show];
-    }
+    self.PaysafeAuthController.authDelegate = self;
+    [self.PaysafeAuthController beginPayment:self withRequestData:[self createDataDictionary] withCartData:[self cartData]];
     
     
 #else
@@ -92,7 +80,7 @@
                                               cancelButtonTitle:@"OK"
                                               otherButtonTitles:nil];
         [alert show];
-        //[self callNonApplePayFlow];
+        [self callNonApplePayFlow];
 
     } else
     {
@@ -112,10 +100,10 @@
 /* --------------- Creating data dictionaries -------------- */
 
 
--(NSMutableDictionary *)createDataDictionary {
+-(NSMutableDictionary *)createDataDictionary{
     // Merchant shipping methods
     NSString *shippingMethodName = @"Llma California Shipping";
-    NSString *shippingMethodAmount = @"0.01";
+    NSString *shippingMethodAmount = @"1.00";
     NSString *shippingMethodDescription = @"3-5 Business Days";
     
     NSDictionary *shippingMethod = [NSDictionary dictionaryWithObjectsAndKeys:shippingMethodName,@"shippingName",shippingMethodAmount,@"shippingAmount", shippingMethodDescription,@"shippingDes", nil];
@@ -137,7 +125,7 @@
     NSString *cartTitle = @"TShirt";
     NSString *cartCost = amountTxt.text;
     NSString *cartDiscount = @"3";
-    NSString *cartShippingCost =@"0.001";
+    NSString *cartShippingCost =@"2";
     NSString *payTo =@"Llama Services, Inc.";
     
     NSDictionary *cartDictonary = [NSDictionary dictionaryWithObjectsAndKeys:cartID,@"CartID",cartTitle,@"CartTitle",cartCost,@"CartCost",cartDiscount, @"CartDiscount", cartShippingCost,@"CartShippingCost" , payTo, @"PayTo", nil];
@@ -148,7 +136,7 @@
 /* ----- OPTPaymentAuthorizationViewControllerDelegate ---- */
 #pragma mark OPTPaymentAuthorizationViewControllerDelegate
  
--(void)callBackResponseFromOPTSDK:(NSDictionary*)response
+-(void)callBackResponseFromPaysafeSDK:(NSDictionary*)response
 {
     if(response)
     {
@@ -277,7 +265,7 @@
 {
     CreditCardViewController *creditCardViewController=[[CreditCardViewController alloc]init];
     creditCardViewController.amount=amountTxt.text;
-    creditCardViewController.PaysafeAuthPaymentController=self.PaysafeAuthController;
+    creditCardViewController.PaysafeAuthPaymentController = self.PaysafeAuthController;
    
     UIStoryboard *storyboard = self.storyboard;
     creditCardViewController = [storyboard instantiateViewControllerWithIdentifier:@"CreditCardViewController"];
@@ -286,7 +274,7 @@
 
 -(void)getTokenUseingCard:(NSDictionary *)response
 {
-    [self callBackResponseFromOPTSDK:response];
+    [self callBackResponseFromPaysafeSDK:response];
 }
 
 /*

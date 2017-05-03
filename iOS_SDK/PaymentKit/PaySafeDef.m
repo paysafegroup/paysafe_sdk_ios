@@ -16,7 +16,6 @@
 @implementation PaySafeDef
 
 NSString * const url_for_single_user_token_Test = @"https://api.test.paysafe.com";  //Test env url
-//https://api.test.paysafe
 NSString * const url_for_single_user_token_Prod = @"https://api.paysafe.com";       //Prod env url 
 
 

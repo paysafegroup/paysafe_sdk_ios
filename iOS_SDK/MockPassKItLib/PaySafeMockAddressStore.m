@@ -9,12 +9,12 @@
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= 80000
 
 #import "PaySafeMockAddressStore.h"
-#define SYSTEM_VERSION_LESS_THAN(v) ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
 
 @interface PaySafeMockAddressStore()
 @property (nonatomic) NSArray *allItems;
 
 @end
+
 
 @implementation PaySafeMockAddressStore
 @synthesize selectedItem;
@@ -63,59 +63,64 @@
     return @[item[@"name"], item[@"line1"]];
 }
 
-- (CNContact *)contactForSelectedItemObscure:(BOOL)obscure {
-    
+- (ABRecordRef)contactForSelectedItemObscure:(BOOL)obscure {
     id item = self.selectedItem;
-    CNMutableContact *mutableContact = [[CNMutableContact alloc]init];
+    ABRecordRef record = ABPersonCreate();
     
     // address
-    CNMutablePostalAddress *postalAddress = [[CNMutablePostalAddress alloc] init];
+    ABMutableMultiValueRef address = ABMultiValueCreateMutable(kABDictionaryPropertyType);
+    CFStringRef keys[5];
+    CFStringRef values[5];
+    CFIndex numValues = 0;
     
     if (!obscure) {
-        postalAddress.street = (__bridge NSString * _Nonnull)(CFBridgingRetain(item[@"line1"]));
+        keys[numValues] = kABPersonAddressStreetKey;
+        values[numValues++] = CFBridgingRetain(item[@"line1"]);
     }
-    postalAddress.city = (__bridge NSString * _Nonnull)(CFBridgingRetain(item[@"city"]));
-    postalAddress.state = (__bridge NSString * _Nonnull)(CFBridgingRetain(item[@"state"]));
-    postalAddress.postalCode = (__bridge NSString * _Nonnull)(CFBridgingRetain(item[@"zip"]));
-    postalAddress.country = (__bridge NSString * _Nonnull)(CFBridgingRetain(item[@"country"]));
+    keys[numValues] = kABPersonAddressCityKey;
+    values[numValues++] = CFBridgingRetain(item[@"city"]);
+    keys[numValues] = kABPersonAddressStateKey;
+    values[numValues++] = CFBridgingRetain(item[@"state"]);
+    keys[numValues] = kABPersonAddressZIPKey;
+    values[numValues++] = CFBridgingRetain(item[@"zip"]);
+    keys[numValues] = kABPersonAddressCountryKey;
+    values[numValues++] = CFBridgingRetain(item[@"country"]);
     
-    CNLabeledValue *address = [CNLabeledValue labeledValueWithLabel:CNLabelWork value:postalAddress];
-    mutableContact.postalAddresses = @[address];
+    CFDictionaryRef aDict = CFDictionaryCreate(
+                                               kCFAllocatorDefault, (const void **)keys, (const void **)values, numValues, &kCFCopyStringDictionaryKeyCallBacks, &kCFTypeDictionaryValueCallBacks);
+    
+    ABMultiValueIdentifier identifier;
+    ABMultiValueAddValueAndLabel(address, aDict, kABHomeLabel, &identifier);
+    CFRelease(aDict);
+    ABRecordSetValue(record, kABPersonAddressProperty, address, nil);
+    CFRelease(address);
     
     // add zip and country fields
     if (!obscure) {
-        
         NSString *firstName = [self.selectedItem[@"name"] componentsSeparatedByString:@" "].firstObject;
         NSString *lastName = [self.selectedItem[@"name"] componentsSeparatedByString:@" "].lastObject;
         
-        mutableContact.givenName = firstName;
-        mutableContact.familyName = lastName;
-        
         // phone
-        NSMutableArray *phoneNumbers = [[NSMutableArray alloc]init];
-        NSString *phNumber = self.selectedItem[@"phone"];
-        CNLabeledValue *contactNumber;
+        ABMutableMultiValueRef phone = ABMultiValueCreateMutable(kABMultiStringPropertyType);
+        ABRecordSetValue(record, kABPersonFirstNameProperty, (__bridge CFTypeRef)(firstName), nil);
+        ABRecordSetValue(record, kABPersonLastNameProperty, (__bridge CFTypeRef)(lastName), nil);
+        ABMultiValueAddValueAndLabel(phone, (__bridge CFTypeRef)(self.selectedItem[@"phone"]), kABPersonPhoneMainLabel, nil);
+        ABRecordSetValue(record, kABPersonPhoneProperty, phone, nil);
+        CFRelease(phone);
         
-        contactNumber = [[CNLabeledValue alloc]initWithLabel:CNLabelPhoneNumberMain value:[CNPhoneNumber phoneNumberWithStringValue:phNumber]]; phNumber = nil;
-        [phoneNumbers addObject:contactNumber];
-        contactNumber = nil;
-        mutableContact.phoneNumbers =  phoneNumbers;
-    
-        //email
-        NSMutableArray *emailAddresses = [[NSMutableArray alloc]initWithCapacity:0];
-        NSString *email = self.selectedItem[@"email"];
-        if (email) {
-            CNLabeledValue *emailAddress = [[CNLabeledValue alloc]initWithLabel:CNLabelHome value:email]; email = nil;
-            [emailAddresses addObject:emailAddress]; emailAddress = nil;
-            mutableContact.emailAddresses = emailAddresses;
-        }
+        // email
+        ABMutableMultiValueRef email = ABMultiValueCreateMutable(kABMultiStringPropertyType);
+        ABRecordSetValue(record, kABPersonFirstNameProperty, (__bridge CFTypeRef)(firstName), nil);
         
+        ABRecordSetValue(record, kABPersonLastNameProperty, (__bridge CFTypeRef)(lastName), nil);
+        ABMultiValueAddValueAndLabel(email, (__bridge CFTypeRef)(self.selectedItem[@"email"]), kABPersonPhoneMainLabel, nil);
+        ABRecordSetValue(record, kABPersonEmailProperty, email, nil);
+        
+        CFRelease(email);
     }
-    
-    return mutableContact;
-    
-} 
- 
+    return CFAutorelease(record);
+}
+
 @end
 
 #endif

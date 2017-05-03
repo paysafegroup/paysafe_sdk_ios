@@ -66,7 +66,7 @@
         
     projectsUrl = [NSURL  URLWithString:urlString];
     
-    NSString *userIDPassword= [NSString stringWithFormat:@"%@:%@", [myDictionary objectForKey:@"OptiMerchantID-Client"], [myDictionary objectForKey:@"OptiMerchantPassword-Client"]];
+    NSString *userIDPassword= [NSString stringWithFormat:@"%@:%@", [myDictionary objectForKey:@"MerchantID"], [myDictionary objectForKey:@"MerchantPassword"]];
     NSData *plainData = [userIDPassword dataUsingEncoding:NSUTF8StringEncoding];
     NSString *base64String = [plainData base64EncodedStringWithOptions:0];
     
