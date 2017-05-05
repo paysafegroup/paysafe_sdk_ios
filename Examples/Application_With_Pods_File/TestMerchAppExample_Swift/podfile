@@ -1,5 +1,0 @@
-target "TestMerchAppExample_Swift" do
-    
-    pod 'Paysafe', '~> 1.2.0'
-    
-end
