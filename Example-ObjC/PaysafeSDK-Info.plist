@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>OptiMerchantPassword-Client</key>
+	<string></string>
+	<key>OptiMerchantID-Client</key>
+	<string></string>
+	<key>countryCode</key>
+	<string>US</string>
+	<key>CurrencyCode</key>
+	<string>USD</string>
+	<key>merchantAccount</key>
+	<string></string>
+	<key>merchantIdentifier</key>
+	<string>merchant.com.paysafe.documentation</string>
+</dict>
+</plist>

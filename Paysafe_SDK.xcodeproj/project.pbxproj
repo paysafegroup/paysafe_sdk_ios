@@ -1,0 +1,1194 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B1DEDDC22E1EACB00CEB1A0 /* WebServiceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1DEDDB22E1EACB00CEB1A0 /* WebServiceHandler.swift */; };
+		2B1DEDE322E721FE00CEB1A0 /* ThreeDSecureFinalizeRequestParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1DEDE222E721FE00CEB1A0 /* ThreeDSecureFinalizeRequestParameters.swift */; };
+		2B2C3D7222D7418500580F50 /* Paysafe_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BCCA98322D4DF9B00C7772A /* Paysafe_SDK.framework */; };
+		2B2C3D7322D7418500580F50 /* Paysafe_SDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2BCCA98322D4DF9B00C7772A /* Paysafe_SDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2B2C3D9222D744C900580F50 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2C3D9122D744C900580F50 /* AppDelegate.m */; };
+		2B2C3D9822D744C900580F50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B2C3D9622D744C900580F50 /* Main.storyboard */; };
+		2B2C3D9A22D744CA00580F50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B2C3D9922D744CA00580F50 /* Assets.xcassets */; };
+		2B2C3D9D22D744CA00580F50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B2C3D9B22D744CA00580F50 /* LaunchScreen.storyboard */; };
+		2B2C3DA022D744CA00580F50 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2C3D9F22D744CA00580F50 /* main.m */; };
+		2B2C3DA522D744DD00580F50 /* Paysafe_SDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2BCCA98322D4DF9B00C7772A /* Paysafe_SDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2B2C3DC522D74CD700580F50 /* PaysafeSDK-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B2C3DC422D74CD700580F50 /* PaysafeSDK-Info.plist */; };
+		2B33A1B522DE0E7C00BB900F /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B33A1B422DE0E7C00BB900F /* Environment.swift */; };
+		2B33A1BB22DF5ACE00BB900F /* MerchantConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B33A1BA22DF5ACE00BB900F /* MerchantConfiguration.swift */; };
+		2B33A1BD22DF5BBF00BB900F /* PaysafeSDK+Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B33A1BC22DF5BBF00BB900F /* PaysafeSDK+Configuration.swift */; };
+		2B5A7F8D22FDAE3400665E6E /* ThreeDSecureServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5A7F8C22FDAE3400665E6E /* ThreeDSecureServiceTests.swift */; };
+		2B73D5692355CB3B000EC320 /* CustomerVaultServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B73D5682355CB3B000EC320 /* CustomerVaultServiceTests.swift */; };
+		2B73D56B2355E98E000EC320 /* WebServiceHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B73D56A2355E98D000EC320 /* WebServiceHandlerTests.swift */; };
+		2B858F2C230463EF00AFA53C /* CardinalSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B858F2B230463EF00AFA53C /* CardinalSessionProtocol.swift */; };
+		2B858F2E2304640B00AFA53C /* ThreeDSecureWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B858F2D2304640B00AFA53C /* ThreeDSecureWebService.swift */; };
+		2B9296E622F45451007C8851 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9296E522F45451007C8851 /* Errors.swift */; };
+		2BA3016D22F994CB002BC174 /* WebServiceHandlerErrorMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3016C22F994CB002BC174 /* WebServiceHandlerErrorMapper.swift */; };
+		2BA3017722F9CE0E002BC174 /* Paysafe_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BCCA98322D4DF9B00C7772A /* Paysafe_SDK.framework */; };
+		2BCCA98822D4DF9B00C7772A /* Paysafe_SDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BCCA98622D4DF9B00C7772A /* Paysafe_SDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BD6F25C22D5F24200B38687 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD6F25B22D5F24200B38687 /* AppDelegate.swift */; };
+		2BD6F25E22D5F24200B38687 /* AddCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD6F25D22D5F24200B38687 /* AddCardViewController.swift */; };
+		2BD6F26122D5F24200B38687 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BD6F25F22D5F24200B38687 /* Main.storyboard */; };
+		2BD6F26322D5F24300B38687 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BD6F26222D5F24300B38687 /* Assets.xcassets */; };
+		2BD6F26622D5F24300B38687 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BD6F26422D5F24300B38687 /* LaunchScreen.storyboard */; };
+		2BEC24C222E0AFD7008794E4 /* SDKInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC24C122E0AFD7008794E4 /* SDKInfo.swift */; };
+		2BEC24C822E0B0E7008794E4 /* ThreeDSecureJWTRequestParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC24C722E0B0E6008794E4 /* ThreeDSecureJWTRequestParameters.swift */; };
+		2BEC24CA22E0B13A008794E4 /* ThreeDSecureJWTResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC24C922E0B13A008794E4 /* ThreeDSecureJWTResponse.swift */; };
+		2BEC412722E0BC740087FD48 /* ThreeDSecureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC412622E0BC740087FD48 /* ThreeDSecureViewController.swift */; };
+		2BEC412A22E0BEA00087FD48 /* MerchantSampleBackend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC412922E0BEA00087FD48 /* MerchantSampleBackend.swift */; };
+		640E545F2408099F00693011 /* CardinalMobile.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 647575DA2379BEB700DC788C /* CardinalMobile.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		640E5461240809AE00693011 /* CardinalMobile.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 647575DA2379BEB700DC788C /* CardinalMobile.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		64173AAD2306FE8600642D95 /* ApplePayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64173AAC2306FE8600642D95 /* ApplePayViewController.swift */; };
+		64173AB22308408500642D95 /* PaysafeSDK_ApplePay-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 64173AB12308408500642D95 /* PaysafeSDK_ApplePay-Info.plist */; };
+		64173AB3230848EA00642D95 /* PSApplePayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64173AAF2307087700642D95 /* PSApplePayViewController.m */; };
+		64297AB7237AE39000EDEED2 /* Paysafe_SDK.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 2BCCA98322D4DF9B00C7772A /* Paysafe_SDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		64297AB8237AE3FE00EDEED2 /* CardinalMobile.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 647575DA2379BEB700DC788C /* CardinalMobile.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		647575DB2379BEB700DC788C /* CardinalMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647575DA2379BEB700DC788C /* CardinalMobile.framework */; };
+		647575DD2379CA0000DC788C /* CardinalMobile.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 647575DA2379BEB700DC788C /* CardinalMobile.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6480993122F4351E00E9C9D6 /* UIViewController+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6480993022F4351E00E9C9D6 /* UIViewController+Utils.m */; };
+		6480993322F48EA500E9C9D6 /* paysafe_sdk_test_index.html in Resources */ = {isa = PBXBuildFile; fileRef = 6480993222F48EA500E9C9D6 /* paysafe_sdk_test_index.html */; };
+		6480994922F8680400E9C9D6 /* UIResponder+FirstResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6480994822F8680400E9C9D6 /* UIResponder+FirstResponder.m */; };
+		64AE64F02354822000C63243 /* ApplePayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AE64EF2354822000C63243 /* ApplePayTests.swift */; };
+		64AE64F22355C38500C63243 /* ApplePayHelperProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AE64F12355C38500C63243 /* ApplePayHelperProtocols.swift */; };
+		64AE64F4235865B700C63243 /* WebViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AE64F3235865B700C63243 /* WebViewControllerTests.swift */; };
+		64B1A0A22379B6A2009BC690 /* Paysafe_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BCCA98322D4DF9B00C7772A /* Paysafe_SDK.framework */; };
+		64B3908023324F7E007ED4B0 /* paysafe_sdk_versioning-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 64B3907F23324F7E007ED4B0 /* paysafe_sdk_versioning-Info.plist */; };
+		64CA5AB022DE14CB00CE4222 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CA5AAF22DE14CB00CE4222 /* WebViewController.swift */; };
+		64CA5AB322DF463900CE4222 /* paysafe_sdk_index.html in Resources */ = {isa = PBXBuildFile; fileRef = 64CA5AB122DF311100CE4222 /* paysafe_sdk_index.html */; };
+		64CA5AB722E1ACFE00CE4222 /* UIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CA5AB622E1ACFE00CE4222 /* UIConfiguration.swift */; };
+		64CA5ABB22E20B8D00CE4222 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CA5ABA22E20B8D00CE4222 /* Utils.swift */; };
+		64DD2FCC22DBB7E5007F9B42 /* WebServiceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DD2FCB22DBB7E5007F9B42 /* WebServiceHandler.swift */; };
+		64DD2FCF22DBB803007F9B42 /* ThreeDSecureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DD2FCD22DBB803007F9B42 /* ThreeDSecureService.swift */; };
+		64DD2FDC22DCBA1F007F9B42 /* ChallengePayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DD2FDB22DCBA1F007F9B42 /* ChallengePayload.swift */; };
+		64E0013722F30960004C1D2A /* MerchantSampleBackend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC412922E0BEA00087FD48 /* MerchantSampleBackend.swift */; };
+		64E0013822F30963004C1D2A /* WebServiceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1DEDDB22E1EACB00CEB1A0 /* WebServiceHandler.swift */; };
+		64E0014022F31398004C1D2A /* PSThreeDSecureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E0013F22F31398004C1D2A /* PSThreeDSecureViewController.m */; };
+		64E0014322F317CA004C1D2A /* PSAddCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E0013D22F30B46004C1D2A /* PSAddCardViewController.m */; };
+		64EFD6F222FAB2D000BB1C9A /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EFD6F122FAB2D000BB1C9A /* Logger.swift */; };
+		64EFD7052302AFDF00BB1C9A /* ApplePayService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EFD7042302AFDF00BB1C9A /* ApplePayService.swift */; };
+		64EFD7082302B05600BB1C9A /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64EFD7072302B05600BB1C9A /* PassKit.framework */; };
+		64EFD70A2302BC7800BB1C9A /* ApplePayServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EFD7092302BC7800BB1C9A /* ApplePayServiceProtocol.swift */; };
+		64EFD70C2303EDEB00BB1C9A /* Merchandise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EFD70B2303EDEB00BB1C9A /* Merchandise.swift */; };
+		64F2B7AA230E9BC6004B4C79 /* BillingAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F2B7A8230E9BC6004B4C79 /* BillingAddress.swift */; };
+		64F2B7AB230E9BC6004B4C79 /* CustomerVaultService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F2B7A9230E9BC6004B4C79 /* CustomerVaultService.swift */; };
+		64F2B7B0230E9BFE004B4C79 /* TokenizedCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F2B7AD230E9BFE004B4C79 /* TokenizedCard.swift */; };
+		64F2B7B1230E9BFE004B4C79 /* SingleUseToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F2B7AE230E9BFE004B4C79 /* SingleUseToken.swift */; };
+		64F2B7B2230E9BFE004B4C79 /* ApplePaySingleUseToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F2B7AF230E9BFE004B4C79 /* ApplePaySingleUseToken.swift */; };
+		64F2B7B6230E9C22004B4C79 /* ApplePayToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F2B7B4230E9C22004B4C79 /* ApplePayToken.swift */; };
+		64F2B7B7230E9C22004B4C79 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F2B7B5230E9C22004B4C79 /* Card.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B2C3D7422D7418500580F50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BCCA97A22D4DF9B00C7772A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BCCA98222D4DF9B00C7772A;
+			remoteInfo = Paysafe_SDK;
+		};
+		2B2C3DA622D744DD00580F50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BCCA97A22D4DF9B00C7772A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BCCA98222D4DF9B00C7772A;
+			remoteInfo = Paysafe_SDK;
+		};
+		2BA3017822F9CE0E002BC174 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BCCA97A22D4DF9B00C7772A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BCCA98222D4DF9B00C7772A;
+			remoteInfo = Paysafe_SDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2B2C3D7622D7418500580F50 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				640E545F2408099F00693011 /* CardinalMobile.framework in Embed Frameworks */,
+				2B2C3D7322D7418500580F50 /* Paysafe_SDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B2C3DA822D744DD00580F50 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				640E5461240809AE00693011 /* CardinalMobile.framework in Embed Frameworks */,
+				2B2C3DA522D744DD00580F50 /* Paysafe_SDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B858F2F2304654D00AFA53C /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				64297AB8237AE3FE00EDEED2 /* CardinalMobile.framework in Copy Frameworks */,
+				64297AB7237AE39000EDEED2 /* Paysafe_SDK.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		647575DC2379C9EA00DC788C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				647575DD2379CA0000DC788C /* CardinalMobile.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2B1DEDDB22E1EACB00CEB1A0 /* WebServiceHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceHandler.swift; sourceTree = "<group>"; };
+		2B1DEDE222E721FE00CEB1A0 /* ThreeDSecureFinalizeRequestParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeDSecureFinalizeRequestParameters.swift; sourceTree = "<group>"; };
+		2B2C3D8E22D744C900580F50 /* Example-ObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example-ObjC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B2C3D9022D744C900580F50 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2B2C3D9122D744C900580F50 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2B2C3D9722D744C900580F50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2B2C3D9922D744CA00580F50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B2C3D9C22D744CA00580F50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2B2C3D9E22D744CA00580F50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B2C3D9F22D744CA00580F50 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2B2C3DC422D74CD700580F50 /* PaysafeSDK-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PaysafeSDK-Info.plist"; sourceTree = "<group>"; };
+		2B33A1B422DE0E7C00BB900F /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		2B33A1BA22DF5ACE00BB900F /* MerchantConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchantConfiguration.swift; sourceTree = "<group>"; };
+		2B33A1BC22DF5BBF00BB900F /* PaysafeSDK+Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PaysafeSDK+Configuration.swift"; sourceTree = "<group>"; };
+		2B5A7F8C22FDAE3400665E6E /* ThreeDSecureServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDSecureServiceTests.swift; sourceTree = "<group>"; };
+		2B73D5682355CB3B000EC320 /* CustomerVaultServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerVaultServiceTests.swift; sourceTree = "<group>"; };
+		2B73D56A2355E98D000EC320 /* WebServiceHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceHandlerTests.swift; sourceTree = "<group>"; };
+		2B858F2B230463EF00AFA53C /* CardinalSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardinalSessionProtocol.swift; sourceTree = "<group>"; };
+		2B858F2D2304640B00AFA53C /* ThreeDSecureWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDSecureWebService.swift; sourceTree = "<group>"; };
+		2B9296E522F45451007C8851 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		2BA3016C22F994CB002BC174 /* WebServiceHandlerErrorMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceHandlerErrorMapper.swift; sourceTree = "<group>"; };
+		2BA3017222F9CE0D002BC174 /* Paysafe_SDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Paysafe_SDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BA3017622F9CE0E002BC174 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BCCA98322D4DF9B00C7772A /* Paysafe_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Paysafe_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BCCA98622D4DF9B00C7772A /* Paysafe_SDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Paysafe_SDK.h; sourceTree = "<group>"; };
+		2BCCA98722D4DF9B00C7772A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BD6F25922D5F24200B38687 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BD6F25B22D5F24200B38687 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2BD6F25D22D5F24200B38687 /* AddCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardViewController.swift; sourceTree = "<group>"; };
+		2BD6F26022D5F24200B38687 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2BD6F26222D5F24300B38687 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2BD6F26522D5F24300B38687 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2BD6F26722D5F24300B38687 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BEC24C122E0AFD7008794E4 /* SDKInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKInfo.swift; sourceTree = "<group>"; };
+		2BEC24C722E0B0E6008794E4 /* ThreeDSecureJWTRequestParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeDSecureJWTRequestParameters.swift; sourceTree = "<group>"; };
+		2BEC24C922E0B13A008794E4 /* ThreeDSecureJWTResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDSecureJWTResponse.swift; sourceTree = "<group>"; };
+		2BEC412622E0BC740087FD48 /* ThreeDSecureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDSecureViewController.swift; sourceTree = "<group>"; };
+		2BEC412922E0BEA00087FD48 /* MerchantSampleBackend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchantSampleBackend.swift; sourceTree = "<group>"; };
+		64173AAC2306FE8600642D95 /* ApplePayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePayViewController.swift; sourceTree = "<group>"; };
+		64173AAF2307087700642D95 /* PSApplePayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSApplePayViewController.m; sourceTree = "<group>"; };
+		64173AB12308408500642D95 /* PaysafeSDK_ApplePay-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PaysafeSDK_ApplePay-Info.plist"; sourceTree = "<group>"; };
+		64173AB423084D5100642D95 /* PSApplePayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSApplePayViewController.h; sourceTree = "<group>"; };
+		647575DA2379BEB700DC788C /* CardinalMobile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CardinalMobile.framework; path = Frameworks/CardinalMobile.framework; sourceTree = "<group>"; };
+		6480992F22F4350C00E9C9D6 /* UIViewController+Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Utils.h"; sourceTree = "<group>"; };
+		6480993022F4351E00E9C9D6 /* UIViewController+Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Utils.m"; sourceTree = "<group>"; };
+		6480993222F48EA500E9C9D6 /* paysafe_sdk_test_index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = paysafe_sdk_test_index.html; sourceTree = "<group>"; };
+		6480994722F867A500E9C9D6 /* UIResponder+FirstResponder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIResponder+FirstResponder.h"; sourceTree = "<group>"; };
+		6480994822F8680400E9C9D6 /* UIResponder+FirstResponder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+FirstResponder.m"; sourceTree = "<group>"; };
+		64AE64EF2354822000C63243 /* ApplePayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePayTests.swift; sourceTree = "<group>"; };
+		64AE64F12355C38500C63243 /* ApplePayHelperProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePayHelperProtocols.swift; sourceTree = "<group>"; };
+		64AE64F3235865B700C63243 /* WebViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewControllerTests.swift; sourceTree = "<group>"; };
+		64B3907F23324F7E007ED4B0 /* paysafe_sdk_versioning-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "paysafe_sdk_versioning-Info.plist"; sourceTree = SOURCE_ROOT; };
+		64CA5AAF22DE14CB00CE4222 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		64CA5AB122DF311100CE4222 /* paysafe_sdk_index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = paysafe_sdk_index.html; sourceTree = "<group>"; };
+		64CA5AB622E1ACFE00CE4222 /* UIConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIConfiguration.swift; sourceTree = "<group>"; };
+		64CA5ABA22E20B8D00CE4222 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		64DD2FCB22DBB7E5007F9B42 /* WebServiceHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceHandler.swift; sourceTree = "<group>"; };
+		64DD2FCD22DBB803007F9B42 /* ThreeDSecureService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeDSecureService.swift; sourceTree = "<group>"; };
+		64DD2FDB22DCBA1F007F9B42 /* ChallengePayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengePayload.swift; sourceTree = "<group>"; };
+		64E0013922F30AD1004C1D2A /* PSAddCardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSAddCardViewController.h; sourceTree = "<group>"; };
+		64E0013D22F30B46004C1D2A /* PSAddCardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSAddCardViewController.m; sourceTree = "<group>"; };
+		64E0013F22F31398004C1D2A /* PSThreeDSecureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSThreeDSecureViewController.m; sourceTree = "<group>"; };
+		64E0014122F313A7004C1D2A /* PSThreeDSecureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSThreeDSecureViewController.h; sourceTree = "<group>"; };
+		64EFD6F122FAB2D000BB1C9A /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		64EFD70222FDB7C900BB1C9A /* Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Example.entitlements; sourceTree = "<group>"; };
+		64EFD70322FDB8C600BB1C9A /* Example-ObjC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Example-ObjC.entitlements"; sourceTree = "<group>"; };
+		64EFD7042302AFDF00BB1C9A /* ApplePayService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePayService.swift; sourceTree = "<group>"; };
+		64EFD7072302B05600BB1C9A /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
+		64EFD7092302BC7800BB1C9A /* ApplePayServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePayServiceProtocol.swift; sourceTree = "<group>"; };
+		64EFD70B2303EDEB00BB1C9A /* Merchandise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Merchandise.swift; sourceTree = "<group>"; };
+		64F2B7A8230E9BC6004B4C79 /* BillingAddress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillingAddress.swift; sourceTree = "<group>"; };
+		64F2B7A9230E9BC6004B4C79 /* CustomerVaultService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerVaultService.swift; sourceTree = "<group>"; };
+		64F2B7AD230E9BFE004B4C79 /* TokenizedCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenizedCard.swift; sourceTree = "<group>"; };
+		64F2B7AE230E9BFE004B4C79 /* SingleUseToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleUseToken.swift; sourceTree = "<group>"; };
+		64F2B7AF230E9BFE004B4C79 /* ApplePaySingleUseToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplePaySingleUseToken.swift; sourceTree = "<group>"; };
+		64F2B7B4230E9C22004B4C79 /* ApplePayToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplePayToken.swift; sourceTree = "<group>"; };
+		64F2B7B5230E9C22004B4C79 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B2C3D8B22D744C900580F50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64B1A0A22379B6A2009BC690 /* Paysafe_SDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BA3016F22F9CE0D002BC174 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BA3017722F9CE0E002BC174 /* Paysafe_SDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BCCA98022D4DF9B00C7772A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64EFD7082302B05600BB1C9A /* PassKit.framework in Frameworks */,
+				647575DB2379BEB700DC788C /* CardinalMobile.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BD6F25622D5F24200B38687 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B2C3D7222D7418500580F50 /* Paysafe_SDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B2C3C8122D6242900580F50 /* threeDSecure */ = {
+			isa = PBXGroup;
+			children = (
+				2BEC24C422E0B0A0008794E4 /* Response */,
+				2BEC24C322E0B09A008794E4 /* Request */,
+				2B9296E522F45451007C8851 /* Errors.swift */,
+				64DD2FCD22DBB803007F9B42 /* ThreeDSecureService.swift */,
+				64EFD70B2303EDEB00BB1C9A /* Merchandise.swift */,
+				64DD2FCB22DBB7E5007F9B42 /* WebServiceHandler.swift */,
+				2BA3016C22F994CB002BC174 /* WebServiceHandlerErrorMapper.swift */,
+				64CA5AAF22DE14CB00CE4222 /* WebViewController.swift */,
+				64CA5AB122DF311100CE4222 /* paysafe_sdk_index.html */,
+				6480993222F48EA500E9C9D6 /* paysafe_sdk_test_index.html */,
+				2B858F2B230463EF00AFA53C /* CardinalSessionProtocol.swift */,
+				2B858F2D2304640B00AFA53C /* ThreeDSecureWebService.swift */,
+			);
+			path = threeDSecure;
+			sourceTree = "<group>";
+		};
+		2B2C3D8F22D744C900580F50 /* Example-ObjC */ = {
+			isa = PBXGroup;
+			children = (
+				64EFD70322FDB8C600BB1C9A /* Example-ObjC.entitlements */,
+				2B2C3D9022D744C900580F50 /* AppDelegate.h */,
+				2B2C3D9122D744C900580F50 /* AppDelegate.m */,
+				2B2C3D9622D744C900580F50 /* Main.storyboard */,
+				2B2C3D9922D744CA00580F50 /* Assets.xcassets */,
+				2B2C3D9B22D744CA00580F50 /* LaunchScreen.storyboard */,
+				2B2C3D9E22D744CA00580F50 /* Info.plist */,
+				2B2C3DC422D74CD700580F50 /* PaysafeSDK-Info.plist */,
+				64173AB12308408500642D95 /* PaysafeSDK_ApplePay-Info.plist */,
+				2B2C3D9F22D744CA00580F50 /* main.m */,
+				64E0014422F3196D004C1D2A /* Add card */,
+			);
+			path = "Example-ObjC";
+			sourceTree = "<group>";
+		};
+		2B33A1B322DE0E6E00BB900F /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				2B33A1BC22DF5BBF00BB900F /* PaysafeSDK+Configuration.swift */,
+				2B33A1B422DE0E7C00BB900F /* Environment.swift */,
+				2B33A1BA22DF5ACE00BB900F /* MerchantConfiguration.swift */,
+				64CA5AB622E1ACFE00CE4222 /* UIConfiguration.swift */,
+				2BEC24C122E0AFD7008794E4 /* SDKInfo.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		2BA3017322F9CE0E002BC174 /* Paysafe_SDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				2BA3017622F9CE0E002BC174 /* Info.plist */,
+				2B5A7F8C22FDAE3400665E6E /* ThreeDSecureServiceTests.swift */,
+				2B73D5682355CB3B000EC320 /* CustomerVaultServiceTests.swift */,
+				2B73D56A2355E98D000EC320 /* WebServiceHandlerTests.swift */,
+				64AE64F3235865B700C63243 /* WebViewControllerTests.swift */,
+				64AE64EF2354822000C63243 /* ApplePayTests.swift */,
+			);
+			path = Paysafe_SDKTests;
+			sourceTree = "<group>";
+		};
+		2BCCA97922D4DF9B00C7772A = {
+			isa = PBXGroup;
+			children = (
+				2BCCA98522D4DF9B00C7772A /* Paysafe_SDK */,
+				2BEC412822E0BE6F0087FD48 /* MerchantBackend */,
+				2BD6F25A22D5F24200B38687 /* Example */,
+				2B2C3D8F22D744C900580F50 /* Example-ObjC */,
+				2BA3017322F9CE0E002BC174 /* Paysafe_SDKTests */,
+				2BCCA98422D4DF9B00C7772A /* Products */,
+				64EFD7062302B05500BB1C9A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2BCCA98422D4DF9B00C7772A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2BCCA98322D4DF9B00C7772A /* Paysafe_SDK.framework */,
+				2BD6F25922D5F24200B38687 /* Example.app */,
+				2B2C3D8E22D744C900580F50 /* Example-ObjC.app */,
+				2BA3017222F9CE0D002BC174 /* Paysafe_SDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2BCCA98522D4DF9B00C7772A /* Paysafe_SDK */ = {
+			isa = PBXGroup;
+			children = (
+				64CA5ABA22E20B8D00CE4222 /* Utils.swift */,
+				64EFD6F122FAB2D000BB1C9A /* Logger.swift */,
+				64B3907F23324F7E007ED4B0 /* paysafe_sdk_versioning-Info.plist */,
+				64F2B7A3230E9B63004B4C79 /* CustomerVaultService */,
+				2B33A1B322DE0E6E00BB900F /* Configuration */,
+				64F2B7A0230E9706004B4C79 /* Apple Pay */,
+				2B2C3C8122D6242900580F50 /* threeDSecure */,
+				2BCCA98622D4DF9B00C7772A /* Paysafe_SDK.h */,
+				2BCCA98722D4DF9B00C7772A /* Info.plist */,
+			);
+			path = Paysafe_SDK;
+			sourceTree = "<group>";
+		};
+		2BD6F25A22D5F24200B38687 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				64EFD70222FDB7C900BB1C9A /* Example.entitlements */,
+				2BD6F25B22D5F24200B38687 /* AppDelegate.swift */,
+				2BD6F25D22D5F24200B38687 /* AddCardViewController.swift */,
+				2BEC412622E0BC740087FD48 /* ThreeDSecureViewController.swift */,
+				64173AAC2306FE8600642D95 /* ApplePayViewController.swift */,
+				2BD6F25F22D5F24200B38687 /* Main.storyboard */,
+				2BD6F26222D5F24300B38687 /* Assets.xcassets */,
+				2BD6F26422D5F24300B38687 /* LaunchScreen.storyboard */,
+				2BD6F26722D5F24300B38687 /* Info.plist */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		2BEC24C322E0B09A008794E4 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				2B1DEDE222E721FE00CEB1A0 /* ThreeDSecureFinalizeRequestParameters.swift */,
+				2BEC24C722E0B0E6008794E4 /* ThreeDSecureJWTRequestParameters.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		2BEC24C422E0B0A0008794E4 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				64DD2FDB22DCBA1F007F9B42 /* ChallengePayload.swift */,
+				2BEC24C922E0B13A008794E4 /* ThreeDSecureJWTResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		2BEC412822E0BE6F0087FD48 /* MerchantBackend */ = {
+			isa = PBXGroup;
+			children = (
+				2BEC412922E0BEA00087FD48 /* MerchantSampleBackend.swift */,
+				2B1DEDDB22E1EACB00CEB1A0 /* WebServiceHandler.swift */,
+			);
+			path = MerchantBackend;
+			sourceTree = "<group>";
+		};
+		64E0014422F3196D004C1D2A /* Add card */ = {
+			isa = PBXGroup;
+			children = (
+				64E0013922F30AD1004C1D2A /* PSAddCardViewController.h */,
+				64E0013D22F30B46004C1D2A /* PSAddCardViewController.m */,
+				64E0014122F313A7004C1D2A /* PSThreeDSecureViewController.h */,
+				64E0013F22F31398004C1D2A /* PSThreeDSecureViewController.m */,
+				64173AB423084D5100642D95 /* PSApplePayViewController.h */,
+				64173AAF2307087700642D95 /* PSApplePayViewController.m */,
+				6480992F22F4350C00E9C9D6 /* UIViewController+Utils.h */,
+				6480993022F4351E00E9C9D6 /* UIViewController+Utils.m */,
+				6480994722F867A500E9C9D6 /* UIResponder+FirstResponder.h */,
+				6480994822F8680400E9C9D6 /* UIResponder+FirstResponder.m */,
+			);
+			path = "Add card";
+			sourceTree = "<group>";
+		};
+		64EFD7062302B05500BB1C9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				647575DA2379BEB700DC788C /* CardinalMobile.framework */,
+				64EFD7072302B05600BB1C9A /* PassKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		64F2B7A0230E9706004B4C79 /* Apple Pay */ = {
+			isa = PBXGroup;
+			children = (
+				64EFD7092302BC7800BB1C9A /* ApplePayServiceProtocol.swift */,
+				64EFD7042302AFDF00BB1C9A /* ApplePayService.swift */,
+				64AE64F12355C38500C63243 /* ApplePayHelperProtocols.swift */,
+			);
+			path = "Apple Pay";
+			sourceTree = "<group>";
+		};
+		64F2B7A3230E9B63004B4C79 /* CustomerVaultService */ = {
+			isa = PBXGroup;
+			children = (
+				64F2B7B3230E9C0B004B4C79 /* Request */,
+				64F2B7AC230E9BE3004B4C79 /* Response */,
+				64F2B7A8230E9BC6004B4C79 /* BillingAddress.swift */,
+				64F2B7A9230E9BC6004B4C79 /* CustomerVaultService.swift */,
+			);
+			path = CustomerVaultService;
+			sourceTree = "<group>";
+		};
+		64F2B7AC230E9BE3004B4C79 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				64F2B7AF230E9BFE004B4C79 /* ApplePaySingleUseToken.swift */,
+				64F2B7AE230E9BFE004B4C79 /* SingleUseToken.swift */,
+				64F2B7AD230E9BFE004B4C79 /* TokenizedCard.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		64F2B7B3230E9C0B004B4C79 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				64F2B7B4230E9C22004B4C79 /* ApplePayToken.swift */,
+				64F2B7B5230E9C22004B4C79 /* Card.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2BCCA97E22D4DF9B00C7772A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BCCA98822D4DF9B00C7772A /* Paysafe_SDK.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2B2C3D8D22D744C900580F50 /* Example-ObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B2C3DA122D744CA00580F50 /* Build configuration list for PBXNativeTarget "Example-ObjC" */;
+			buildPhases = (
+				2B2C3D8A22D744C900580F50 /* Sources */,
+				2B2C3D8B22D744C900580F50 /* Frameworks */,
+				2B2C3D8C22D744C900580F50 /* Resources */,
+				2B2C3DA822D744DD00580F50 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B2C3DA722D744DD00580F50 /* PBXTargetDependency */,
+			);
+			name = "Example-ObjC";
+			productName = "Example-ObjC";
+			productReference = 2B2C3D8E22D744C900580F50 /* Example-ObjC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2BA3017122F9CE0D002BC174 /* Paysafe_SDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BA3017A22F9CE0E002BC174 /* Build configuration list for PBXNativeTarget "Paysafe_SDKTests" */;
+			buildPhases = (
+				2BA3016E22F9CE0D002BC174 /* Sources */,
+				2BA3016F22F9CE0D002BC174 /* Frameworks */,
+				2BA3017022F9CE0D002BC174 /* Resources */,
+				2B858F2F2304654D00AFA53C /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BA3017922F9CE0E002BC174 /* PBXTargetDependency */,
+			);
+			name = Paysafe_SDKTests;
+			productName = Paysafe_SDKTests;
+			productReference = 2BA3017222F9CE0D002BC174 /* Paysafe_SDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2BCCA98222D4DF9B00C7772A /* Paysafe_SDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BCCA98B22D4DF9B00C7772A /* Build configuration list for PBXNativeTarget "Paysafe_SDK" */;
+			buildPhases = (
+				2BCCA97E22D4DF9B00C7772A /* Headers */,
+				2BCCA97F22D4DF9B00C7772A /* Sources */,
+				2BCCA98022D4DF9B00C7772A /* Frameworks */,
+				2BCCA98122D4DF9B00C7772A /* Resources */,
+				647575DC2379C9EA00DC788C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Paysafe_SDK;
+			productName = Paysafe_SDK;
+			productReference = 2BCCA98322D4DF9B00C7772A /* Paysafe_SDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2BD6F25822D5F24200B38687 /* Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BD6F26A22D5F24300B38687 /* Build configuration list for PBXNativeTarget "Example" */;
+			buildPhases = (
+				2BD6F25522D5F24200B38687 /* Sources */,
+				2BD6F25622D5F24200B38687 /* Frameworks */,
+				2BD6F25722D5F24200B38687 /* Resources */,
+				2B2C3D7622D7418500580F50 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B2C3D7522D7418500580F50 /* PBXTargetDependency */,
+			);
+			name = Example;
+			productName = Example;
+			productReference = 2BD6F25922D5F24200B38687 /* Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2BCCA97A22D4DF9B00C7772A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Paysafe;
+				TargetAttributes = {
+					2B2C3D8D22D744C900580F50 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplePay = {
+								enabled = 1;
+							};
+						};
+					};
+					2BA3017122F9CE0D002BC174 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					2BCCA98222D4DF9B00C7772A = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					2BD6F25822D5F24200B38687 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+						SystemCapabilities = {
+							com.apple.ApplePay = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 2BCCA97D22D4DF9B00C7772A /* Build configuration list for PBXProject "Paysafe_SDK" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2BCCA97922D4DF9B00C7772A;
+			productRefGroup = 2BCCA98422D4DF9B00C7772A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2BCCA98222D4DF9B00C7772A /* Paysafe_SDK */,
+				2BD6F25822D5F24200B38687 /* Example */,
+				2B2C3D8D22D744C900580F50 /* Example-ObjC */,
+				2BA3017122F9CE0D002BC174 /* Paysafe_SDKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B2C3D8C22D744C900580F50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B2C3D9D22D744CA00580F50 /* LaunchScreen.storyboard in Resources */,
+				2B2C3D9A22D744CA00580F50 /* Assets.xcassets in Resources */,
+				2B2C3D9822D744C900580F50 /* Main.storyboard in Resources */,
+				64173AB22308408500642D95 /* PaysafeSDK_ApplePay-Info.plist in Resources */,
+				2B2C3DC522D74CD700580F50 /* PaysafeSDK-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BA3017022F9CE0D002BC174 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BCCA98122D4DF9B00C7772A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64B3908023324F7E007ED4B0 /* paysafe_sdk_versioning-Info.plist in Resources */,
+				6480993322F48EA500E9C9D6 /* paysafe_sdk_test_index.html in Resources */,
+				64CA5AB322DF463900CE4222 /* paysafe_sdk_index.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BD6F25722D5F24200B38687 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BD6F26622D5F24300B38687 /* LaunchScreen.storyboard in Resources */,
+				2BD6F26322D5F24300B38687 /* Assets.xcassets in Resources */,
+				2BD6F26122D5F24200B38687 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B2C3D8A22D744C900580F50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64E0014322F317CA004C1D2A /* PSAddCardViewController.m in Sources */,
+				64173AB3230848EA00642D95 /* PSApplePayViewController.m in Sources */,
+				6480993122F4351E00E9C9D6 /* UIViewController+Utils.m in Sources */,
+				64E0014022F31398004C1D2A /* PSThreeDSecureViewController.m in Sources */,
+				64E0013822F30963004C1D2A /* WebServiceHandler.swift in Sources */,
+				6480994922F8680400E9C9D6 /* UIResponder+FirstResponder.m in Sources */,
+				64E0013722F30960004C1D2A /* MerchantSampleBackend.swift in Sources */,
+				2B2C3DA022D744CA00580F50 /* main.m in Sources */,
+				2B2C3D9222D744C900580F50 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BA3016E22F9CE0D002BC174 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B73D5692355CB3B000EC320 /* CustomerVaultServiceTests.swift in Sources */,
+				2B73D56B2355E98E000EC320 /* WebServiceHandlerTests.swift in Sources */,
+				64AE64F4235865B700C63243 /* WebViewControllerTests.swift in Sources */,
+				2B5A7F8D22FDAE3400665E6E /* ThreeDSecureServiceTests.swift in Sources */,
+				64AE64F02354822000C63243 /* ApplePayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BCCA97F22D4DF9B00C7772A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B33A1BB22DF5ACE00BB900F /* MerchantConfiguration.swift in Sources */,
+				2BA3016D22F994CB002BC174 /* WebServiceHandlerErrorMapper.swift in Sources */,
+				64F2B7B6230E9C22004B4C79 /* ApplePayToken.swift in Sources */,
+				64EFD7052302AFDF00BB1C9A /* ApplePayService.swift in Sources */,
+				64AE64F22355C38500C63243 /* ApplePayHelperProtocols.swift in Sources */,
+				64F2B7B7230E9C22004B4C79 /* Card.swift in Sources */,
+				64F2B7B1230E9BFE004B4C79 /* SingleUseToken.swift in Sources */,
+				2B858F2C230463EF00AFA53C /* CardinalSessionProtocol.swift in Sources */,
+				64CA5ABB22E20B8D00CE4222 /* Utils.swift in Sources */,
+				64EFD6F222FAB2D000BB1C9A /* Logger.swift in Sources */,
+				64CA5AB022DE14CB00CE4222 /* WebViewController.swift in Sources */,
+				2B858F2E2304640B00AFA53C /* ThreeDSecureWebService.swift in Sources */,
+				64DD2FCF22DBB803007F9B42 /* ThreeDSecureService.swift in Sources */,
+				64DD2FDC22DCBA1F007F9B42 /* ChallengePayload.swift in Sources */,
+				2B33A1B522DE0E7C00BB900F /* Environment.swift in Sources */,
+				2B33A1BD22DF5BBF00BB900F /* PaysafeSDK+Configuration.swift in Sources */,
+				64DD2FCC22DBB7E5007F9B42 /* WebServiceHandler.swift in Sources */,
+				64CA5AB722E1ACFE00CE4222 /* UIConfiguration.swift in Sources */,
+				64F2B7AA230E9BC6004B4C79 /* BillingAddress.swift in Sources */,
+				2B9296E622F45451007C8851 /* Errors.swift in Sources */,
+				64F2B7B2230E9BFE004B4C79 /* ApplePaySingleUseToken.swift in Sources */,
+				2BEC24C222E0AFD7008794E4 /* SDKInfo.swift in Sources */,
+				64F2B7B0230E9BFE004B4C79 /* TokenizedCard.swift in Sources */,
+				64F2B7AB230E9BC6004B4C79 /* CustomerVaultService.swift in Sources */,
+				64EFD70A2302BC7800BB1C9A /* ApplePayServiceProtocol.swift in Sources */,
+				64EFD70C2303EDEB00BB1C9A /* Merchandise.swift in Sources */,
+				2BEC24C822E0B0E7008794E4 /* ThreeDSecureJWTRequestParameters.swift in Sources */,
+				2BEC24CA22E0B13A008794E4 /* ThreeDSecureJWTResponse.swift in Sources */,
+				2B1DEDE322E721FE00CEB1A0 /* ThreeDSecureFinalizeRequestParameters.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BD6F25522D5F24200B38687 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64173AAD2306FE8600642D95 /* ApplePayViewController.swift in Sources */,
+				2BD6F25E22D5F24200B38687 /* AddCardViewController.swift in Sources */,
+				2BD6F25C22D5F24200B38687 /* AppDelegate.swift in Sources */,
+				2B1DEDDC22E1EACB00CEB1A0 /* WebServiceHandler.swift in Sources */,
+				2BEC412A22E0BEA00087FD48 /* MerchantSampleBackend.swift in Sources */,
+				2BEC412722E0BC740087FD48 /* ThreeDSecureViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2B2C3D7522D7418500580F50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BCCA98222D4DF9B00C7772A /* Paysafe_SDK */;
+			targetProxy = 2B2C3D7422D7418500580F50 /* PBXContainerItemProxy */;
+		};
+		2B2C3DA722D744DD00580F50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BCCA98222D4DF9B00C7772A /* Paysafe_SDK */;
+			targetProxy = 2B2C3DA622D744DD00580F50 /* PBXContainerItemProxy */;
+		};
+		2BA3017922F9CE0E002BC174 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BCCA98222D4DF9B00C7772A /* Paysafe_SDK */;
+			targetProxy = 2BA3017822F9CE0E002BC174 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2B2C3D9622D744C900580F50 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B2C3D9722D744C900580F50 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2B2C3D9B22D744CA00580F50 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B2C3D9C22D744CA00580F50 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2BD6F25F22D5F24200B38687 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BD6F26022D5F24200B38687 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2BD6F26422D5F24300B38687 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BD6F26522D5F24300B38687 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2B2C3DA222D744CA00580F50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Example-ObjC/Example-ObjC.entitlements";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = "Example-ObjC/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paysafe.atlas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2B2C3DA322D744CA00580F50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Example-ObjC/Example-ObjC.entitlements";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = "Example-ObjC/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paysafe.atlas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2BA3017B22F9CE0E002BC174 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Frameworks";
+				INFOPLIST_FILE = Paysafe_SDKTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Paysafe.Paysafe-SDKTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2BA3017C22F9CE0E002BC174 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Frameworks";
+				INFOPLIST_FILE = Paysafe_SDKTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Paysafe.Paysafe-SDKTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2BCCA98922D4DF9B00C7772A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2BCCA98A22D4DF9B00C7772A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2BCCA98C22D4DF9B00C7772A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Paysafe_SDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = mh_dylib;
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Paysafe.Paysafe-SDK";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2BCCA98D22D4DF9B00C7772A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Paysafe_SDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = mh_dylib;
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Paysafe.Paysafe-SDK";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2BD6F26822D5F24300B38687 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Example/Example.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Frameworks";
+				INFOPLIST_FILE = Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paysafe.atlas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2BD6F26922D5F24300B38687 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Example/Example.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Frameworks";
+				INFOPLIST_FILE = Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paysafe.atlas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B2C3DA122D744CA00580F50 /* Build configuration list for PBXNativeTarget "Example-ObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B2C3DA222D744CA00580F50 /* Debug */,
+				2B2C3DA322D744CA00580F50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BA3017A22F9CE0E002BC174 /* Build configuration list for PBXNativeTarget "Paysafe_SDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BA3017B22F9CE0E002BC174 /* Debug */,
+				2BA3017C22F9CE0E002BC174 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BCCA97D22D4DF9B00C7772A /* Build configuration list for PBXProject "Paysafe_SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BCCA98922D4DF9B00C7772A /* Debug */,
+				2BCCA98A22D4DF9B00C7772A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BCCA98B22D4DF9B00C7772A /* Build configuration list for PBXNativeTarget "Paysafe_SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BCCA98C22D4DF9B00C7772A /* Debug */,
+				2BCCA98D22D4DF9B00C7772A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BD6F26A22D5F24300B38687 /* Build configuration list for PBXNativeTarget "Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BD6F26822D5F24300B38687 /* Debug */,
+				2BD6F26922D5F24300B38687 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2BCCA97A22D4DF9B00C7772A /* Project object */;
+}
