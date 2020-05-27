@@ -32,6 +32,6 @@ extension PKPaymentAuthorizationViewController: PKPaymentAuthorizationExtensionP
         }
 
         applePayController.delegate = delegate
-        UIApplication.shared.keyWindow?.rootViewController?.present(applePayController, animated: true, completion: nil)
+        UIApplication.shared.topmostController?.present(applePayController, animated: true, completion: nil)
     }
 }

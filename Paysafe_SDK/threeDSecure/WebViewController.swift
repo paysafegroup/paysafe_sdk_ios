@@ -111,7 +111,7 @@ class WebViewController: UIViewController {
 
     @objc func dismissController() {
         cancelCallback?()
-        UIApplication.shared.keyWindow?.rootViewController?.dismiss(animated: true, completion: nil)
+        UIApplication.shared.topmostController?.dismiss(animated: true, completion: nil)
     }
 
     private func getJavaScriptString() -> String? {

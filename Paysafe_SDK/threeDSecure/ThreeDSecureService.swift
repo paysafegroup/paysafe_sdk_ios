@@ -369,7 +369,7 @@ extension ThreeDSecureService {
             webNavigationController.modalPresentationStyle = .fullScreen
         }
 
-        UIApplication.shared.keyWindow?.rootViewController?.present(webNavigationController, animated: true, completion: nil)
+        UIApplication.shared.topmostController?.present(webNavigationController, animated: true, completion: nil)
     }
 
     private func dismissWebview() {

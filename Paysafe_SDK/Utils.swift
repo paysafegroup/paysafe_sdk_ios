@@ -72,3 +72,16 @@ extension UIColor {
         return String(format: "#%06x", rgb)
     }
 }
+
+extension UIApplication {
+    var topmostController: UIViewController? {
+        let keyWindow = windows.filter { $0.isKeyWindow }.first
+        guard var topmostController = keyWindow?.rootViewController else {
+            return nil
+        }
+        while let presentedViewController = topmostController.presentedViewController {
+            topmostController = presentedViewController
+        }
+        return topmostController
+    }
+}
