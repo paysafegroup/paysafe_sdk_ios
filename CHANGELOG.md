@@ -2,9 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
-## [2.1.0] - 2020-05-27
-### Added
-- Abiblity to present over top most controller in your navigation stack for 3DS 1
+## [2.1.0] 
+### Added - 2020-10-19
+- Ability to test apple pay with paysafe simulated apple pay token in the sample app
+### Added - 2020-05-27
+- Ability to present over top most controller in your navigation stack for 3DS 1
 
 ## [2.0.0] - 2020-05-21
 ### Added

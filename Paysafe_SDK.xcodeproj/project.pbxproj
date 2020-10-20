@@ -40,6 +40,8 @@
 		2BEC24CA22E0B13A008794E4 /* ThreeDSecureJWTResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC24C922E0B13A008794E4 /* ThreeDSecureJWTResponse.swift */; };
 		2BEC412722E0BC740087FD48 /* ThreeDSecureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC412622E0BC740087FD48 /* ThreeDSecureViewController.swift */; };
 		2BEC412A22E0BEA00087FD48 /* MerchantSampleBackend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC412922E0BEA00087FD48 /* MerchantSampleBackend.swift */; };
+		3F461B1C25374A1D009F831A /* CustomerVaultFakeToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6F49C8250123590080BDDB /* CustomerVaultFakeToken.swift */; };
+		3F6F49C9250123590080BDDB /* CustomerVaultFakeToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6F49C8250123590080BDDB /* CustomerVaultFakeToken.swift */; };
 		640E545F2408099F00693011 /* CardinalMobile.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 647575DA2379BEB700DC788C /* CardinalMobile.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		640E5461240809AE00693011 /* CardinalMobile.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 647575DA2379BEB700DC788C /* CardinalMobile.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		64173AAD2306FE8600642D95 /* ApplePayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64173AAC2306FE8600642D95 /* ApplePayViewController.swift */; };
@@ -194,6 +196,7 @@
 		2BEC24C922E0B13A008794E4 /* ThreeDSecureJWTResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDSecureJWTResponse.swift; sourceTree = "<group>"; };
 		2BEC412622E0BC740087FD48 /* ThreeDSecureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDSecureViewController.swift; sourceTree = "<group>"; };
 		2BEC412922E0BEA00087FD48 /* MerchantSampleBackend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchantSampleBackend.swift; sourceTree = "<group>"; };
+		3F6F49C8250123590080BDDB /* CustomerVaultFakeToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerVaultFakeToken.swift; sourceTree = "<group>"; };
 		64173AAC2306FE8600642D95 /* ApplePayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePayViewController.swift; sourceTree = "<group>"; };
 		64173AAF2307087700642D95 /* PSApplePayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSApplePayViewController.m; sourceTree = "<group>"; };
 		64173AB12308408500642D95 /* PaysafeSDK_ApplePay-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PaysafeSDK_ApplePay-Info.plist"; sourceTree = "<group>"; };
@@ -411,6 +414,7 @@
 		2BEC412822E0BE6F0087FD48 /* MerchantBackend */ = {
 			isa = PBXGroup;
 			children = (
+				3F6F49C8250123590080BDDB /* CustomerVaultFakeToken.swift */,
 				2BEC412922E0BEA00087FD48 /* MerchantSampleBackend.swift */,
 				2B1DEDDB22E1EACB00CEB1A0 /* WebServiceHandler.swift */,
 			);
@@ -686,6 +690,7 @@
 				64E0013722F30960004C1D2A /* MerchantSampleBackend.swift in Sources */,
 				2B2C3DA022D744CA00580F50 /* main.m in Sources */,
 				2B2C3D9222D744C900580F50 /* AppDelegate.m in Sources */,
+				3F461B1C25374A1D009F831A /* CustomerVaultFakeToken.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -742,6 +747,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				64173AAD2306FE8600642D95 /* ApplePayViewController.swift in Sources */,
+				3F6F49C9250123590080BDDB /* CustomerVaultFakeToken.swift in Sources */,
 				2BD6F25E22D5F24200B38687 /* AddCardViewController.swift in Sources */,
 				2BD6F25C22D5F24200B38687 /* AppDelegate.swift in Sources */,
 				2B1DEDDC22E1EACB00CEB1A0 /* WebServiceHandler.swift in Sources */,
@@ -1096,7 +1102,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Example/Example.entitlements;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Frameworks";
 				INFOPLIST_FILE = Example/Info.plist;
@@ -1105,7 +1112,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.paysafe.atlas;
+				PRODUCT_BUNDLE_IDENTIFIER = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
@@ -1122,7 +1129,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Example/Example.entitlements;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Frameworks";
 				INFOPLIST_FILE = Example/Info.plist;
@@ -1131,7 +1139,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.paysafe.atlas;
+				PRODUCT_BUNDLE_IDENTIFIER = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";

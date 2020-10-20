@@ -38,10 +38,10 @@ static NSString * const simulatorNotSupportedMessage = @"Apple Pay transactions 
 
 - (NSArray *)shippingMethodOptions {
     return @[
-             [[ShippingMethod alloc] initWithPrice:[NSDecimalNumber decimalNumberWithString:@"5.00"] title:@"Carrier Pigeon" description:@"You'll get it someday."],
-             [[ShippingMethod alloc] initWithPrice:[NSDecimalNumber decimalNumberWithString:@"100.00"] title:@"Racecar" description:@"Vrrrroom! Get it by tomorrow!"],
-             [[ShippingMethod alloc] initWithPrice:[NSDecimalNumber decimalNumberWithString:@"90000.00"] title:@"Rocket Ship" description:@"Look out your window!"]
-             ];
+        [[ShippingMethod alloc] initWithPrice:[NSDecimalNumber decimalNumberWithString:@"5.00"] title:@"Carrier Pigeon" description:@"You'll get it someday."],
+        [[ShippingMethod alloc] initWithPrice:[NSDecimalNumber decimalNumberWithString:@"100.00"] title:@"Racecar" description:@"Vrrrroom! Get it by tomorrow!"],
+        [[ShippingMethod alloc] initWithPrice:[NSDecimalNumber decimalNumberWithString:@"90000.00"] title:@"Rocket Ship" description:@"Look out your window!"]
+    ];
 }
 
 - (void)setLoading:(BOOL)loading {
@@ -51,7 +51,7 @@ static NSString * const simulatorNotSupportedMessage = @"Apple Pay transactions 
     } else {
         [self.activityIndicator stopAnimating];
     }
-
+    
     [self.activityIndicator setHidden:!loading];
     [self.applePayButton setEnabled:!loading];
 }
@@ -67,17 +67,17 @@ static NSString * const simulatorNotSupportedMessage = @"Apple Pay transactions 
     [super viewDidLoad];
     [self hideKeyboardWhenTappedAround];
     [self setupMerchantConfiguration];
-
+    
     self.merchantBackend = [[MerchantSampleBackend alloc] init];
     self.applePayService = [[ApplePayService alloc] init];
-
+    
     [self.applePayButton setHidden:![self.applePayService isApplePaySupported]];
-
+    
     if (self.applePayButton.isHidden) {
         self.errorMessageLabel.text = unsupportedConfiguration;
         [self.errorMessageLabel setHidden:NO];
     }
-
+    
     self.amountTextField.text = @"20";
     self.singleItemPriceTextField.text = @"0.01";
     self.currencyLabel.text = PaysafeSDK.applePayMerchantConfiguration.currencyCode;
@@ -86,13 +86,13 @@ static NSString * const simulatorNotSupportedMessage = @"Apple Pay transactions 
 
 - (BOOL)isNumber:(NSString *)input {
     NSString *decimalSeparator;
-
+    
     if (@available(iOS 10.0, *)) {
         decimalSeparator = [NSLocale currentLocale].decimalSeparator;
     } else {
         decimalSeparator = [[NSLocale currentLocale] objectForKey:NSLocaleDecimalSeparator];
     }
-
+    
     NSString *regularExpression = [@"0123456789" stringByAppendingString:decimalSeparator];
     NSMutableCharacterSet *characterSet = [NSMutableCharacterSet characterSetWithCharactersInString:regularExpression];
     BOOL isNumber = [input stringByTrimmingCharactersInSet:characterSet].length == 0;
@@ -102,45 +102,71 @@ static NSString * const simulatorNotSupportedMessage = @"Apple Pay transactions 
 - (BOOL)isAmountOrPriceInvalid {
     BOOL priceIsNumber = [self isNumber:self.singleItemPriceTextField.text];
     BOOL amountIsNumber = [self isNumber:self.amountTextField.text];
-
+    
     if (!priceIsNumber || !amountIsNumber) {
         [self displayAlertWithTitle:invalidAmountTitle message:invalidAmountMessage];
         return YES;
     }
-
+    
     return NO;
 }
 
 - (IBAction)startApplePayPayment:(id)sender {
     __weak typeof(self) weakSelf = self;
-
+    
     if ([self isAmountOrPriceInvalid] == YES) {
         return;
     }
-
+    
     Merchandise *product = [[Merchandise alloc] initWithImage:NULL
                                                         title:@"Llama California Shipping"
                                                         price:[NSDecimalNumber decimalNumberWithString:self.singleItemPriceTextField.text]
                                                        amount:self.amountTextField.text.doubleValue
                                                shippingMethod:[self shippingMethodOptions].firstObject
                                                   description:@"3-5 Business Days"];
-
+    
     CartDetails *cartData = [[CartDetails alloc] initWithCartId:@"123423"
                                                           payTo:@"Llama Services, Inc."
                                                 shippingOptions:[self shippingMethodOptions]];
-
+    
     self.loading = YES;
     [self.applePayService beginPayment:product
                            cartDetails:cartData
                             completion:^(PKPayment * _Nullable payment, NSError * _Nullable error) {
-                                weakSelf.loading = NO;
-
-                                if (error) {
-                                    [weakSelf displayError:error];
-                                } else {
-                                    [weakSelf storeToBackendWithPayment:payment];
-                                }
-                            }];
+        weakSelf.loading = NO;
+        
+        if (error) {
+            [weakSelf displayError:error];
+        } else {
+#if TARGET_IPHONE_SIMULATOR
+            
+            NSString* cardNum;
+            if (payment.token.paymentMethod.network == PKPaymentNetworkAmex) {
+                cardNum = @"370000000001091";
+            } else if (payment.token.paymentMethod.network == PKPaymentNetworkMasterCard) {
+                cardNum = @"510000000001091";
+            } else if (payment.token.paymentMethod.network == PKPaymentNetworkVisa) {
+                cardNum = @"400000000001091";
+            } else {
+                cardNum = @"400000000001091";
+            }
+            [self.merchantBackend createApplePaymentFakeTokenWithCardNum:cardNum completion:^(ApplePayTokenWrapper * _Nullable applePayInfo, NSError * _Nullable error) {
+                if (error) {
+                    __weak typeof(self) weakSelf = self;
+                    [weakSelf displayError:error];
+                } else {
+                    [self storeToBackendWithPayment:applePayInfo];
+                }
+            }];
+#else
+            
+            ApplePayTokenWrapper *applePayInfo = [self createTokenWithPayment:payment];
+            [weakSelf storeToBackendWithPayment:payment];
+            
+#endif
+            
+        }
+    }];
 }
 
 - (ApplePayTokenWrapper *)createTokenWithPayment:(PKPayment *)payment {
@@ -148,25 +174,18 @@ static NSString * const simulatorNotSupportedMessage = @"Apple Pay transactions 
     return [ApplePayTokenWrapper createFrom:paymentData];
 }
 
-- (void)storeToBackendWithPayment:(PKPayment *)payment {
-    ApplePayTokenWrapper *applePayInfo = [self createTokenWithPayment:payment];
-
-    if (!applePayInfo) {
-        [self displayAlertWithTitle:NULL message:simulatorNotSupportedMessage];
-        return;
-    }
-
+- (void)storeToBackendWithPayment:(ApplePayTokenWrapper *) applePayInfo {
     __weak typeof(self) weakSelf = self;
     [self.merchantBackend sendApplePay:applePayInfo
                             completion:^(ApplePaySingleUseToken * _Nullable info, NSError * _Nullable error) {
-
-                                if (error) {
-                                    [weakSelf displayError:error];
-                                } else {
-                                    NSString *successMessage = [successfulTransactionMessage stringByAppendingString:info.id];
-                                    [weakSelf displayAlertWithTitle:successfulTransactionTitle message:successMessage];
-                                }
-                            }];
+        
+        if (error) {
+            [weakSelf displayError:error];
+        } else {
+            NSString *successMessage = [successfulTransactionMessage stringByAppendingString:info.paymentToken];
+            [weakSelf displayAlertWithTitle:successfulTransactionTitle message:successMessage];
+        }
+    }];
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {

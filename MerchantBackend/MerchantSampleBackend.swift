@@ -23,6 +23,25 @@ import Paysafe_SDK
         return PaysafeSDK.getBaseUrlPath() + Constants.threeDSecureAccountsPath
     }()
 
+    @objc public func createApplePaymentFakeToken(cardNum: String, completion: @escaping (_ wrapper:ApplePayTokenWrapper?, _ error: Error?) -> Void) -> Void {
+        createApplePaymentFakeToken(cardNum: cardNum) { result in
+            switch result {
+            case .success(let info):
+                completion(info, nil)
+            case .failure(let error):
+                completion(nil, error)
+            }
+            
+        }
+    }
+    
+    func createApplePaymentFakeToken(cardNum: String, completion: @escaping (Result<ApplePayTokenWrapper, Error>) -> Void) -> Void {
+        let customerVaultFakeTokenRequest = CustomerVaultFakeToken(cardNumber: cardNum, applicationExpirationDate: "6001", transactionAmount: "241", cardholderName: "Bil Gates")
+        let webServiceHandler = WebServiceHandler()
+        let url = PaysafeSDK.getBaseUrlPath() + "/customervault/v1/applepaysingleusetokens/faketoken/simple"
+        webServiceHandler.callWebService(with:  url, requestData: customerVaultFakeTokenRequest, method: .post, completion:completion)
+    }
+    
     @objc public func startTransaction(with card: Card, completion: @escaping (_ error: Error?) -> Void) {
         startTransaction(card) { result in
             switch result {
