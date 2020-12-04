@@ -234,7 +234,6 @@ class ThreeDSecureServiceTests: XCTestCase {
 
     private func base64EncodedChallengePayload(threeDSecureVersion: String = "2.0") -> String {
         let challenge = ChallengePayload(transactionId: "transactionId",
-                                         acsUrl: "acsUrl",
                                          payload: "payload",
                                          accountId: "accountId",
                                          id: "challengeId",
@@ -282,8 +281,6 @@ class ThreeDSecureServiceTests: XCTestCase {
 
         func continueWith(transactionId: String,
                           payload: String,
-                          acsUrl: String,
-                          directoryServerID: CCADirectoryServerID,
                           validationDelegate: CardinalValidationDelegate) {
             didCallContinue = true
         }

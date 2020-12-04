@@ -18,8 +18,6 @@ protocol CardinalSessionProtocol {
 
     func continueWith(transactionId: String,
                       payload: String,
-                      acsUrl: String,
-                      directoryServerID: CCADirectoryServerID,
                       validationDelegate: CardinalValidationDelegate)
 }
 

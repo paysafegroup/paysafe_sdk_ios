@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name              	= "Paysafe_SDK"
-  s.version           	= "2.1.0"
+  s.version           	= "2.2.0"
   s.summary           	= "Paysafe SDK handling 3DS 2 and Apple Pay"
 
   s.license           	= "MIT"

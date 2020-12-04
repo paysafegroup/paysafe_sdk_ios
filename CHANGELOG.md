@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.2.0] 
+### Added - 2020-12-04
+- Updated Cardinal mobile SDK dependency to version 2.2.4-1
+- OneTimeCode suggestion for iOS 12+ in OTP Challenge Screen for native screen.
+
 ## [2.1.0] 
 ### Added - 2020-10-19
 - Ability to test apple pay with paysafe simulated apple pay token in the sample app

@@ -316,8 +316,6 @@ extension ThreeDSecureService {
 
             session.continueWith(transactionId: challengePayload.transactionId,
                                  payload: challengePayload.payload,
-                                 acsUrl: challengePayload.acsUrl,
-                                 directoryServerID: CCADirectoryServerIDVisa,
                                  validationDelegate: self)
         } else {
             webNavigationController = nil

@@ -10,7 +10,6 @@ import Foundation
 
 struct ChallengePayload: Codable {
     let transactionId: String
-    let acsUrl: String
     let payload: String
     let accountId: String
     let id: String
