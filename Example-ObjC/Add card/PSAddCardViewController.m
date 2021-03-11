@@ -21,6 +21,7 @@ const static NSInteger cardBinLength = 6;
 @property (weak, nonatomic) IBOutlet UITextField *monthTextField;
 @property (weak, nonatomic) IBOutlet UITextField *yearTextField;
 @property (weak, nonatomic) IBOutlet UITextField *nameOnCardTextField;
+@property (weak, nonatomic) IBOutlet UITextField *cvvTextField;
 @property (weak, nonatomic) IBOutlet UITextField *street1TextField;
 @property (weak, nonatomic) IBOutlet UITextField *street2TextField;
 @property (weak, nonatomic) IBOutlet UITextField *cityTextField;
@@ -169,8 +170,10 @@ const static NSInteger cardBinLength = 6;
                                                                      country:self.countryTextField.text
                                                                        state:self.stateTextField.text
                                                                          zip:self.zipTextField.text];
+    NSString *cvv = [self.cvvTextField.text isEqualToString:@""] ? nil : self.cvvTextField.text;
     Card *card = [[Card alloc] initWithCardNumber:self.cardNumberTextField.text
                                        cardExpiry:expiry
+                                              cvv:cvv
                                        holderName:self.nameOnCardTextField.text
                                    billingAddress:billingAddress];
     self.loading = YES;

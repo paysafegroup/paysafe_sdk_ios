@@ -21,6 +21,7 @@ class AddCardViewController: UIViewController {
     @IBOutlet private var monthTextField: UITextField!
     @IBOutlet private var yearTextField: UITextField!
     @IBOutlet private var nameOnCardTextField: UITextField!
+    @IBOutlet private var cvvTextField: UITextField!
     @IBOutlet private var street1TextField: UITextField!
     @IBOutlet private var street2TextField: UITextField!
     @IBOutlet private var cityTextField: UITextField!
@@ -116,6 +117,7 @@ class AddCardViewController: UIViewController {
         monthTextField.text = "01"
         yearTextField.text = "2022"
         nameOnCardTextField.text = "MR. JOHN SMITH"
+        cvvTextField.text = "123"
         street1TextField.text = "100 Queen Street West"
         street2TextField.text = "Unit 201"
         cityTextField.text = "Toronto"
@@ -167,8 +169,10 @@ class AddCardViewController: UIViewController {
                                             country: countryTextField.text ?? "",
                                             state: stateTextField.text,
                                             zip: zipTextField.text ?? "")
+        let cvv = cvvTextField.text == "" ? nil : cvvTextField.text
         let card = Card(cardNumber: cardNumberTextField.text ?? "",
                         cardExpiry: expiry,
+                        cvv: cvv,
                         holderName: nameOnCardTextField.text,
                         billingAddress: billingAddress)
 
