@@ -11,7 +11,6 @@ Pod::Spec.new do |s|
   s.source              = { :git => "https://github.com/paysafegroup/paysafe_sdk_ios.git", :tag => s.version }
   s.source_files      	= 'Paysafe_SDK/**/*.{swift,h,m}'
   s.resources         	= 'Paysafe_SDK/**/*.html','**/*paysafe_sdk_versioning-Info.plist'
-  s.xcconfig            = { "EXCLUDED_ARCHS[sdk=iphonesimulator*]" => "arm64" }
 
   s.platform          	= :ios, "10.0"
   s.swift_version       = '5.0'
