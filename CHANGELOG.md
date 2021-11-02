@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.4.0] 
+### Added - 2021-11-02
+- Updated Cardinal mobile SDK dependency to version 2.2.5-2
+- Remove exclude for arm64 architecture
+
 ## [2.3.0] 
 ### Added - 2021-03-11
 - Add CVV support for card tokenisation
