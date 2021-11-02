@@ -17,7 +17,8 @@ class CustomerVaultServiceTests: XCTestCase {
         let service = CustomerVaultService(webServiceHandler: mockWebService)
 
         let card = Card(cardNumber: "4000000000000001",
-                        cardExpiry: Card.Expiry(month: "12", year: "2022"))
+                        cardExpiry: Card.Expiry(month: "12", year: "2022"),
+                        cvv: nil)
         let error = NSError(domain: "Test Error Domain", code: 100, userInfo: nil)
 
         let exp = expectation(description: "createSingleUseToken completion should be called")
@@ -39,7 +40,8 @@ class CustomerVaultServiceTests: XCTestCase {
         let service = CustomerVaultService(webServiceHandler: mockWebService)
 
         let card = Card(cardNumber: "4000000000000001",
-                        cardExpiry: Card.Expiry(month: "12", year: "2022"))
+                        cardExpiry: Card.Expiry(month: "12", year: "2022"),
+                        cvv: nil)
 
         let token = mockedSingleUseToken()
 
@@ -61,7 +63,8 @@ class CustomerVaultServiceTests: XCTestCase {
         let service = CustomerVaultService(webServiceHandler: mockWebService)
 
         let card = Card(cardNumber: "4000000000000001",
-                        cardExpiry: Card.Expiry(month: "12", year: "2022"))
+                        cardExpiry: Card.Expiry(month: "12", year: "2022"),
+                        cvv: nil)
         let error = NSError(domain: "Test Error Domain", code: 100, userInfo: nil)
 
         let exp = expectation(description: "createSingleUseToken completion should be called")
@@ -84,7 +87,8 @@ class CustomerVaultServiceTests: XCTestCase {
         let service = CustomerVaultService(webServiceHandler: mockWebService)
 
         let card = Card(cardNumber: "4000000000000001",
-                        cardExpiry: Card.Expiry(month: "12", year: "2022"))
+                        cardExpiry: Card.Expiry(month: "12", year: "2022"),
+                        cvv: nil)
 
         let token = mockedSingleUseToken()
 
