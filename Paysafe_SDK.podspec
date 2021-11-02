@@ -16,6 +16,6 @@ Pod::Spec.new do |s|
   s.platform          	= :ios, "10.0"
   s.swift_version       = '5.0'
   s.requires_arc        = true
-  s.vendored_frameworks = "Frameworks/CardinalMobile.framework"
+  s.vendored_frameworks = "Frameworks/CardinalMobile.xcframework"
 
 end
