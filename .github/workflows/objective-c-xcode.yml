@@ -1,0 +1,24 @@
+name: Xcode - Build and Analyze
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    name: Build and analyse default scheme using xcodebuild command
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Build
+        env:
+          project: ${{ 'Paysafe_SDK' }}
+          scheme: ${{ 'Paysafe_SDK' }}
+          platform: ${{ 'iOS Simulator' }}
+        run: |
+          device=`xcrun xctrace list devices 2>&1 | grep -oE 'iPhone.*?[^\(]+' | head -1 | awk '{$1=$1;print}'`
+          xcodebuild clean build analyze -project "$project.xcodeproj" -scheme "$scheme" -destination "platform=$platform,name=$device" | xcpretty && exit ${PIPESTATUS[0]}
