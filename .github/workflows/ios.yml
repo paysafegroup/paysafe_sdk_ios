@@ -16,15 +16,19 @@ jobs:
         uses: actions/checkout@v2
       - name: Build
         env:
+          project: ${{ 'Paysafe_SDK' }}
+          scheme: ${{ 'Paysafe_SDK' }}
           platform: ${{ 'iOS Simulator' }}
         run: |
           # xcrun xctrace returns via stderr, not the expected stdout (see https://developer.apple.com/forums/thread/663959)
           device=`xcrun xctrace list devices 2>&1 | grep -oE 'iPhone.*?[^\(]+' | head -1 | awk '{$1=$1;print}'`
-          xcodebuild build-for-testing -project "Paysafe_SDK.xcodeproj" -scheme "Paysafe_SDK" -destination "platform=$platform,name=$device"
+          xcodebuild build-for-testing -project "$project.xcodeproj" -scheme "$scheme" -destination "platform=$platform,name=$device"
       - name: Test
         env:
+          project: ${{ 'Paysafe_SDK' }}
+          scheme: ${{ 'Paysafe_SDK' }}
           platform: ${{ 'iOS Simulator' }}
         run: |
           # xcrun xctrace returns via stderr, not the expected stdout (see https://developer.apple.com/forums/thread/663959)
           device=`xcrun xctrace list devices 2>&1 | grep -oE 'iPhone.*?[^\(]+' | head -1 | awk '{$1=$1;print}'`
-          xcodebuild test-without-building -project "Paysafe_SDK.xcodeproj" -scheme "Paysafe_SDK" -destination "platform=$platform,name=$device"
+          xcodebuild test-without-building -project "$project.xcodeproj" -scheme "$scheme" -destination "platform=$platform,name=$device"
