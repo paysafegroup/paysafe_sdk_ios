@@ -16,7 +16,6 @@ jobs:
         uses: actions/checkout@v2
       - name: Build
         env:
-          scheme: ${{ 'default' }}
           platform: ${{ 'iOS Simulator' }}
         run: |
           # xcrun xctrace returns via stderr, not the expected stdout (see https://developer.apple.com/forums/thread/663959)
@@ -24,7 +23,6 @@ jobs:
           xcodebuild build-for-testing -project "Paysafe_SDK.xcodeproj" -scheme "Paysafe_SDK" -destination "platform=$platform,name=$device"
       - name: Test
         env:
-          scheme: ${{ 'default' }}
           platform: ${{ 'iOS Simulator' }}
         run: |
           # xcrun xctrace returns via stderr, not the expected stdout (see https://developer.apple.com/forums/thread/663959)
