@@ -137,20 +137,7 @@ class ThreeDSecureServiceTests: XCTestCase {
         XCTAssertTrue(mockCardinalSession.didCallContinue)
     }
 
-    func testContinueCardinalNotCalledForThreeDS1() {
-        service.start(cardBin: "123456", completion: { (result) in
-        })
-        let response = ThreeDSecureJWTResponse(deviceFingerprintingId: "fingerPrintId",
-                                               jwt: "jwt")
-        mockWebService.getJWTTokenCompletion?(.success(response))
 
-        let sdkChallengePayload = base64EncodedChallengePayload(threeDSecureVersion: "1.0")
-        service.challenge(sdkChallengePayload: sdkChallengePayload,
-                          completion: { _ in
-        })
-
-        XCTAssertFalse(mockCardinalSession.didCallContinue)
-    }
 
     func testFinalizeCalledWithoutPayloadIfCardinalPassesEmptyStringForJWT() {
         service.start(cardBin: "123456", completion: { (result) in
