@@ -16,14 +16,6 @@ extension PaysafeSDK {
         return currentEnvironment.getBaseUrlPath()
     }
 
-    static func getEnvironmentNameForWebSDK() -> String {
-        return currentEnvironment.getEnvironmentNameForWebSDK()
-    }
-
-    static func getEnvironmentURLPath() -> URL? {
-        return currentEnvironment.getEnvironmentURLPath()
-    }
-
     @objc(PaysafeSDKEnvironment) public enum Environment: Int, CaseIterable {
         case test
         case production
@@ -34,26 +26,6 @@ extension PaysafeSDK {
                 return "https://api.test.paysafe.com"
             case .production:
                 return "https://api.paysafe.com"
-            }
-        }
-
-        fileprivate func getEnvironmentNameForWebSDK() -> String {
-            switch currentEnvironment {
-            case .test:
-                return "TEST"
-            case .production:
-                return "LIVE"
-            }
-        }
-
-        fileprivate func getEnvironmentURLPath() -> URL? {
-            let bundle = Bundle(for: PaysafeSDK.self)
-
-            switch currentEnvironment {
-            case .test:
-                return bundle.url(forResource: "paysafe_sdk_test_index", withExtension: "html")
-            case .production:
-                return bundle.url(forResource: "paysafe_sdk_index", withExtension: "html")
             }
         }
     }

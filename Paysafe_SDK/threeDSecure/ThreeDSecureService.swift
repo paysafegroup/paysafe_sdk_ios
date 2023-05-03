@@ -18,7 +18,6 @@ import CardinalMobile
 
     private var responseDict: [String: Any]?
     private var challengePayload: ChallengePayload?
-    private var webNavigationController: UINavigationController?
     private var merchantConfiguration: PaysafeSDK.MerchantConfiguration?
 
     private lazy var correlationId: String = {
@@ -45,7 +44,6 @@ import CardinalMobile
         }
 
         config.renderType = [CardinalSessionRenderTypeOTP, CardinalSessionRenderTypeHTML]
-        config.enableQuickAuth = true
         config.enableDFSync = true
         session.configure(config)
 
@@ -91,17 +89,6 @@ import CardinalMobile
 
     private func generateCorrelationId() -> String {
         return UUID().uuidString.lowercased()
-    }
-
-    private func createWebController(_ accountId: String,
-                                     threeDSecureAuthId: String,
-                                     merchantConfiguration: PaysafeSDK.MerchantConfiguration) -> WebViewController {
-        let webController = WebViewController(merchantConfiguration: merchantConfiguration)
-        webController.title = PaysafeSDK.uiConfiguration?.toolbarConfiguration?.headerText ?? "Secure Checkout"
-        webController.cancelCallback = { [weak self] in
-            self?.callFinalize(validateResponse: nil, accountID: accountId, threeDSecureAuthID: threeDSecureAuthId, serverJWT: nil)
-        }
-        return webController
     }
 
     private func getJWTForCardinal(cardBin: String, completion: @escaping (Result<String, Error>) -> Void) {
@@ -310,67 +297,13 @@ extension ThreeDSecureService {
         }
 
         onChallengeCompleted = completion
+      
+        self.challengePayload = challengePayload
 
-        if challengePayload.threeDSecureVersion.hasPrefix("2.") {
-            self.challengePayload = challengePayload
+        session.continueWith(transactionId: challengePayload.transactionId,
+                             payload: challengePayload.payload,
+                             validationDelegate: self)
 
-            session.continueWith(transactionId: challengePayload.transactionId,
-                                 payload: challengePayload.payload,
-                                 validationDelegate: self)
-        } else {
-            webNavigationController = nil
-            handleThreeDSecure1Challenge(challengePayload,
-                                         sdkChallengePayload: sdkChallengePayload,
-                                         completion: completion)
-        }
     }
 
-    private func handleThreeDSecure1Challenge(_ challengePayload: ChallengePayload,
-                                              sdkChallengePayload: String,
-                                              completion: @escaping ((Result<String, Error>) -> Void)) {
-        guard let merchantConfiguration = self.merchantConfiguration else {
-            completion(.failure(Errors.invalidMerchantConfigurationError))
-            return
-        }
-
-        let webController = createWebController(challengePayload.accountId,
-                                                threeDSecureAuthId: challengePayload.id,
-                                                merchantConfiguration: merchantConfiguration)
-        webNavigationController = UINavigationController(rootViewController: webController)
-
-        let challengeCorrelationId = correlationId
-        webController.continueWith(payload: sdkChallengePayload) { [weak self] result in
-            self?.dismissWebview()
-
-            switch result {
-            case .failure(let error):
-                completion(.failure(error))
-
-            case .success(let authenticationID):
-                guard let authenticationID = authenticationID as? String else {
-                    self?.logger.log(message: Errors.ErrorType.internalSDKError, eventType: .internalSDKError, correlationId: challengeCorrelationId)
-                    completion(.failure(Errors.internalSDKError))
-                    return
-                }
-
-                completion(.success(authenticationID))
-            }
-        }
-
-        guard let webNavigationController = webNavigationController else {
-            return
-        }
-
-        if #available(iOS 13.0, *) {
-            webNavigationController.isModalInPresentation = true
-        } else {
-            webNavigationController.modalPresentationStyle = .fullScreen
-        }
-
-        UIApplication.shared.topmostController?.present(webNavigationController, animated: true, completion: nil)
-    }
-
-    private func dismissWebview() {
-        webNavigationController?.dismiss(animated: true, completion: nil)
-    }
 }

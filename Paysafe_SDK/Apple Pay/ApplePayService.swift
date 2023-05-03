@@ -180,6 +180,7 @@ extension ApplePayService: ApplePayServiceProtocol {
         applePaymentDidSucceed = false
 
         let request = PKPaymentRequest()
+        
         request.merchantIdentifier = merchantIdentifier
         request.supportedNetworks = supportedPaymentNetworks
         request.merchantCapabilities = .capability3DS
@@ -198,7 +199,7 @@ extension ApplePayService: ApplePayServiceProtocol {
             for shippingMethod in cartDetails.shippingOptions {
                 let method = PKShippingMethod(label: shippingMethod.title, amount: shippingMethod.price)
                 method.identifier = shippingMethod.title
-                method.detail = shippingMethod.description
+                method.detail = shippingMethod.shippingDescription
                 shippingMethods.append(method)
             }
 

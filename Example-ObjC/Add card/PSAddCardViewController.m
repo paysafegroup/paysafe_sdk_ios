@@ -41,8 +41,7 @@ const static NSInteger cardBinLength = 6;
 
 - (NSDictionary *)cards {
     return @{ @"4000000000001091": @"3DS 2",
-              @"4000000000001000": @"3DS 2 Frictionless",
-              @"4111111111111111": @"3DS 1.0"
+              @"4000000000001000": @"3DS 2 Frictionless"
               };
 }
 
@@ -117,7 +116,12 @@ const static NSInteger cardBinLength = 6;
                                                                              action:@selector(didTapPickCard)];
     self.cardNumberTextField.text = @"4000000000001091";
     self.monthTextField.text = @"01";
-    self.yearTextField.text = @"2022";
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"yyyy"];
+    NSString *yearString = [NSString stringWithFormat:@"%d",[[formatter stringFromDate:[NSDate date]] intValue] + 3];
+    self.cvvTextField.text = @"123";
+
+    self.yearTextField.text =  yearString;
     self.nameOnCardTextField.text = @"MR. JOHN SMITH";
     self.street1TextField.text = @"100 Queen Street West";
     self.street2TextField.text = @"Unit 201";

@@ -13,8 +13,7 @@ class AddCardViewController: UIViewController {
 
     private let cards: [(number: String, name: String)] = [
         ("4000000000001091", "3DS 2"),
-        ("4000000000001000", "3DS 2 Frictionless"),
-        ("4111111111111111", "3DS 1.0"),
+        ("4000000000001000", "3DS 2 Frictionless")
     ]
 
     @IBOutlet private var cardNumberTextField: UITextField!
@@ -115,7 +114,7 @@ class AddCardViewController: UIViewController {
         cardNumberTextField.text = "4000000000001091"
 
         monthTextField.text = "01"
-        yearTextField.text = "2022"
+        yearTextField.text = String(Calendar.current.component(.year, from: Date()) + 3)
         nameOnCardTextField.text = "MR. JOHN SMITH"
         cvvTextField.text = "123"
         street1TextField.text = "100 Queen Street West"
