@@ -47,15 +47,12 @@
 		64173AB3230848EA00642D95 /* PSApplePayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64173AAF2307087700642D95 /* PSApplePayViewController.m */; };
 		64297AB7237AE39000EDEED2 /* Paysafe_SDK.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 2BCCA98322D4DF9B00C7772A /* Paysafe_SDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6480993122F4351E00E9C9D6 /* UIViewController+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6480993022F4351E00E9C9D6 /* UIViewController+Utils.m */; };
-		6480993322F48EA500E9C9D6 /* paysafe_sdk_test_index.html in Resources */ = {isa = PBXBuildFile; fileRef = 6480993222F48EA500E9C9D6 /* paysafe_sdk_test_index.html */; };
 		6480994922F8680400E9C9D6 /* UIResponder+FirstResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6480994822F8680400E9C9D6 /* UIResponder+FirstResponder.m */; };
 		64AE64F02354822000C63243 /* ApplePayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AE64EF2354822000C63243 /* ApplePayTests.swift */; };
 		64AE64F22355C38500C63243 /* ApplePayHelperProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AE64F12355C38500C63243 /* ApplePayHelperProtocols.swift */; };
 		64AE64F4235865B700C63243 /* WebViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AE64F3235865B700C63243 /* WebViewControllerTests.swift */; };
 		64B1A0A22379B6A2009BC690 /* Paysafe_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BCCA98322D4DF9B00C7772A /* Paysafe_SDK.framework */; };
 		64B3908023324F7E007ED4B0 /* paysafe_sdk_versioning-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 64B3907F23324F7E007ED4B0 /* paysafe_sdk_versioning-Info.plist */; };
-		64CA5AB022DE14CB00CE4222 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CA5AAF22DE14CB00CE4222 /* WebViewController.swift */; };
-		64CA5AB322DF463900CE4222 /* paysafe_sdk_index.html in Resources */ = {isa = PBXBuildFile; fileRef = 64CA5AB122DF311100CE4222 /* paysafe_sdk_index.html */; };
 		64CA5AB722E1ACFE00CE4222 /* UIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CA5AB622E1ACFE00CE4222 /* UIConfiguration.swift */; };
 		64CA5ABB22E20B8D00CE4222 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CA5ABA22E20B8D00CE4222 /* Utils.swift */; };
 		64DD2FCC22DBB7E5007F9B42 /* WebServiceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DD2FCB22DBB7E5007F9B42 /* WebServiceHandler.swift */; };
@@ -195,15 +192,12 @@
 		64173AB423084D5100642D95 /* PSApplePayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSApplePayViewController.h; sourceTree = "<group>"; };
 		6480992F22F4350C00E9C9D6 /* UIViewController+Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Utils.h"; sourceTree = "<group>"; };
 		6480993022F4351E00E9C9D6 /* UIViewController+Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Utils.m"; sourceTree = "<group>"; };
-		6480993222F48EA500E9C9D6 /* paysafe_sdk_test_index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = paysafe_sdk_test_index.html; sourceTree = "<group>"; };
 		6480994722F867A500E9C9D6 /* UIResponder+FirstResponder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIResponder+FirstResponder.h"; sourceTree = "<group>"; };
 		6480994822F8680400E9C9D6 /* UIResponder+FirstResponder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+FirstResponder.m"; sourceTree = "<group>"; };
 		64AE64EF2354822000C63243 /* ApplePayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePayTests.swift; sourceTree = "<group>"; };
 		64AE64F12355C38500C63243 /* ApplePayHelperProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePayHelperProtocols.swift; sourceTree = "<group>"; };
 		64AE64F3235865B700C63243 /* WebViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewControllerTests.swift; sourceTree = "<group>"; };
 		64B3907F23324F7E007ED4B0 /* paysafe_sdk_versioning-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "paysafe_sdk_versioning-Info.plist"; sourceTree = SOURCE_ROOT; };
-		64CA5AAF22DE14CB00CE4222 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
-		64CA5AB122DF311100CE4222 /* paysafe_sdk_index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = paysafe_sdk_index.html; sourceTree = "<group>"; };
 		64CA5AB622E1ACFE00CE4222 /* UIConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIConfiguration.swift; sourceTree = "<group>"; };
 		64CA5ABA22E20B8D00CE4222 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		64DD2FCB22DBB7E5007F9B42 /* WebServiceHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceHandler.swift; sourceTree = "<group>"; };
@@ -277,9 +271,6 @@
 				64EFD70B2303EDEB00BB1C9A /* Merchandise.swift */,
 				64DD2FCB22DBB7E5007F9B42 /* WebServiceHandler.swift */,
 				2BA3016C22F994CB002BC174 /* WebServiceHandlerErrorMapper.swift */,
-				64CA5AAF22DE14CB00CE4222 /* WebViewController.swift */,
-				64CA5AB122DF311100CE4222 /* paysafe_sdk_index.html */,
-				6480993222F48EA500E9C9D6 /* paysafe_sdk_test_index.html */,
 				2B858F2B230463EF00AFA53C /* CardinalSessionProtocol.swift */,
 				2B858F2D2304640B00AFA53C /* ThreeDSecureWebService.swift */,
 			);
@@ -651,8 +642,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				64B3908023324F7E007ED4B0 /* paysafe_sdk_versioning-Info.plist in Resources */,
-				6480993322F48EA500E9C9D6 /* paysafe_sdk_test_index.html in Resources */,
-				64CA5AB322DF463900CE4222 /* paysafe_sdk_index.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -712,7 +701,6 @@
 				2B858F2C230463EF00AFA53C /* CardinalSessionProtocol.swift in Sources */,
 				64CA5ABB22E20B8D00CE4222 /* Utils.swift in Sources */,
 				64EFD6F222FAB2D000BB1C9A /* Logger.swift in Sources */,
-				64CA5AB022DE14CB00CE4222 /* WebViewController.swift in Sources */,
 				2B858F2E2304640B00AFA53C /* ThreeDSecureWebService.swift in Sources */,
 				64DD2FCF22DBB803007F9B42 /* ThreeDSecureService.swift in Sources */,
 				64DD2FDC22DCBA1F007F9B42 /* ChallengePayload.swift in Sources */,
