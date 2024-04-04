@@ -188,11 +188,11 @@ extension ApplePayService: ApplePayServiceProtocol {
         request.currencyCode = applePayMerchantConfiguration.currencyCode
 
         request.paymentSummaryItems = calculateSummaryItemsFrom(merchandise: product, cartDetails: cartDetails)
-        request.requiredShippingAddressFields = .all
+        request.requiredShippingContactFields = [.emailAddress, .name, .phoneNumber, .phoneticName, .postalAddress]
 
         switch product.shippingType {
         case .delivered:
-            request.requiredShippingAddressFields = .postalAddress
+            request.requiredShippingContactFields = [.postalAddress]
 
             var shippingMethods = [PKShippingMethod]()
 
@@ -206,7 +206,7 @@ extension ApplePayService: ApplePayServiceProtocol {
             request.shippingMethods = shippingMethods
 
         case .electronic:
-            request.requiredShippingAddressFields = .email
+            request.requiredShippingContactFields = [.emailAddress]
          }
 
         do {

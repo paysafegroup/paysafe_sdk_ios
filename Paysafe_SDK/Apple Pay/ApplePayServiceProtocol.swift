@@ -9,7 +9,7 @@
 import Foundation
 import PassKit
 
-@objc public protocol ApplePayServiceProtocol: class {
+@objc public protocol ApplePayServiceProtocol: AnyObject {
 
     /**
      - Parameters:

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -40,6 +40,7 @@
 		2BEC24CA22E0B13A008794E4 /* ThreeDSecureJWTResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC24C922E0B13A008794E4 /* ThreeDSecureJWTResponse.swift */; };
 		2BEC412722E0BC740087FD48 /* ThreeDSecureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC412622E0BC740087FD48 /* ThreeDSecureViewController.swift */; };
 		2BEC412A22E0BEA00087FD48 /* MerchantSampleBackend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC412922E0BEA00087FD48 /* MerchantSampleBackend.swift */; };
+		2E7B6FE22BBDAB470036FBCF /* CardinalMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E7B6FE12BBDAB460036FBCF /* CardinalMobile.xcframework */; };
 		3F461B1C25374A1D009F831A /* CustomerVaultFakeToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6F49C8250123590080BDDB /* CustomerVaultFakeToken.swift */; };
 		3F6F49C9250123590080BDDB /* CustomerVaultFakeToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6F49C8250123590080BDDB /* CustomerVaultFakeToken.swift */; };
 		64173AAD2306FE8600642D95 /* ApplePayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64173AAC2306FE8600642D95 /* ApplePayViewController.swift */; };
@@ -73,7 +74,6 @@
 		64F2B7B2230E9BFE004B4C79 /* ApplePaySingleUseToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F2B7AF230E9BFE004B4C79 /* ApplePaySingleUseToken.swift */; };
 		64F2B7B6230E9C22004B4C79 /* ApplePayToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F2B7B4230E9C22004B4C79 /* ApplePayToken.swift */; };
 		64F2B7B7230E9C22004B4C79 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F2B7B5230E9C22004B4C79 /* Card.swift */; };
-		E10D4C06273018490075804E /* CardinalMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E10D4C05273018490075804E /* CardinalMobile.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -184,6 +184,7 @@
 		2BEC24C922E0B13A008794E4 /* ThreeDSecureJWTResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDSecureJWTResponse.swift; sourceTree = "<group>"; };
 		2BEC412622E0BC740087FD48 /* ThreeDSecureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDSecureViewController.swift; sourceTree = "<group>"; };
 		2BEC412922E0BEA00087FD48 /* MerchantSampleBackend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchantSampleBackend.swift; sourceTree = "<group>"; };
+		2E7B6FE12BBDAB460036FBCF /* CardinalMobile.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CardinalMobile.xcframework; path = Frameworks/CardinalMobile.xcframework; sourceTree = "<group>"; };
 		3F6F49C8250123590080BDDB /* CustomerVaultFakeToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerVaultFakeToken.swift; sourceTree = "<group>"; };
 		64173AAC2306FE8600642D95 /* ApplePayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePayViewController.swift; sourceTree = "<group>"; };
 		64173AAF2307087700642D95 /* PSApplePayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSApplePayViewController.m; sourceTree = "<group>"; };
@@ -219,7 +220,6 @@
 		64F2B7AF230E9BFE004B4C79 /* ApplePaySingleUseToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplePaySingleUseToken.swift; sourceTree = "<group>"; };
 		64F2B7B4230E9C22004B4C79 /* ApplePayToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplePayToken.swift; sourceTree = "<group>"; };
 		64F2B7B5230E9C22004B4C79 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
-		E10D4C05273018490075804E /* CardinalMobile.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CardinalMobile.xcframework; path = Frameworks/CardinalMobile.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,7 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				64EFD7082302B05600BB1C9A /* PassKit.framework in Frameworks */,
-				E10D4C06273018490075804E /* CardinalMobile.xcframework in Frameworks */,
+				2E7B6FE22BBDAB470036FBCF /* CardinalMobile.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,7 +421,7 @@
 		64EFD7062302B05500BB1C9A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E10D4C05273018490075804E /* CardinalMobile.xcframework */,
+				2E7B6FE12BBDAB460036FBCF /* CardinalMobile.xcframework */,
 				64EFD7072302B05600BB1C9A /* PassKit.framework */,
 			);
 			name = Frameworks;
@@ -801,7 +801,7 @@
 					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = "Example-ObjC/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -827,7 +827,7 @@
 					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = "Example-ObjC/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1024,7 +1024,7 @@
 				);
 				INFOPLIST_FILE = Paysafe_SDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1061,7 +1061,7 @@
 				);
 				INFOPLIST_FILE = Paysafe_SDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1091,7 +1091,7 @@
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Frameworks";
 				INFOPLIST_FILE = Example/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1118,7 +1118,7 @@
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Frameworks";
 				INFOPLIST_FILE = Example/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
