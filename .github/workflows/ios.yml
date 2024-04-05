@@ -21,7 +21,7 @@ jobs:
           platform: ${{ 'iOS Simulator' }}
         run: |
           # xcrun xctrace returns via stderr, not the expected stdout (see https://developer.apple.com/forums/thread/663959)
-          device=`xcrun xctrace list devices 2>&1 | grep -oE 'iPhone.*?[^\(]+' | head -1 | awk '{$1=$1;print}'`
+          device=`xcrun simctl list devices 2>&1 | grep -oE 'iPhone [1-9][1-9][ ]*[a-zA-Z]*[ ]*[a-zA-Z]*'| head -1 | awk '{$1=$1;print}'`
           xcodebuild build-for-testing -project "$project.xcodeproj" -scheme "$scheme" -destination "platform=$platform,name=$device"
       - name: Test
         env:
@@ -30,5 +30,5 @@ jobs:
           platform: ${{ 'iOS Simulator' }}
         run: |
           # xcrun xctrace returns via stderr, not the expected stdout (see https://developer.apple.com/forums/thread/663959)
-          device=`xcrun xctrace list devices 2>&1 | grep -oE 'iPhone.*?[^\(]+' | head -1 | awk '{$1=$1;print}'`
+          device=`xcrun simctl list devices 2>&1 | grep -oE 'iPhone [1-9][1-9][ ]*[a-zA-Z]*[ ]*[a-zA-Z]*'| head -1 | awk '{$1=$1;print}'`
           xcodebuild test-without-building -project "$project.xcodeproj" -scheme "$scheme" -destination "platform=$platform,name=$device"
