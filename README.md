@@ -8,15 +8,15 @@
 
 # System requirements
 
-* iOS 10.0+ / macOS 10.15+
+* iOS 12.0+ / macOS 10.15+
 * Xcode 11+
 * Swift 5+
 
 # Support
 
 It Supports:
-* 'Non Apple Pay' for iOS 10.0 and above
-* 'Apple Pay' iOS 10.0 and above
+* 'Non Apple Pay' for iOS 12.0 and above
+* 'Apple Pay' iOS 12.0 and above
 
 # Installation
 
