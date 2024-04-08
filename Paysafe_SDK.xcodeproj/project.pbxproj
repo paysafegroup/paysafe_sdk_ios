@@ -41,6 +41,7 @@
 		2BEC412722E0BC740087FD48 /* ThreeDSecureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC412622E0BC740087FD48 /* ThreeDSecureViewController.swift */; };
 		2BEC412A22E0BEA00087FD48 /* MerchantSampleBackend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEC412922E0BEA00087FD48 /* MerchantSampleBackend.swift */; };
 		2E7B6FE22BBDAB470036FBCF /* CardinalMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E7B6FE12BBDAB460036FBCF /* CardinalMobile.xcframework */; };
+		2EF00A652BC3F6CF000151C1 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 2EF00A642BC3F6CF000151C1 /* PrivacyInfo.xcprivacy */; };
 		3F461B1C25374A1D009F831A /* CustomerVaultFakeToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6F49C8250123590080BDDB /* CustomerVaultFakeToken.swift */; };
 		3F6F49C9250123590080BDDB /* CustomerVaultFakeToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6F49C8250123590080BDDB /* CustomerVaultFakeToken.swift */; };
 		64173AAD2306FE8600642D95 /* ApplePayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64173AAC2306FE8600642D95 /* ApplePayViewController.swift */; };
@@ -185,6 +186,7 @@
 		2BEC412622E0BC740087FD48 /* ThreeDSecureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDSecureViewController.swift; sourceTree = "<group>"; };
 		2BEC412922E0BEA00087FD48 /* MerchantSampleBackend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchantSampleBackend.swift; sourceTree = "<group>"; };
 		2E7B6FE12BBDAB460036FBCF /* CardinalMobile.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CardinalMobile.xcframework; path = Frameworks/CardinalMobile.xcframework; sourceTree = "<group>"; };
+		2EF00A642BC3F6CF000151C1 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		3F6F49C8250123590080BDDB /* CustomerVaultFakeToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerVaultFakeToken.swift; sourceTree = "<group>"; };
 		64173AAC2306FE8600642D95 /* ApplePayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePayViewController.swift; sourceTree = "<group>"; };
 		64173AAF2307087700642D95 /* PSApplePayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSApplePayViewController.m; sourceTree = "<group>"; };
@@ -320,6 +322,7 @@
 		2BCCA97922D4DF9B00C7772A = {
 			isa = PBXGroup;
 			children = (
+				2EF00A642BC3F6CF000151C1 /* PrivacyInfo.xcprivacy */,
 				2BCCA98522D4DF9B00C7772A /* Paysafe_SDK */,
 				2BEC412822E0BE6F0087FD48 /* MerchantBackend */,
 				2BD6F25A22D5F24200B38687 /* Example */,
@@ -638,6 +641,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EF00A652BC3F6CF000151C1 /* PrivacyInfo.xcprivacy in Resources */,
 				64B3908023324F7E007ED4B0 /* paysafe_sdk_versioning-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
