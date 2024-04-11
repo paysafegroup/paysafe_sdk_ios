@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name              	= "Paysafe_SDK"
-  s.version           	= "2.5.0"
+  s.version           	= "2.6.0"
   s.summary           	= "Paysafe SDK handling 3DS 2 and Apple Pay"
 
   s.license           	= "MIT"
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.source_files      	= 'Paysafe_SDK/**/*.{swift,h,m}'
   s.resources         	= 'Paysafe_SDK/**/*.html','**/*paysafe_sdk_versioning-Info.plist'
 
-  s.platform          	= :ios, "10.0"
+  s.platform          	= :ios, "12.0"
   s.swift_version       = '5.0'
   s.requires_arc        = true
   s.vendored_frameworks = "Frameworks/CardinalMobile.xcframework"

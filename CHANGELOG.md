@@ -2,11 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
-## [2.5.0] 
+## [2.6.0]
 ### Added - 2024-04-10
 - Add Privacy Manifest (#15)
 ### Added - 2024-04-09
 - Updated Cardinal mobile SDK dependency to version 2.2.5-8 (#14)
+
+## [2.5.0]
 ### Added - 2023-05-03
 - Remove 3DS version 1 fallback (#12)
 
