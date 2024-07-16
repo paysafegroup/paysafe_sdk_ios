@@ -322,7 +322,6 @@
 		2BCCA97922D4DF9B00C7772A = {
 			isa = PBXGroup;
 			children = (
-				2EF00A642BC3F6CF000151C1 /* PrivacyInfo.xcprivacy */,
 				2BCCA98522D4DF9B00C7772A /* Paysafe_SDK */,
 				2BEC412822E0BE6F0087FD48 /* MerchantBackend */,
 				2BD6F25A22D5F24200B38687 /* Example */,
@@ -347,6 +346,7 @@
 		2BCCA98522D4DF9B00C7772A /* Paysafe_SDK */ = {
 			isa = PBXGroup;
 			children = (
+				2EF00A642BC3F6CF000151C1 /* PrivacyInfo.xcprivacy */,
 				64CA5ABA22E20B8D00CE4222 /* Utils.swift */,
 				64EFD6F122FAB2D000BB1C9A /* Logger.swift */,
 				64B3907F23324F7E007ED4B0 /* paysafe_sdk_versioning-Info.plist */,
