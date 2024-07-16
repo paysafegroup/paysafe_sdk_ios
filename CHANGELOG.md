@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.7.0]
+### Added - 2024-07-16
+- Change Privacy Manifest location and add to resource bundles in podspec (#16)
+
 ## [2.6.0]
 ### Added - 2024-04-10
 - Add Privacy Manifest (#15)
