@@ -12,6 +12,10 @@ Pod::Spec.new do |s|
   s.source_files      	= 'Paysafe_SDK/**/*.{swift,h,m}'
   s.resources         	= 'Paysafe_SDK/**/*.html','**/*paysafe_sdk_versioning-Info.plist'
 
+  s.resource_bundles = {
+    'Paysafe_SDK_Privacy' => ['Paysafe_SDK/PrivacyInfo.xcprivacy'] 
+  }
+
   s.platform          	= :ios, "12.0"
   s.swift_version       = '5.0'
   s.requires_arc        = true
