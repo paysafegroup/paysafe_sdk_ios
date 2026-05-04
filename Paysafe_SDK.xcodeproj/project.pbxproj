@@ -185,7 +185,7 @@
 		2BEC24C922E0B13A008794E4 /* ThreeDSecureJWTResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDSecureJWTResponse.swift; sourceTree = "<group>"; };
 		2BEC412622E0BC740087FD48 /* ThreeDSecureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDSecureViewController.swift; sourceTree = "<group>"; };
 		2BEC412922E0BEA00087FD48 /* MerchantSampleBackend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchantSampleBackend.swift; sourceTree = "<group>"; };
-		2E7B6FE12BBDAB460036FBCF /* CardinalMobile.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CardinalMobile.xcframework; path = Frameworks/CardinalMobile.xcframework; sourceTree = "<group>"; };
+		2E7B6FE12BBDAB460036FBCF /* CardinalMobile.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:H7M4G5NDNU:CardinalCommerce Corp"; lastKnownFileType = wrapper.xcframework; name = CardinalMobile.xcframework; path = Frameworks/CardinalMobile.xcframework; sourceTree = "<group>"; };
 		2EF00A642BC3F6CF000151C1 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		3F6F49C8250123590080BDDB /* CustomerVaultFakeToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerVaultFakeToken.swift; sourceTree = "<group>"; };
 		64173AAC2306FE8600642D95 /* ApplePayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePayViewController.swift; sourceTree = "<group>"; };
