@@ -45,6 +45,7 @@ import CardinalMobile
 
         config.renderType = [CardinalSessionRenderTypeOTP, CardinalSessionRenderTypeHTML]
         config.enableDFSync = true
+        config.cardinalDatacenter = Visa
         session.configure(config)
 
         return session

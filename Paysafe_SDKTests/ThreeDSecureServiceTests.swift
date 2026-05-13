@@ -113,6 +113,15 @@ class ThreeDSecureServiceTests: XCTestCase {
         wait(for: [exp], timeout: 0.1)
     }
 
+    func testCardinalSessionAlwaysConfiguredForVisaDataCenter() {
+        service.start(cardBin: "123456", completion: { _ in })
+
+        let response = ThreeDSecureJWTResponse(deviceFingerprintingId: "fingerPrintId", jwt: "jwt")
+        mockWebService.getJWTTokenCompletion?(.success(response))
+
+        XCTAssertEqual(mockCardinalSession.configurationApplied?.cardinalDatacenter, Visa)
+    }
+
     func testContinueInvalidSdkChallengePayload() {
         let sdkChallengePayload = "InvalidSdkChallengePayload"
         service.challenge(sdkChallengePayload: sdkChallengePayload,
@@ -254,9 +263,10 @@ class ThreeDSecureServiceTests: XCTestCase {
         var didValidateHandler: CardinalSessionSetupDidValidateHandler?
 
         var didCallContinue: Bool = false
+        var configurationApplied: CardinalSessionConfiguration?
 
         func configure(_ sessionConfig: CardinalSessionConfiguration) {
-
+            configurationApplied = sessionConfig
         }
 
         func setup(jwtString: String,

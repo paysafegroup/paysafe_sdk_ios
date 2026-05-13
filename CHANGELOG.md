@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.8.0]
+### Added - 2026-05-04
+- Updated Cardinal Mobile SDK dependency to version `2.2.6-2`
+- The Cardinal session is now always configured to route 3DS traffic to the Visa data center
+
 ## [2.7.0]
 ### Added - 2024-07-16
 - Change Privacy Manifest location and add to resource bundles in podspec (#16)
