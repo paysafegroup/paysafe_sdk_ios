@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.9.0]
+### Added - 2026-08-12
+- Added Swift Package Manager support (`Package.swift`) alongside the existing CocoaPods integration
+
 ## [2.8.0]
 ### Added - 2026-05-04
 - Updated Cardinal Mobile SDK dependency to version `2.2.6-2`

@@ -20,7 +20,25 @@ It Supports:
 
 # Installation
 
-Installation is available via CocoaPods:
+Installation is available via Swift Package Manager and CocoaPods.
+
+## Swift Package Manager
+
+Swift Package Manager (SPM) is a dependency manager built into Xcode. To integrate the iOS Paysafe SDK into your project:
+
+* In Xcode, go to **File > Add Package Dependencies...**
+* Enter the repository URL: `https://github.com/paysafegroup/paysafe_sdk_ios`
+* Select the version rule (e.g. **Up to Next Major**) and add the `Paysafe_SDK` library to your target.
+
+Alternatively, add it to your own `Package.swift` dependencies:
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/paysafegroup/paysafe_sdk_ios", from: "<latest_published_version>")
+]
+```
+
+## CocoaPods
 
 CocoaPods is a dependency manager for Cocoa projects. For usage and installation instructions, visit their [website](https://cocoapods.org). To integrate iOS Paysafe SDK into your Xcode project using CocoaPods, specify it in your Podfile:
 
@@ -28,7 +46,7 @@ CocoaPods is a dependency manager for Cocoa projects. For usage and installation
 
 # Usage
 
-After installing the Paysafe_SDK cocoapod, the only requirement to start using the SDK is simply by importing it into your project:
+After installing the Paysafe_SDK, the only requirement to start using the SDK is simply by importing it into your project:
 
 * Swift:
 ```
