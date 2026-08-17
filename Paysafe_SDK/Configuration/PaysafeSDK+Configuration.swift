@@ -102,7 +102,12 @@ private extension PaysafeSDK {
     }
 
     static func getSDKVersion() -> String {
-        guard let path = Bundle(for: ThreeDSecureService.self).path(forResource: Constants.sdkPlistName, ofType: "plist"),
+        #if SWIFT_PACKAGE
+            let bundle = Bundle.module
+        #else
+            let bundle = Bundle(for: ThreeDSecureService.self)
+        #endif
+        guard let path = bundle.path(forResource: Constants.sdkPlistName, ofType: "plist"),
             let xml = FileManager.default.contents(atPath: path),
             let preferences = try? PropertyListSerialization.propertyList(from: xml, options: .mutableContainersAndLeaves, format: nil),
             let plistDict = preferences as? [String: AnyObject],

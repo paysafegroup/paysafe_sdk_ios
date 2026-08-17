@@ -8,6 +8,7 @@
 
 import Foundation
 import PassKit
+import UIKit
 
 public typealias PKPaymentAuthorizationExtensionProtocol = PKPaymentViewControllerProtocol & PKAuthorizationPresenterProtocol
 

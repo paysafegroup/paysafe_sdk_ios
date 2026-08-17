@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import PassKit
 @testable import Paysafe_SDK
 import XCTest
 

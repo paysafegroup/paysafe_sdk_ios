@@ -198,7 +198,7 @@
 		6480994822F8680400E9C9D6 /* UIResponder+FirstResponder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+FirstResponder.m"; sourceTree = "<group>"; };
 		64AE64EF2354822000C63243 /* ApplePayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePayTests.swift; sourceTree = "<group>"; };
 		64AE64F12355C38500C63243 /* ApplePayHelperProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePayHelperProtocols.swift; sourceTree = "<group>"; };
-		64B3907F23324F7E007ED4B0 /* paysafe_sdk_versioning-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "paysafe_sdk_versioning-Info.plist"; sourceTree = SOURCE_ROOT; };
+		64B3907F23324F7E007ED4B0 /* paysafe_sdk_versioning-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Paysafe_SDK/paysafe_sdk_versioning-Info.plist"; sourceTree = SOURCE_ROOT; };
 		64CA5AB622E1ACFE00CE4222 /* UIConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIConfiguration.swift; sourceTree = "<group>"; };
 		64CA5ABA22E20B8D00CE4222 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		64DD2FCB22DBB7E5007F9B42 /* WebServiceHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceHandler.swift; sourceTree = "<group>"; };
